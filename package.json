@@ -1,0 +1,22 @@
+{
+  "name": "rubyconf-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "aoi serve -t slim -L babel -e src/app.js",
+    "build": "aoi build -t slim -L babel -e src/app.js"
+  },
+  "author": "Aotokitsuruya",
+  "license": "MIT",
+  "devDependencies": {
+    "aoi": "^0.1.0",
+    "image-webpack-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "browserify-versionify": "^1.0.6",
+    "ify-loader": "^1.0.3",
+    "pixi.js": "^4.0.1"
+  }
+}
