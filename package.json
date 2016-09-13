@@ -17,6 +17,7 @@
   "dependencies": {
     "browserify-versionify": "^1.0.6",
     "ify-loader": "^1.0.3",
+    "json-loader": "^0.5.4",
     "pixi.js": "^4.0.1"
   }
 }
