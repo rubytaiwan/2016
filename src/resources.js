@@ -10,4 +10,4 @@ const IMAGES = [
     "landing/char-hair.png"
 ];
 
-IMAGES.each((image) => { require(`images\/${image}`) })
+IMAGES.forEach((image) => { require(`images\/${image}`) })
