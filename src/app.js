@@ -2,6 +2,7 @@
  * RubyConf Taiwan 2016
  */
 
+import './resources'
 import '../sass/app.scss';
 
 (function() {
