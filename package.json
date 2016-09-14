@@ -12,6 +12,8 @@
   "license": "MIT",
   "devDependencies": {
     "aoi": "^0.1.0",
+    "bemify": "^0.1.2",
+    "bootstrap-sass": "^3.3.7",
     "image-webpack-loader": "^2.0.0"
   },
   "dependencies": {

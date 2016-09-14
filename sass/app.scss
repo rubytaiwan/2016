@@ -2,7 +2,8 @@
  * RubyConf Taiwan 2016
  */
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+@import "bemify";
+//  CSS framework //
+@import "bootstrap";
+
+@import "setting";
