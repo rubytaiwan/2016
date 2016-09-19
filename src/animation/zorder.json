@@ -1,6 +1,9 @@
 {
   "background": -100,
 
-  "character-hair": 100,
-  "character-body": 50
+  "character-hair-front": 200,
+  "character-body": 100,
+  "character-hair-back": 50,
+
+  "gem": 150
 }
