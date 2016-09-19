@@ -1,7 +1,9 @@
 {
   "background": "images/landing/bg.jpg",
   "character-body": "images/landing/char-body.png",
-  "character-hair-front": "images/landing/char-hair.png",
+  "character-hair-front-a": "images/landing/char-hair-front-1.png",
+  "character-hair-front-b": "images/landing/char-hair-front-2.png",
   "character-hair-back": "images/landing/char-hair-back.png",
+  "frontground": "images/landing/fg.png",
   "gem": "images/landing/gem.png"
 }

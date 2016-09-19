@@ -53,6 +53,7 @@ export default class LandingAnimation {
     prepareStage(loader, resources) {
         this.add(new Background(this.stage, 'background'))
         this.add(new Character(this.stage))
+        this.add(new Background(this.stage, 'frontground'))
 
         this.animate()
     }

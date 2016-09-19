@@ -12,7 +12,10 @@ export default class Character {
         this.character.pivot.set(692, 0)
         this.character.x = 692
 
-        this.hairFront = new Sprite(Resource.texture('character-hair-front'))
+        this.hairFront = new Container
+
+        this.hairFrontA = new Sprite(Resource.texture('character-hair-front-a'))
+        this.hairFrontB = new Sprite(Resource.texture('character-hair-front-b'))
         this.hairBack = new Sprite(Resource.texture('character-hair-back'))
         this.body = new Sprite(Resource.texture('character-body'))
         this.gem = new Sprite(Resource.texture('gem'))
@@ -25,6 +28,9 @@ export default class Character {
         this.gem.pivot.set(570, 0)
         this.gem.x = 570
         // this.gem.blendMode = BLEND_MODES.LUMINOSITY
+
+        this.hairFront.addChild(this.hairFrontB)
+        this.hairFront.addChild(this.hairFrontA)
 
         this.character.addChild(this.hairBack)
         this.character.addChild(this.body)
@@ -59,7 +65,9 @@ export default class Character {
     animateHair(currentTime) {
         let skewX = Math.sin(currentTime / 1000 * 2) * 0.005
         let skewY = Math.cos(currentTime / 500) * 0.001 + 0.002
-        this.hairFront.skew.set(skewX, skewY)
+        // this.hairFront.skew.set(skewX, skewY)
         this.hairBack.skew.set(skewX * 2, skewY * 2)
+
+        this.hairFrontA.skew.set(skewX / 2, skewY / 2)
     }
 }
