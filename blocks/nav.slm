@@ -1,4 +1,4 @@
-nav.navbar.c-navbar
+nav.navbar.navbar-fixed-top.c-navbar
   .container-fluid
     /! Brand and toggle get grouped for better mobile display
     .navbar-header

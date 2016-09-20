@@ -1,4 +1,13 @@
 @include block('c-navbar') {
+  border-width: 0;
+  margin: 0;
+
+  @media (min-width: $screen-sm) {
+    background-image: url(../images/background/cave_top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+  }
 
   @include block('navbar-nav') {
 
