@@ -1,5 +1,5 @@
-nav.navbar.c-navbar.navbar-fixed-top
-  .container
+nav.navbar.c-navbar
+  .container-fluid
     /! Brand and toggle get grouped for better mobile display
     .navbar-header
       button.navbar-toggle.collapsed aria-expanded="false" data-target="#c-navbar-collapse" data-toggle="collapse" type="button" 
