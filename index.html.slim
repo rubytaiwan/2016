@@ -9,8 +9,11 @@ html
     link(rel="stylesheet" href="style.css")
     script(src="bundle.js")
   body
-   .container
-      == partial('blocks/home')
+
+    == partial('blocks/home')
+    == partial('blocks/nav')
+
+    .container.content
       == partial('blocks/speaker')
       == partial('blocks/schedule')
       == partial('blocks/venue')
