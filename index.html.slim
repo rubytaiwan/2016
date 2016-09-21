@@ -10,10 +10,10 @@ html
     script(src="bundle.js")
   body
 
-    == partial('blocks/home')
     == partial('blocks/nav')
 
     .container-fluid.main
+      == partial('blocks/home')
       == partial('blocks/speaker')
       == partial('blocks/schedule')
       == partial('blocks/venue')

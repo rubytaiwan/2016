@@ -16,7 +16,7 @@ export default class LandingAnimation {
     constructor(selector) {
         this.$container = document.querySelector(selector)
 
-        this.renderer = new autoDetectRenderer(STAGE_WIDTH, STAGE_HEIGHT)
+        this.renderer = new autoDetectRenderer(STAGE_WIDTH, STAGE_HEIGHT, { transparent:  true , antialias: true })
         this.stage = new Container
 
         this.$container.appendChild(this.renderer.view)
@@ -51,7 +51,7 @@ export default class LandingAnimation {
     }
 
     prepareStage(loader, resources) {
-        this.add(new Background(this.stage, 'background'))
+        // this.add(new Background(this.stage, 'background'))
         this.add(new Character(this.stage))
         this.add(new Background(this.stage, 'frontground'))
 

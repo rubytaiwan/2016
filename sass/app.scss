@@ -8,23 +8,28 @@
 
 @import "setting";
 
+@import "layout/home";
 @import "layout/nav";
 @import "layout/footer";
 
 body{
-  background-color: $brown-dark;
+  background:
+  url(../images/background/cave.svg) fixed,
+  url(../images/landing/bg.jpg) no-repeat,
+  $brown-dark;
+  background-size: contain;
   color: white;
 }
 
 @include block('main') {
 
-  @media (min-width: $screen-sm) {
-    background-image: url(../images/background/cave.svg);
-    background-attachment: fixed;
-    background-repeat: y-repeat;
-    background-size: contain;
+  position: relative;
 
-    padding-top: 60px;
-  }
+  background-image: url(../images/background/cave.svg);
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: contain;
+
+  padding-top: 60px;
 
 }
