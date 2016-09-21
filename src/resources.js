@@ -7,7 +7,15 @@
 const IMAGES = [
     "landing/bg.jpg",
     "landing/char-body.png",
-    "landing/char-hair.png"
+    "landing/char-hair.png",
+    "background/cave.svg",
+    "background/cave_top.svg",
+    "background/cave_bottom.svg",
+    "nav_element.svg",
+    "nav_element_hover.svg",
+    "social/fb.png",
+    "social/twitter.png",
+    "social/email.png"
 ];
 
 IMAGES.forEach((image) => { require(`images\/${image}`) })

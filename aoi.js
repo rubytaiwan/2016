@@ -1,4 +1,19 @@
 var path = require('path');
+var fs = require('fs');
+var yaml = require('js-yaml');
+
+function loadData() {
+    var RULES = /\.(yml|yaml)$/;
+    var buffer = "";
+
+    fs.readdirSync(path.resolve(__dirname, "data")).map(function(filename) {
+        if(RULES.test(filename)) {
+            buffer += fs.readFileSync(path.resolve(__dirname, "data", filename))
+        }
+    })
+
+    return yaml.safeLoad(buffer);
+}
 
 module.exports = function(config, options) {
     /*
@@ -20,6 +35,10 @@ module.exports = function(config, options) {
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
     });
+
+    config.slmLoader = {
+        data: loadData()
+    }
 
     return config;
 }

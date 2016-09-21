@@ -2,7 +2,29 @@
  * RubyConf Taiwan 2016
  */
 
-html, body {
-  margin: 0;
-  padding: 0;
+@import "bemify";
+//  CSS framework //
+@import "bootstrap";
+
+@import "setting";
+
+@import "layout/nav";
+@import "layout/footer";
+
+body{
+  background-color: $brown-dark;
+  color: white;
+}
+
+@include block('main') {
+
+  @media (min-width: $screen-sm) {
+    background-image: url(../images/background/cave.svg);
+    background-attachment: fixed;
+    background-repeat: y-repeat;
+    background-size: contain;
+
+    padding-top: 60px;
+  }
+
 }
