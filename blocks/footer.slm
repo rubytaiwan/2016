@@ -1,1 +1,10 @@
-h1 test
+footer
+  .copyright
+    p © 2016 Ruby Conf Taiwan
+  .social-link
+    a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
+      img src="images/social/fb.png" alt="facebook"/
+    a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"
+      img src="images/social/twitter.png" alt="twitter"/
+    a.social-link--email href="mailto:contact@rubyconf.tw"
+      img src="images/social/email.png" alt="email"/
