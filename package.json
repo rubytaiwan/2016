@@ -14,7 +14,9 @@
     "aoi": "^0.1.0",
     "image-webpack-loader": "^2.0.0",
     "js-yaml": "^3.6.1",
-    "slm-loader": "git+https://github.com/elct9620/slm-loader.git"
+    "slm-loader": "git+https://github.com/elct9620/slm-loader.git",
+    "bemify": "^0.1.2",
+    "bootstrap-sass": "^3.3.7"
   },
   "dependencies": {
     "browserify-versionify": "^1.0.6",

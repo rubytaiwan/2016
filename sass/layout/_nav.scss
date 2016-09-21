@@ -1,0 +1,183 @@
+@include block('c-navbar') {
+  border-width: 0;
+  margin: 0;
+
+  @media (min-width: $screen-sm) {
+    background-image: url(../images/background/cave_top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+  }
+
+  @include block('navbar-nav') {
+
+    li{
+      background-image: url(../images/nav_element.svg);
+      background-size: auto 100%;
+      position: fixed;
+      width: 100px;
+      height: 100px;
+
+      @media (min-width: $screen-md) {
+        width: 120px;
+        height: 120px;
+      }
+
+      &:hover{
+        background-image: url(../images/nav_element_hover.svg);
+        a{
+          visibility: visible;
+        }
+      }
+
+      a{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        visibility: hidden; 
+
+        &:hover{
+          background-color: transparent;
+        }
+
+        @media (min-width: $screen-md) {
+          font-size: 18px;
+        }
+      }
+
+      @include state('active') {
+        background-image: url(../images/nav_element_hover.svg);
+        a{
+          visibility: visible;
+        }
+      }
+    }
+
+    @include child('home') {
+      transform: rotate(10deg);
+      background-position: -7px 0;
+      top: 5vh;
+      left: 2vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -4px 0;
+      }
+
+      a{
+        line-height: 70px;
+        @media (min-width: $screen-md) {
+          line-height: 90px;
+        }
+      }
+    }
+
+    @include child('speaker') {
+      transform: rotate(-20deg);
+      background-position: -106px 0;
+      top: 17vh;
+      left: 5vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -123px 0;
+      }
+
+      a{
+        line-height: 45px;
+        @media (min-width: $screen-md) {
+          line-height: 65px;
+        }
+      }
+    }
+
+    @include child('schedule') {
+      transform: rotate(10deg);
+      background-position: -207px 0;
+      top: 28vh;
+      left: 2vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -244px 0;
+      }
+
+      a{
+        line-height: 68px;
+        @media (min-width: $screen-md) {
+          line-height: 88px;
+        }
+      }
+    }
+
+    @include child('venue') {
+      transform: rotate(-5deg);
+      background-position: -306px 0;
+      top: 40vh;
+      left: 5vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -362px 0;
+      }
+
+      a{
+        line-height: 85px;
+        @media (min-width: $screen-md) {
+          line-height: 105px;
+        }
+      }
+    }
+
+    @include child('coc') {
+      background-position: -406px 0;
+      top: 53vh;
+      left: 2vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -483px 0;
+      }
+
+      a{
+        line-height: 70px;
+        @media (min-width: $screen-md) {
+          line-height: 90px;
+        }
+      }
+    }
+
+    @include child('sponsor') {
+      transform: rotate(10deg);
+      background-position: -507px 0;
+      top: 66vh;
+      left: 3vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -603px 0;
+      }
+
+      a{
+        line-height: 65px;
+        @media (min-width: $screen-md) {
+          line-height: 85px;
+        }
+      }
+    }
+
+    @include child('staff') {
+      transform: rotate(-15deg);
+      background-position: -606px 0;
+      top: 80vh;
+      left: 2vw;
+
+      @media (min-width: $screen-md) {
+        background-position: -722px 0;
+      }
+
+      a{
+        line-height: 65px;
+        @media (min-width: $screen-md) {
+          line-height: 85px;
+        }
+      }
+    }
+  }
+}
