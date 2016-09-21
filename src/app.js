@@ -11,7 +11,7 @@ import Animation from './animation.js'
     let setup = function() {
         console.log("Welcome to RubyConf 2016")
 
-        let landing = new Animation("#view")
+        let landing = new Animation("#landing")
     }
 
     document.addEventListener('DOMContentLoaded', setup)

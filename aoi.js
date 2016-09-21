@@ -16,12 +16,17 @@ function loadData() {
 }
 
 module.exports = function(config, options) {
-
+    /*
     config.module.postLoaders = config.module.postLoaders || [];
     config.module.postLoaders.push({
         include: path.resolve(__dirname, 'node_modules/pixi.js'),
         loader: 'ify'
     });
+    */
+
+    config.externals = {
+        "pixi.js": "PIXI"
+    }
 
     config.module.loaders.push({
         test: /\.(jpe?g|png|gif|svg)$/i,
