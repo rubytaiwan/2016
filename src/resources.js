@@ -12,8 +12,8 @@ const IMAGES = [
     "background/cave_left.svg",
     "background/cave_top.svg",
     "background/cave_bottom.svg",
-    "nav_element.svg",
-    "nav_element_hover.svg",
+    "nav_element.png",
+    "nav_element_hover.png",
     "social/fb.png",
     "social/twitter.png",
     "social/email.png"
