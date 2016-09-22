@@ -5,7 +5,7 @@
   @media (min-width: $screen-sm) {
     background-image: url(../images/background/cave_top.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 120px;
   }
 
@@ -116,7 +116,7 @@
       left: 5vw;
 
       @media (min-width: $screen-md) {
-        background-position: -362px 0;
+        background-position: -364px 0;
       }
 
       a{
