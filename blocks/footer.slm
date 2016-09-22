@@ -1,7 +1,5 @@
 footer
-  .copyright
-    p © 2016 Ruby Conf Taiwan
-  .social-link
+  .social-link.visible-xs
     a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
       img src="images/social/fb.png" alt="facebook"/
     a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"

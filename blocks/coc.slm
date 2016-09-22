@@ -1,6 +1,7 @@
 section#coc.row
   .col-xs-12.col-sm-offset-3.col-sm-8
-    h1.coc-title Code of conduct
+    .title
+      h1 Code of conduct
   .col-xs-12.col-sm-offset-3.col-sm-8
     .content.en
       p All attendees, speakers, sponsors and volunteers at our conference are required to agree to following the code of conduct. Organizers will enforce this code of conduct throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.

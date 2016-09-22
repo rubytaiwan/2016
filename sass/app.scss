@@ -13,23 +13,36 @@
 @import "layout/footer";
 
 body{
-  background:
-  url(../images/background/cave.svg) fixed,
-  url(../images/landing/bg.jpg) no-repeat,
-  $brown-dark;
+  background: url(../images/landing/bg.jpg) no-repeat, $brown-light;
   background-size: contain;
   color: white;
 }
 
 @include block('main') {
-
+  background-image:
+    url(../images/background/cave_bottom.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 180% auto;
   position: relative;
 
-  background-image: url(../images/background/cave.svg);
-  background-attachment: fixed;
-  background-repeat: repeat-y;
-  background-size: contain;
+  padding-top: 30px;
 
-  padding-top: 60px;
+  @media (min-width: $screen-sm) {
+    background-image:
+      url(../images/background/cave_bottom.svg),
+      url(../images/background/cave_left.svg), 
+      url(../images/background/cave_right.svg);
+    background-position: bottom, left, right;
+    background-repeat: no-repeat, repeat-y, repeat-y;
+    background-size: contain;
+  }
 
+  @include block('title') {
+    padding: 30px 0;
+
+  h1{
+      display: inline;
+    }
+  }
 }
