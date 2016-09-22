@@ -1,12 +1,40 @@
 @include block('c-navbar') {
   border-width: 0;
   margin: 0;
+  padding: 40px 0;
+
+  background-image: url(../images/background/cave_top.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 90% 0;
+  background-size: 200% auto;
+  min-height: 140px;
 
   @media (min-width: $screen-sm) {
-    background-image: url(../images/background/cave_top.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120px;
+    background-size: contain;
+  }
+
+  @include block('social-link') {    
+    position: absolute;
+    width: 40%;
+    top: 10px;
+    right: 10px; 
+    opacity: 0.8;
+
+    @media (min-width: $screen-md) {
+      top: 20%;
+      right: 5%; 
+    }
+
+    img{
+      float: right;
+      width: 30px;
+      margin: 0 5px;
+
+      @media (min-width: $screen-md) {
+        width: 35px;
+      }
+    }
   }
 
   @include block('navbar-nav') {

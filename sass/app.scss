@@ -8,33 +8,41 @@
 
 @import "setting";
 
+@import "layout/home";
 @import "layout/nav";
 @import "layout/footer";
 
 body{
-  background-color: $brown-light;
+  background: url(../images/landing/bg.jpg) no-repeat, $brown-light;
+  background-size: contain;
   color: white;
 }
 
 @include block('main') {
+  background-image:
+    url(../images/background/cave_bottom.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 180% auto;
+  position: relative;
+
+  padding-top: 30px;
 
   @media (min-width: $screen-sm) {
-    background-image: url(../images/background/cave.svg);
-    background-attachment: fixed;
-    background-repeat: y-repeat;
+    background-image:
+      url(../images/background/cave_bottom.svg),
+      url(../images/background/cave_left.svg), 
+      url(../images/background/cave_right.svg);
+    background-position: bottom, left, right;
+    background-repeat: no-repeat, repeat-y, repeat-y;
     background-size: contain;
-
-    padding-top: 60px;
   }
-}
 
-@include block('title') {
-  padding: 20px 0;
-  text-align: center;
+  @include block('title') {
+    padding: 30px 0;
 
   h1{
-    background-color: $brown-light;
-    display: inline;
+      display: inline;
+    }
   }
-
 }
