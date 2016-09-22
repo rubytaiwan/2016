@@ -8,7 +8,7 @@ function loadData() {
 
     fs.readdirSync(path.resolve(__dirname, "data")).map(function(filename) {
         if(RULES.test(filename)) {
-            buffer += fs.readFileSync(path.resolve(__dirname, "data", filename))
+            buffer += "\n" + fs.readFileSync(path.resolve(__dirname, "data", filename))
         }
     })
 

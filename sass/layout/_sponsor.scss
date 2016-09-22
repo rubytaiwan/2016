@@ -1,0 +1,46 @@
+#sponsor{
+  text-align: center;
+
+  @include block('logo') {
+    display: block;
+    margin: 10px 0 30px;
+  }
+
+  @include block('sub-title') {
+    background: url(../images/gem_icon_alt_l.png), url(../images/gem_icon_alt_r.png);
+    background-repeat: no-repeat; 
+    background-position: 20% -10px, 80% -10px;
+
+    @media (min-width: $screen-sm) {
+      background-position: 30% -10px, 70% -10px;
+    }
+
+    @media (min-width: $screen-md) {
+      background-position: 40% -10px, 60% -10px;
+    }
+
+    @include state('platinum'){
+      background-position: 10% -10px, 90% -10px;
+
+      @media (min-width: $screen-sm) {
+        background-position: 25% -10px, 75% -10px;
+      }
+
+      @media (min-width: $screen-md) {
+        background-position: 35% -10px, 65% -10px;
+      }
+    }
+
+    padding: 25px 80px;
+    text-align: center;
+    
+    h2{
+      display: inline;
+      font-size: 24px;
+
+      @media (min-width: $screen-sm) {
+        font-size: 28px;
+      }
+    }
+  }
+}

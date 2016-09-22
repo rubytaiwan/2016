@@ -11,6 +11,7 @@
 @import "layout/home";
 @import "layout/nav";
 @import "layout/coc";
+@import "layout/sponsor";
 @import "layout/footer";
 
 body{
@@ -20,10 +21,8 @@ body{
 }
 
 @include block('main') {
-  background-image:
-    url(../images/background/cave_bottom.svg);
+  background-image: url(../images/background/cave_bottom.svg) no-repeat;
   background-position: bottom;
-  background-repeat: no-repeat;
   background-size: 180% auto;
   position: relative;
 
@@ -40,10 +39,21 @@ body{
   }
 
   @include block('title') {
-    padding: 30px 0;
+    background: url(../images/gem_icon.png) no-repeat;
+    margin-left: -40px;
+    padding: 35px 0 35px 80px;
+    
+    @media (min-width: $screen-sm) {
+      padding: 30px 0  30px 80px;
+    }
 
-  h1{
+    h1{
       display: inline;
+      font-size: 28px;
+
+      @media (min-width: $screen-sm) {
+        font-size: 36px;
+      }
     }
   }
 }
