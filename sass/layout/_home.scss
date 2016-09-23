@@ -1,14 +1,14 @@
 #landing {
   position: relative;
-  margin-top: -60px;
   z-index: -100;
+  padding-left: 8%;
 
   .mask {
     position: absolute;
     width: 100%;
     height: 100px;
 
-    bottom: 0;
-    background-image: linear-gradient(rgba($brown-dark, 0), $brown-dark);
+    bottom: -1px;
+    background-image: linear-gradient(rgba($brown-light, 0), $brown-light);
   }
 }

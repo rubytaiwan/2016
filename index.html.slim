@@ -12,12 +12,14 @@ html
 
     == partial('blocks/nav')
 
-    .container-fluid.main
+    .main
       == partial('blocks/home')
-      == partial('blocks/speaker')
-      == partial('blocks/schedule')
-      == partial('blocks/venue')
-      == partial('blocks/coc')
-      == partial('blocks/sponsor')
-      == partial('blocks/staff')
-      == partial('blocks/footer')
+
+      .container-fluid
+        == partial('blocks/speaker')
+        == partial('blocks/schedule')
+        == partial('blocks/venue')
+        == partial('blocks/coc')
+        == partial('blocks/sponsor')
+        == partial('blocks/staff')
+        == partial('blocks/footer')

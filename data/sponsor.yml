@@ -1,0 +1,41 @@
+sponsor:
+  ruby:
+    - name: Ruby
+      url: https://5xruby.tw/
+      picture: http://placehold.it/280x145
+      desc:
+  platinum:
+    - name: 
+      url: 
+      picture: http://placehold.it/250x145
+      desc:
+    - name: 
+      url: 
+      picture: http://placehold.it/250x145
+      desc:
+  gold:
+    - name: 
+      url: 
+      picture: http://placehold.it/220x100
+      desc:
+    - name: 
+      url: 
+      picture: http://placehold.it/220x100
+      desc:
+    - name: 
+      url: 
+      picture: http://placehold.it/220x100
+      desc:
+  silver:
+    - name:
+      url: 
+      picture: http://placehold.it/200x100
+      desc:
+    - name: 
+      url: 
+      picture: http://placehold.it/200x100
+      desc:
+    - name: 
+      url: 
+      picture: http://placehold.it/200x100
+      desc:
