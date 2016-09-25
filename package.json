@@ -11,7 +11,7 @@
   "author": "Aotokitsuruya",
   "license": "MIT",
   "devDependencies": {
-    "aoi": "^0.1.0",
+    "aoi": "^0.2.0-pre",
     "image-webpack-loader": "^2.0.0",
     "js-yaml": "^3.6.1",
     "slm-loader": "git+https://github.com/elct9620/slm-loader.git",

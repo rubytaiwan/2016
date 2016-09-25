@@ -8,16 +8,22 @@ import Resource from './animation/resources'
 import Background from './animation/backgronud'
 import Character from './animation/character'
 
-const STAGE_WIDTH = 1280
-const STAGE_HEIGHT = 720
+const STAGE_WIDTH = 1280;
+const STAGE_HEIGHT = 720;
 
 export default class LandingAnimation {
 
     constructor(selector) {
+        let initWidth = document.body.getBoundingClientRect().width
+        let initHeight = Math.ceil(initWidth * 9 / 16)
+
         this.$container = document.querySelector(selector)
 
-        this.renderer = new autoDetectRenderer(STAGE_WIDTH, STAGE_HEIGHT, { transparent:  true , antialias: true })
+        this.renderer = new autoDetectRenderer(initWidth, initHeight, { transparent:  true , antialias: true, autoResize: true })
         this.stage = new Container
+
+        this.stage.scale.x = initWidth / STAGE_WIDTH
+        this.stage.scale.y = initHeight / STAGE_HEIGHT
 
         this.$container.appendChild(this.renderer.view)
 
@@ -30,6 +36,18 @@ export default class LandingAnimation {
         Resource.load()
         Resource.onComplete = this.prepareStage.bind(this)
         Resource.onProgress = this.updateLoadingState.bind(this)
+
+        window.addEventListener('resize', this.onResize.bind(this))
+    }
+
+    onResize() {
+        let newWidth = document.body.getBoundingClientRect().width
+        let newHeight = Math.ceil(newWidth * 9 / 16)
+
+        this.renderer.resize(newWidth, newHeight)
+
+        this.stage.scale.x = newWidth / STAGE_WIDTH
+        this.stage.scale.y = newHeight / STAGE_HEIGHT
     }
 
     animate() {
