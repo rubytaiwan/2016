@@ -16,14 +16,6 @@ function loadData() {
 }
 
 module.exports = function(config, options) {
-    /*
-    config.module.postLoaders = config.module.postLoaders || [];
-    config.module.postLoaders.push({
-        include: path.resolve(__dirname, 'node_modules/pixi.js'),
-        loader: 'ify'
-    });
-    */
-
     config.externals = {
         "pixi.js": "PIXI"
     }
@@ -35,6 +27,12 @@ module.exports = function(config, options) {
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
     });
+
+    config.module.loaders.push({
+      test: /\.yaml$/,
+      include: path.resolve('data'),
+      loader: 'yaml',
+    })
 
     config.slmLoader = {
         data: loadData()
