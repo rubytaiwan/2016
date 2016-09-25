@@ -2,6 +2,8 @@
  * RubyConf Taiwan 2016
  */
 
+import '../index.html.slim'
+
 import './resources'
 import '../sass/app.scss';
 
