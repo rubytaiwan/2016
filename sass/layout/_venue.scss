@@ -1,0 +1,29 @@
+#venue{
+
+  #map{
+    width: 100%;
+    height: 400px;
+  }
+
+  @include block('map-content'){
+    color: black;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    line-height: 1.4;
+    
+    @include element('title'){
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    @include element('address'){
+      color: #333;
+      font-size: 18px;
+
+      @include state('zh'){
+        font-size: 16px;
+      }
+    }
+  }
+}
