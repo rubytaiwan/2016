@@ -13,21 +13,26 @@ export default class Character {
         this.character.x = 692
 
         this.hairFront = new Container
+        this.gem = new Container
 
         this.hairFrontA = new Sprite(Resource.texture('character-hair-front-a'))
         this.hairFrontB = new Sprite(Resource.texture('character-hair-front-b'))
         this.hairBack = new Sprite(Resource.texture('character-hair-back'))
         this.body = new Sprite(Resource.texture('character-body'))
-        this.gem = new Sprite(Resource.texture('gem'))
+        this.gemBody = new Sprite(Resource.texture('gem'))
+        this.gemGlowing = new Sprite(Resource.texture('gem-glowing'))
 
         this.hairFront.zOrder = zOrder['character-hair-front']
         this.hairBack.zOrder = zOrder['character-hair-back']
         this.body.zOrder = zOrder['character-body']
         this.gem.zOrder = zOrder['gem']
+        this.gemBody.zOrder = zOrder['gem']
+        this.gemGlowing.zOrder = zOrder['gem-glowing']
 
         this.gem.pivot.set(570, 0)
         this.gem.x = 570
-        // this.gem.blendMode = BLEND_MODES.LUMINOSITY
+
+        this.gemGlowing.blendMode = BLEND_MODES.LUMINOSITY
 
         this.hairFront.addChild(this.hairFrontB)
         this.hairFront.addChild(this.hairFrontA)
@@ -36,6 +41,9 @@ export default class Character {
         this.character.addChild(this.body)
         this.character.addChild(this.hairFront)
         this.character.addChild(this.gem)
+
+        this.gem.addChild(this.gemBody)
+        this.gem.addChild(this.gemGlowing)
 
         stage.addChild(this.character)
     }
@@ -52,6 +60,8 @@ export default class Character {
             0,
             Math.cos(currentTime / 500) * 0.05
         )
+
+        this.gemGlowing.alpha = (Math.cos(currentTime / 1000) + 1) / 2
     }
 
     animateCharacter(currentTime) {

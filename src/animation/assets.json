@@ -5,5 +5,7 @@
   "character-hair-front-b": "images/landing/char-hair-front-2.png",
   "character-hair-back": "images/landing/char-hair-back.png",
   "frontground": "images/landing/fg.png",
-  "gem": "images/landing/gem.png"
+  "gem": "images/landing/gem.png",
+  "gem-glowing": "images/landing/gem_glowing.png",
+  "glowing": "images/landing/glowing.png"
 }
