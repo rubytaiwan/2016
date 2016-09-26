@@ -1,0 +1,134 @@
+#speaker{
+  @include block('speaker-list') {
+    text-align: center;
+
+    @include block('speaker'){
+      transition: all 0.3s;
+      display: block;
+      color: white;
+      margin-bottom: 30px;
+
+      &:hover{
+        text-decoration: none;
+        color: $pink;
+      }
+
+      @include element('avatar'){
+        @include size(150px, 150px);
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      }
+
+      @include element('more'){
+        @include size(100%, 100%);
+        background-color: #060b0e;
+        visibility: hidden;
+        overflow: scroll;
+        position: fixed;
+        z-index: 1000;
+        top: 0%;
+        left: 0%;        
+        padding-top: 20%;   
+
+        &:target{
+          visibility: visible;
+        }
+
+        @media (min-width: $screen-sm) {
+          padding-top: 10%; 
+        }
+
+        @include element('close'){
+          @include size(30px, 30px);
+          background-image: url(../images/icon_close.svg);
+          background-size: cover;
+          position: absolute;
+          display: block;
+          opacity: 0.5;
+          top: 0;
+          right: 12%;
+        }
+
+        @include element('info'){
+          border: 1px solid $brown-light;
+          border-radius: 4px;
+          position: relative;
+          margin: 20px auto;
+          width: 80%;
+        }
+
+        @include element('name'){
+          background-color: $brown-light;
+          color: white;
+          font-weight: 700;
+          margin: 0;
+          padding: 20px 0 10px;
+
+          @media (min-width: $screen-sm) {
+            padding: 15px;
+          }
+        }
+
+        @include element('title'){
+          border-bottom: 1px solid $brown-light;
+          width: 80%;
+          margin: 0 auto;
+          padding: 10px;
+        }
+
+        @include element('bio'){
+          text-align: left;
+          margin: 0;
+          padding: 20px;
+        }
+
+        @include element('talk'){
+          border: 1px solid $brown;
+          border-radius: 4px;
+          width: 80%;
+          min-height: 200px;
+          margin: 0 auto 20px;
+        }
+
+        @include element('subject'){
+          background-color: $brown;
+          color: white;
+          margin: 0;
+          padding: 15px;
+        }
+
+        @include element('summary'){
+          text-align: left;
+          margin: 0;
+          padding: 20px;
+        }
+
+        @include element('social'){
+          background-color: $brown-light;
+
+          @media (min-width: $screen-sm) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: 10px;     
+          }
+
+          a{
+            display: inline-block;
+            color: white;
+            margin-right: 10px;
+          }
+
+          i{
+            font-size: 24px;
+            line-height: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -8,21 +8,36 @@
   @include block('map-content'){
     color: black;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-bottom: 15px;
     line-height: 1.4;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 20px;
+    }
     
     @include element('title'){
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
+      @media (min-width: $screen-sm) {
+        font-size: 24px;
+      }
     }
 
     @include element('address'){
       color: #333;
-      font-size: 18px;
+      font-size: 16px;
+
+      @media (min-width: $screen-sm) {
+        font-size: 18px;
+      }
 
       @include state('zh'){
-        font-size: 16px;
+        font-size: 14px;
+
+        @media (min-width: $screen-sm) {
+          font-size: 16px;
+        }
       }
     }
   }

@@ -1,0 +1,32 @@
+section#speaker.row
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .speaker-list
+      .row
+        - for speaker of (this.speakers)
+          .col-xs-12.col-sm-6.col-md-4
+            a.speaker href=["#" +speaker.name]
+              img.speaker__avatar src=speaker.avatar alt=speaker.name /
+              h3.speaker__name =speaker.name
+              p.speaker__title =speaker.title
+            .speaker__more[id=speaker.name]
+              .row
+                .col-xs-12.col-sm-offset-3.col-sm-8
+                  a.speaker__more__close href="#/"
+                  img.speaker__avatar src=speaker.avatar alt=speaker.name /
+                  .speaker__more__info
+                    h3.speaker__more__name =speaker.name
+                    .speaker__more__social
+                      -if speaker.urlHome
+                        a.speaker__more__home[href=speaker.urlHome target="_blank"]
+                          i.fa.fa-home
+                      -if speaker.urltwitter
+                        a.speaker__more__twitter[href=speaker.urltwitter target="_blank"]
+                          i.fa.fa-twitter
+                      -if speaker.urlGithub
+                        a.speaker__more__github[href=speaker.urlGithub target="_blank"]
+                          i.fa.fa-github
+                    p.speaker__more__title =speaker.title
+                    p.speaker__more__bio =speaker.bio
+                  .speaker__more__talk
+                    h4.speaker__more__subject =speaker.subject
+                    p.speaker__more__summary =speaker.summary

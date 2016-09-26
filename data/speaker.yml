@@ -1,1 +1,11 @@
 speakers:
+  - name: Sarah Allen
+    avatar: http://placehold.it/150x150
+    title: Co-founder, Mightyverse
+    bio: Co-founder of Mightyverse and Presidential Innovation Fellow
+    subject: Transparency Wins
+    summary: Transparency is a powerful means of making change. Ruby’s open source approach has spread across an ecosystem of libraries and whole companies. Open source increases the speed of software development and leads to higher quality code. These patterns of how we make software are changing how we do business and how our governments work. These aren’t just patterns of how we write code; these are patterns of how we interact with each other, teach and learn new skills, and experiment with new ideas. When we make our work visible, we expand its potential, and increase the chances of dramatic, unexpected impact.
+    urlHome: http://www.ultrasaurus.com/
+    urltwitter: http://twitter.com/ultrasaurus
+    urlGithub: http://github.com/ultrasaurus
+    

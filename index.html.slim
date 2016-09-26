@@ -9,6 +9,7 @@ html
     script(src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js")
     script(src="bundle.js")
     script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyC5axSSWrtFUxQWYS1BfkDjjEG_z9jVBnA&callback=initMap")
+    script(src="//use.fontawesome.com/a57863a8af.js")
 
   body
 
@@ -28,6 +29,7 @@ html
 
     javascript:
       (function() {
+        // Google Map
         var location = {lat: 25.0423, lng: 121.61455};
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -35,6 +37,7 @@ html
           zoom: 15,
           streetViewControl: false,
           scrollwheel: false,
+          mapTypeControl: false,
         });
         
         var contentString = 

@@ -10,6 +10,7 @@
 
 @import "layout/home";
 @import "layout/nav";
+@import "layout/speaker";
 @import "layout/venue";
 @import "layout/coc";
 @import "layout/sponsor";
@@ -19,6 +20,10 @@ body{
   background: url(../images/landing/bg.jpg) no-repeat, $brown-light;
   background-size: contain;
   color: white;
+}
+
+section + section{
+  margin-top: 30px;
 }
 
 @include block('main') {
