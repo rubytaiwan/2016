@@ -1,0 +1,90 @@
+#staff{
+
+  @media (min-width: $screen-sm) {
+    padding-top: 25px;
+  }
+
+  @include block('staff'){
+    display: block;
+    text-align: center;
+
+    img{
+      @include floating();
+    }
+
+    @include element('more'){
+      @include size(100%, 100%);
+      background-color: #060b0e;
+      visibility: hidden;
+      overflow: scroll;
+      position: fixed;
+      z-index: 1000;
+      top: 0%;
+      left: 0%;
+      padding-top: 80px;
+
+      @media (min-width: $screen-sm) {
+        padding-top: 100px;
+      }
+      @media (min-width: $screen-md) {
+        padding-top: 120px;
+      }
+
+      &:target{
+        visibility: visible;
+      }
+
+      @include element('close'){
+        @include size(30px, 30px);
+        background-image: url(../images/icon_close.svg);
+        background-size: cover;
+        display: block;
+        margin: 0 auto 40px;
+        opacity: 0.5;
+      }
+
+      @include element('info'){
+        background: url(../images/gem_icon.png) no-repeat;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 30px auto;
+        padding: 10px 0 0 20px;
+        text-align: center;
+
+        @media (min-width: $screen-sm) {
+          width: 70%;
+          text-align: left;
+          padding: 10px 0 0 100px;
+        }
+        @media (min-width: $screen-md) {
+          width: 45%;
+        }
+      }
+      
+      @include element('name'){
+        margin: 0;
+        line-height: 50px;
+        font-size: 20px;
+        @media (min-width: $screen-sm) {
+          font-size: 24px;
+        }
+      }
+
+      @include element('title'){
+        font-size: 16px;
+        margin: 0;
+      }
+
+      @include element('url'){
+        color: white;
+        margin-left: 20px;
+        opacity: 0.8;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

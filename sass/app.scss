@@ -6,6 +6,7 @@
 //  CSS framework //
 @import "bootstrap";
 
+@import "mixin";
 @import "setting";
 
 @import "layout/home";
@@ -14,6 +15,7 @@
 @import "layout/venue";
 @import "layout/coc";
 @import "layout/sponsor";
+@import "layout/staff";
 @import "layout/footer";
 
 body{
@@ -27,20 +29,21 @@ section + section{
 }
 
 @include block('main') {
-  background-image: url(../images/background/cave_bottom.svg) no-repeat;
-  background-position: bottom;
-  background-size: 180% auto;
   position: relative;
 
-  padding-top: 30px;
-
+  @media (max-width: $screen-sm) {
+    background-image: url(../images/background/cave_bottom.svg) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 180% auto;
+  }
+  
   @media (min-width: $screen-sm) {
     background-image:
-      url(../images/background/cave_bottom.svg),
       url(../images/background/cave_left.svg), 
       url(../images/background/cave_right.svg);
-    background-position: bottom, left, right;
-    background-repeat: no-repeat, repeat-y, repeat-y;
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
     background-size: contain;
   }
 
