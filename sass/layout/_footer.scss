@@ -1,15 +1,29 @@
 footer{
-  min-height: 100px;
-  opacity: 0.8;
+
+  @media (min-width: $screen-sm) {
+    background-image:
+      url(../images/background/cave_bottom.svg),
+      url(../images/background/fg.png);
+    background-position: bottom, 70% 100%;
+    background-repeat: no-repeat;
+    background-size: contain, 75% auto;
+    height: 200px;
+  }
 
   @media (min-width: $screen-md) {
-    min-height: 120px;
+    background-image:
+      url(../images/background/cave_bottom.svg),
+      url(../images/background/fg.png);
+    background-position: bottom, 67% 90%;
+    background-repeat: no-repeat;
+    background-size: contain, 65% auto;
+    height: 250px;
   }
 
   @include block('social-link') {
-    padding-top: 20px;
-    margin: 0 auto;
+    margin: 20px auto 60px;
     text-align: center;
+    opacity: 0.8;
 
     img{
       width: 30px;
