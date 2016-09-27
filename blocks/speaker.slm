@@ -9,7 +9,7 @@ section#speaker.row
               h3.speaker__name =speaker.name
               p.speaker__title =speaker.title
             .speaker__more[id=speaker.name]
-              .row
+              .row.row-fix
                 .col-xs-12.col-sm-offset-3.col-sm-8
                   a.speaker__more__close href="#/"
                   img.speaker__avatar src=speaker.avatar alt=speaker.name /

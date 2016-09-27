@@ -4,7 +4,7 @@ footer
       a.staff href="#staff-list"
         img src="images/gem_icon.png" alt=""/
       .staff__more#staff-list
-        .row
+        .row.row-fix
           .col-xs-12.col-sm-offset-3.col-sm-8
             a.staff__more__close href="#/"
             - for staff of (this.staffs)

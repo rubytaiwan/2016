@@ -24,12 +24,16 @@ body{
   color: white;
 }
 
-section + section{
-  margin-top: 30px;
-}
-
 @include block('main') {
   position: relative;
+
+  section + section{
+    margin-top: 30px;
+  }
+
+  @include block('row-fix'){
+    margin: 0;
+  }
 
   @media (max-width: $screen-sm) {
     background-image: url(../images/background/cave_bottom.svg) ;
