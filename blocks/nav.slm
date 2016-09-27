@@ -1,36 +1,27 @@
 nav.navbar.navbar-fixed-top.c-navbar
   .container-fluid
-    /! Brand and toggle get grouped for better mobile display
-    .navbar-header
-      button.navbar-toggle.collapsed aria-expanded="false" data-target="#c-navbar-collapse" data-toggle="collapse" type="button" 
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand href="#"
-    
-    /! Collect the nav links, forms, and other content for toggling
-    #c-navbar-collapse.collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li.navbar-nav__home.is-active
-          a href="#home" Home
-        li.navbar-nav__speaker
-          a href="#speaker" Speaker
-        li.navbar-nav__schedule
-          a href="#schedule" Schedule
-        li.navbar-nav__venue
-          a href="#venue" Venue
-        li.navbar-nav__coc
-          a href="#coc" COC
-        li.navbar-nav__sponsor
-          a href="#sponsor" Sponsor
-        li.navbar-nav__staff
-          a href="#staff" Staff
-          
-      .social-link
-        a.social-link--email href="mailto:contact@rubyconf.tw"
-          img src="images/social/email.png" alt="email"
-        a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"
-          img src="images/social/twitter.png" alt="twitter"
-        a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
-          img src="images/social/fb.png" alt="facebook"
+    a.mobile-nav.visible-xs href="#nav"
+    ul.nav.navbar-nav#nav
+      a.navbar-nav__close.visible-xs href="#/"
+      li.navbar-nav__home
+        a href="#" Home
+      li.navbar-nav__news
+        a href="#news" News
+      li.navbar-nav__speaker
+        a href="#speaker" Speaker
+      li.navbar-nav__schedule
+        a href="#schedule" Schedule
+      li.navbar-nav__venue
+        a href="#venue" Venue
+      li.navbar-nav__coc
+        a href="#coc" COC
+      li.navbar-nav__sponsor
+        a href="#sponsor" Sponsor
+        
+    .social-link.hidden-xs
+      a.social-link--email href="mailto:contact@rubyconf.tw"
+        img src="images/social/email.png" alt="email"
+      a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"
+        img src="images/social/twitter.png" alt="twitter"
+      a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
+        img src="images/social/fb.png" alt="facebook"
