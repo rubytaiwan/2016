@@ -1,17 +1,21 @@
 @include block('c-navbar') {
   border-width: 0;
   margin: 0;
-  padding: 40px 0;
 
   background-image: url(../images/background/cave_top.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 90% 0;
   background-size: 200% auto;
-  min-height: 140px;
+  min-height: 60px;
 
   @media (min-width: $screen-sm) {
     background-size: contain;
+    min-height: 80px;
+  }
+
+  @media (min-width: $screen-md) {
+    min-height: 120px;
   }
 
   @include block('social-link') {    
@@ -83,7 +87,7 @@
       }
     }
 
-    @include child('home') {
+  @include element('home') {
       transform: rotate(10deg);
       background-position: -7px 0;
 
@@ -102,7 +106,7 @@
       }
     }
 
-    @include child('speaker') {
+  @include element('speaker') {
       transform: rotate(-20deg);
       background-position: -100px 0;
       top: 17vh;
@@ -120,7 +124,7 @@
       }
     }
 
-    @include child('schedule') {
+  @include element('schedule') {
       transform: rotate(10deg);
       background-position: -200px 0;
       top: 28vh;
@@ -138,7 +142,7 @@
       }
     }
 
-    @include child('venue') {
+  @include element('venue') {
       transform: rotate(-5deg);
       background-position: -300px 0;
       top: 40vh;
@@ -156,7 +160,7 @@
       }
     }
 
-    @include child('coc') {
+  @include element('coc') {
       background-position: -400px 0;
       top: 53vh;
       left: 2vw;
@@ -173,7 +177,7 @@
       }
     }
 
-    @include child('sponsor') {
+  @include element('sponsor') {
       transform: rotate(10deg);
       background-position: -500px 0;
       top: 66vh;
@@ -191,7 +195,7 @@
       }
     }
 
-    @include child('staff') {
+  @include element('staff') {
       transform: rotate(-15deg);
       background-position: -600px 0;
       top: 80vh;
