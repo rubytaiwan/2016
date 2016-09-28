@@ -1,3 +1,5 @@
 section#venue.row
   .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 Venue
     #map

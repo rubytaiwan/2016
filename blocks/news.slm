@@ -1,0 +1,18 @@
+section#news.row
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 News
+    .news
+      - for news of (this.news)
+        a.news__link href=["#" +news.date]
+          p.news__link__date =news.date
+          h3.news__link__title =news.title
+        .news__more[id=news.date]
+          .row.row-fix
+            .col-xs-12.col-sm-offset-3.col-sm-8
+              a.news__more__close href="#/"
+              -if news.cover
+                img.news__more__cover src=news.cover alt=news.title /
+              h3.news__more__title =news.title
+              p.news__more__date =news.date
+              p.news__more__content =news.content

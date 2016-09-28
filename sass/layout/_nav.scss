@@ -277,7 +277,7 @@
     }
 
     // Mobile Nav
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-sm) {
       @include size(100%, 100%);
       background-color: #060b0e;
       overflow: scroll;
