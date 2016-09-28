@@ -1,5 +1,8 @@
 section#speaker.row
   .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 Speaker
+  .col-xs-12.col-sm-offset-3.col-sm-8
     .speaker-list
       .row
         - for speaker of (this.speakers)

@@ -1,0 +1,104 @@
+section#news{
+
+  @media (min-width: $screen-sm) {
+    margin: 20px 0;
+  }
+
+  @include block('news'){
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+      width: 95%; 
+    }
+
+    @include element('link'){
+      background: url(../images/gem_icon_alt_l.png) no-repeat;
+      background-position: 0 50%;
+      background-size: 40px;
+      
+      @include transition(all 0.3s);
+      width: 100%;
+      min-height: 60px;
+      display: block;
+      color: white;
+      padding: 10px 0 10px 50px;
+      overflow: auto;
+
+      @media (min-width: $screen-sm) {
+        background-size: 60px;
+        padding-left: 80px; 
+      }
+
+      &:hover{
+        color: $blue;
+        text-decoration: none;
+      }
+
+      @include element('date'){
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0 20px 0 0;
+
+        @media (min-width: $screen-sm) {
+          float: left;
+          line-height: 60px;
+        }
+      }
+
+      @include element('title'){
+        font-size: 20px;
+        line-height: 40px;
+        margin: 0;
+
+        @media (min-width: $screen-sm) {
+          float: left;
+          line-height: 60px;
+        }
+      }
+    }
+    
+    @include element('more'){
+      @include size(100%, 100%);
+      background-color: #060b0e;
+      visibility: hidden;
+      overflow: scroll;
+      position: fixed;
+      z-index: 1000;
+      top: 0%;
+      left: 0%;
+      padding-top: 120px;
+
+      +.news__link{
+        border-top: 1px dotted #4E342E;
+      }
+
+      &:target{
+        visibility: visible;
+      }
+
+      @include element('close'){
+        @include size(25px, 25px);
+        background-image: url(../images/icon_close.svg);
+        background-size: cover;
+        display: block;
+        margin: 0 auto 30px;
+      }
+
+      @include element('cover'){
+        width: 100%;
+      }
+
+      @include element('date'){
+        color: #999;
+      }
+
+      @include element('content'){
+        padding: 20px 0;
+        font-size: 16px;
+      }
+    }
+  }
+}

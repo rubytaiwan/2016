@@ -1,0 +1,9 @@
+news:
+  - title: 這是消息標題這是消息標題
+    date: 2016/09/28
+    cover: http://placehold.it/960x300
+    content: 文字文字文字文字文字文字文字文字文字文字文字文字
+  - title: 這是消息標題
+    date: 2016/09/30
+    cover:
+    content: 文字文字文字文字文字文字文字文字文字文字文字文字

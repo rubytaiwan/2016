@@ -9,8 +9,9 @@
 @import "mixin";
 @import "setting";
 
-@import "layout/home";
 @import "layout/nav";
+@import "layout/home";
+@import "layout/news";
 @import "layout/speaker";
 @import "layout/venue";
 @import "layout/coc";
@@ -28,7 +29,7 @@ body{
   position: relative;
 
   section + section{
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   @include block('row-fix'){

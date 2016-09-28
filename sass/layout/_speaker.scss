@@ -1,6 +1,7 @@
 #speaker{
   @include block('speaker-list') {
     text-align: center;
+    padding-top: 30px;
 
     @include block('speaker'){
       transition: all 0.3s;
