@@ -7,5 +7,6 @@
   "frontground": "images/landing/fg.png",
   "gem": "images/landing/gem.png",
   "gem-glowing": "images/landing/gem_glowing.png",
-  "glowing": "images/landing/glowing.png"
+  "glowing": "images/landing/glowing.png",
+  "glowing2": "images/landing/glowing_2.png"
 }

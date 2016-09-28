@@ -73,6 +73,8 @@ export default class LandingAnimation {
         this.add(new Character(this.stage))
         this.add(new Background(this.stage, 'frontground'))
         this.add(new Background(this.stage, 'glowing', BLEND_MODES.LUMINOSITY))
+        this.add(new Background(this.stage, 'glowing2', BLEND_MODES.LUMINOSITY))
+
 
         this.animate()
     }
