@@ -13,6 +13,7 @@
 @import "layout/home";
 @import "layout/news";
 @import "layout/speaker";
+@import "layout/schedule";
 @import "layout/venue";
 @import "layout/coc";
 @import "layout/sponsor";
@@ -22,7 +23,12 @@
 body{
   background: url(../images/landing/bg.jpg) no-repeat, $brown-light;
   background-size: contain;
-  color: white;
+  color: #EFEBE9;
+  font-family: 'Questrial', "Microsoft JhengHei", sans-serif;
+
+  p{
+    font-size: 16px;
+  }
 }
 
 @include block('main') {
@@ -45,28 +51,34 @@ body{
   
   @media (min-width: $screen-sm) {
     background-image:
+      url(../images/background/cave_top.svg),
       url(../images/background/cave_left.svg), 
       url(../images/background/cave_right.svg);
-    background-position: left, right;
-    background-repeat: repeat-y, repeat-y;
+    background-position: top, left, right;
+    background-repeat: no-repeat, repeat-y, repeat-y;
     background-size: contain;
   }
 
   @include block('title') {
     background: url(../images/gem_icon.png) no-repeat;
-    margin-left: -40px;
-    padding: 35px 0 35px 80px;
+    background-size: auto 100%;
+    background-position: 0 center;
+    margin-left: -20px;
+    padding: 20px 0 20px 60px;
     
     @media (min-width: $screen-sm) {
-      padding: 30px 0  30px 80px;
+      margin-left: -30px;
+      padding: 25px 0  25px 80px;
     }
 
     h1{
+      font-family: 'Poiret One', sans-serif;
+      font-weight: 700;
       display: inline;
       font-size: 28px;
 
       @media (min-width: $screen-sm) {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
   }
