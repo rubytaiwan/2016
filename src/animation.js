@@ -2,7 +2,7 @@
  * Landing Animation
  */
 
-import {autoDetectRenderer, Container} from 'pixi.js'
+import {autoDetectRenderer, Container, BLEND_MODES} from 'pixi.js'
 
 import Resource from './animation/resources'
 import Background from './animation/backgronud'
@@ -72,6 +72,9 @@ export default class LandingAnimation {
         // this.add(new Background(this.stage, 'background'))
         this.add(new Character(this.stage))
         this.add(new Background(this.stage, 'frontground'))
+        this.add(new Background(this.stage, 'glowing', BLEND_MODES.LUMINOSITY))
+        this.add(new Background(this.stage, 'glowing2', BLEND_MODES.LUMINOSITY))
+
 
         this.animate()
     }

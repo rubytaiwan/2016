@@ -5,5 +5,8 @@
   "character-body": 100,
   "character-hair-back": 50,
 
-  "gem": 150
+  "gem-glowing": 151,
+  "gem": 150,
+
+  "glowing": 200
 }
