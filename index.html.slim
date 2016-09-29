@@ -6,6 +6,7 @@ html
     title
       = this.site.title
     link(rel="stylesheet" href="style.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Questrial")
     script(src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js")
     script(src="bundle.js")
 
@@ -37,8 +38,7 @@ html
           center: location,
           zoom: 15,
           streetViewControl: false,
-          scrollwheel: false,
-          mapTypeControl: false,
+          scrollwheel: false
         });
         
         var contentString = 

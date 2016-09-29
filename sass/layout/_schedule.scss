@@ -1,0 +1,151 @@
+#schedule{
+
+  a{
+    @include transition(all 0.3s);
+    color: white;
+
+    &:hover{
+      color: $brown;
+      text-decoration: none;
+    }
+  }
+
+  @include block('schedule'){
+    position: relative;
+    margin: 0 40px;
+    
+    @include element('day-link'){
+      margin: 0 40px 20px;
+
+      a{
+        @include transition(all 0.3s);
+        @include size(50%, 80px);
+
+        background-image: 
+          url('../images/gem_icon_alt_l.png'),
+          url('../images/gem_icon_alt_r.png');
+        background-size: auto 120%;
+        background-repeat: no-repeat;
+        background-position: 10% center, 90% center;
+
+        display: inline-block;
+        text-align: center; 
+        font-size: 24px;
+        line-height: 40px;
+        padding: 20px;
+      }
+    }
+
+    @include element('table'){
+      border-bottom: 3px solid $brown-alt;
+      width: 100%;
+
+      thead > tr > th, tbody > tr > th, tbody > tr > td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 20px;
+      }
+
+      thead{
+        background: $brown-alt;
+        .day{
+          font-size: 20px;
+          text-align: left;
+          height: 60px;
+          border-bottom: 2px solid $brown-medium;
+        }
+        .period{
+          width: 20%;
+        }
+        .r0, .r1{
+          width: 40%;
+        }
+      }
+
+      tbody{
+        tr{
+          th{
+            border-right: 2px solid $brown-medium;
+          }
+
+          &:nth-child(even){
+            background-color: $brown-medium;
+            th, td:nth-child(2){
+              border-right: 2px solid $brown-light; 
+            }
+          }
+
+          &.break-time{
+            background-color: $brown-medium+#111;
+          }
+
+          &.lightning-talk{
+            border-top: 2px dotted $brown-medium;
+            background-color: $brown-light;
+          }
+
+          td:nth-child(3){
+            border-left: 2px solid $brown-medium;
+          }
+        }
+      }
+
+      .long-talk{
+        border-top: 2px solid $brown-medium;
+      }
+
+      .fix{
+        border-bottom: 2px solid $brown-light;
+      }
+
+      @include element('speaker'){
+        line-height: 2;
+        font-size: 16px;
+        margin: 0;
+
+        strong{
+          font-size: 18px;
+        }
+      }
+
+      @include element('doc'){
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 55px;
+        margin: 10px 5px 0;
+        padding: 5px 0;
+
+        &:hover{
+          color: white;
+        }
+
+        @include state('slide'){
+          background-color: $pink;
+          &:hover{
+            background-color: $pink -#222;
+          }
+        }
+        
+        @include state('video'){
+          background-color: $blue;
+          &:hover{
+            background-color: $blue -#222;
+          }
+        }
+      }
+    }
+
+    @include element('second'){
+      @include size(100%, 100%);
+      background: $brown-light;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+
+      &:target{
+        visibility: visible;
+      }
+    }
+  }
+}

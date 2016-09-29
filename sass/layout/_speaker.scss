@@ -28,15 +28,15 @@
         position: fixed;
         z-index: 1000;
         top: 0%;
-        left: 0%;        
-        padding-top: 20%;   
+        left: 0%;
+        padding-top: 50px;
+
+        @media (min-width: $screen-sm) {
+          padding-top: 80px;
+        }
 
         &:target{
           visibility: visible;
-        }
-
-        @media (min-width: $screen-sm) {
-          padding-top: 10%; 
         }
 
         @include element('close'){
@@ -51,7 +51,7 @@
         }
 
         @include element('info'){
-          border: 1px solid $brown-light;
+          border: 1px solid $pink;
           border-radius: 4px;
           position: relative;
           margin: 20px auto;
@@ -59,7 +59,7 @@
         }
 
         @include element('name'){
-          background-color: $brown-light;
+          background-color: $pink;
           color: white;
           font-weight: 700;
           margin: 0;
@@ -71,7 +71,7 @@
         }
 
         @include element('title'){
-          border-bottom: 1px solid $brown-light;
+          border-bottom: 1px solid $pink;
           width: 80%;
           margin: 0 auto;
           padding: 10px;
@@ -85,7 +85,7 @@
         }
 
         @include element('talk'){
-          border: 1px solid $brown;
+          border: 1px solid $blue;
           border-radius: 4px;
           width: 80%;
           min-height: 200px;
@@ -93,7 +93,7 @@
         }
 
         @include element('subject'){
-          background-color: $brown;
+          background-color: $blue;
           color: white;
           margin: 0;
           padding: 15px;
@@ -106,7 +106,7 @@
         }
 
         @include element('social'){
-          background-color: $brown-light;
+          background-color: $pink;
 
           @media (min-width: $screen-sm) {
             position: absolute;
