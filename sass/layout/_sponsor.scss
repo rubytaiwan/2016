@@ -5,46 +5,94 @@
     text-align: left;
   }
 
-  @include block('logo') {
-    display: block;
-    margin: 10px 0 20px;
-  }
+  @include block('sponsors'){
 
-  @include block('sub-title') {
-    background: url(../images/gem_icon_alt_l.png), url(../images/gem_icon_alt_r.png);
-    background-repeat: no-repeat; 
-    background-position: 20% -10px, 80% -10px;
-    color: #E3F2FD;
-
-    @media (min-width: $screen-sm) {
-      background-position: 30% -10px, 70% -10px;
-    }
-
-    @media (min-width: $screen-md) {
-      background-position: 40% -10px, 60% -10px;
-    }
-
-    @include state('platinum'){
-      background-position: 10% -10px, 90% -10px;
+    @include element('sub-title') {
+      background: url(../images/gem_icon_alt_l.png), url(../images/gem_icon_alt_r.png);
+      background-repeat: no-repeat; 
+      background-position: 20% -10px, 80% -10px;
+      color: #E3F2FD;
 
       @media (min-width: $screen-sm) {
-        background-position: 25% -10px, 75% -10px;
+        background-position: 30% -10px, 70% -10px;
       }
 
       @media (min-width: $screen-md) {
-        background-position: 35% -10px, 65% -10px;
+        background-position: 40% -10px, 60% -10px;
+      }
+
+      @include state('platinum'){
+        background-position: 10% -10px, 90% -10px;
+
+        @media (min-width: $screen-sm) {
+          background-position: 25% -10px, 75% -10px;
+        }
+
+        @media (min-width: $screen-md) {
+          background-position: 35% -10px, 65% -10px;
+        }
+      }
+
+      padding: 25px 0;
+      text-align: center;
+      
+      h2{
+        display: inline;
+        font-size: 24px;
+
+        @media (min-width: $screen-sm) {
+          font-size: 28px;
+        }
       }
     }
 
-    padding: 25px 0;
-    text-align: center;
-    
-    h2{
-      display: inline;
-      font-size: 24px;
+    @include element('logo') {
+      display: block;
+      margin: 10px 0 20px;
+    }
+  }
+
+  @include block('sponsor-cfs'){
+    @include transition(all 0.3s);    
+    @include size(90%, 60px);
+    background-color: $brown-alt;
+    margin: 20px auto;
+
+    &:hover{
+      background-color: $brown-alt - #111;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin: 40px auto 20px;
+    }
+
+    p{
+      margin: 0;
+      display: inline-block;
+      font-size: 18px;
 
       @media (min-width: $screen-sm) {
-        font-size: 28px;
+        font-size: 20px;
+      }
+
+      .cht{
+        font-size: 17px;
+
+        @media (min-width: $screen-sm) {
+          font-size: 19px;
+        }
+      }
+    }
+    
+    a{
+      color: #EFEBE9;
+      line-height: 60px;
+      padding: 5px 0;
+      margin: 0 10px;
+
+      &:hover{
+        text-decoration: none;
+        border-bottom: 1px dotted #EFEBE9;
       }
     }
   }
