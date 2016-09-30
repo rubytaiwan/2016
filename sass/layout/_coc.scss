@@ -1,2 +1,24 @@
 #coc{
+  @include block('coc-content'){
+    padding: 0 10px;
+    text-align: justify;
+
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+    }
+
+    @include state('zh'){
+      margin-top: 30px;
+
+      a{
+        @include transition(all 0.3s);
+        color: white;
+
+        &:hover{
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

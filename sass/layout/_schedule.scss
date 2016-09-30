@@ -1,0 +1,204 @@
+#schedule{
+
+  a{
+    @include transition(all 0.3s);
+    color: #EFEBE9;
+
+    &:hover{
+      color: $brown;
+      text-decoration: none;
+    }
+  }
+
+  @include block('schedule'){
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 20px;
+    }
+    
+    @include element('day-link'){
+      border: 2px solid $brown-alt;
+      padding: 0;
+      margin: 0;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 0 20px;
+      }
+
+      li{
+        display: inline-block;
+        @include size(50%, 40px);
+
+        @media (min-width: $screen-sm) {
+          @include size(50%, 60px);
+        }
+
+        &.ui-tabs-active{
+          background-color: $brown-alt;
+        }
+
+        a{
+          @include transition(all 0.3s);
+          display: block;
+          text-align: center; 
+          line-height: 40px;
+          font-size: 20px;
+
+          &:hover{
+            background-color: $brown-medium;
+            color: white;
+          }
+
+          &:focus{
+            outline-width: 0;
+          }
+
+          @media (min-width: $screen-sm) {
+            line-height: 60px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    @include element('table'){
+      border-bottom: 3px solid $brown-alt;
+      width: 100%;
+
+      thead > tr > th, tbody > tr > th, tbody > tr > td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 20px;
+      }
+
+      thead{
+        background: $brown-alt;
+        .day{
+          font-size: 20px;
+          text-align: left;
+          height: 60px;
+          border-bottom: 2px solid $brown-medium;
+        }
+        .period{
+          width: 20%;
+        }
+        .r0, .r1{
+          width: 40%;
+        }
+      }
+
+      tbody{
+        tr{
+          th{
+            border-right: 2px solid $brown-medium;
+          }
+
+          &:nth-child(even){
+            background-color: $brown-medium;
+            th, td:nth-child(2){
+              border-right: 2px solid $brown-light; 
+            }
+          }
+
+          &.break-time{
+            background-color: $brown-medium+#111;
+          }
+
+          &.lightning-talk{
+            border-top: 2px dotted $brown-medium;
+            background-color: $brown-light;
+          }
+
+          td:nth-child(3){
+            border-left: 2px solid $brown-medium;
+          }
+        }
+      }
+
+      .long-talk{
+        border-top: 2px solid $brown-medium;
+      }
+
+      .fix{
+        border-bottom: 2px solid $brown-light;
+      }
+
+      @include element('speaker'){
+        line-height: 2;
+        font-size: 16px;
+        margin: 0;
+
+        strong{
+          font-size: 18px;
+        }
+      }
+
+      @include element('doc'){
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 55px;
+        margin: 10px 5px 0;
+        padding: 5px 0;
+
+        &:hover{
+          color: white;
+        }
+
+        @include state('slide'){
+          background-color: $pink;
+          &:hover{
+            background-color: $pink -#222;
+          }
+        }
+        
+        @include state('video'){
+          background-color: $blue;
+          &:hover{
+            background-color: $blue -#222;
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      tbody{
+        tr{
+          th{
+            border-right: 0px solid $brown-medium;
+          }
+        }
+      }
+
+      .row-time{
+        background-color: transparent;
+      }
+
+      .row-r0{
+        background-color: $brown-medium;
+      }
+
+      .row-r1{
+        background-color: $brown-medium;
+        border-top: 1px solid $brown-alt;
+      }
+      
+      .lable{
+        border-bottom: 1px dotted #777;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      }
+
+      .break-time{
+        span{
+          border-left: 2px dotted $brown-alt;
+          margin-left: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

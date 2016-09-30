@@ -17,11 +17,3 @@ nav.navbar.navbar-fixed-top.c-navbar
         a href="#coc" COC
       li.navbar-nav__sponsor
         a href="#sponsor" Sponsor
-        
-    .social-link.hidden-xs
-      a.social-link--email href="mailto:contact@rubyconf.tw"
-        img src="images/social/email.png" alt="email"
-      a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"
-        img src="images/social/twitter.png" alt="twitter"
-      a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
-        img src="images/social/fb.png" alt="facebook"

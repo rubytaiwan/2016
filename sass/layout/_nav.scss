@@ -2,22 +2,6 @@
   border-width: 0;
   margin: 0;
 
-  background-image: url(../images/background/cave_top.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 90% 0;
-  background-size: 200% auto;
-  min-height: 60px;
-
-  @media (min-width: $screen-sm) {
-    background-size: contain;
-    min-height: 80px;
-  }
-
-  @media (min-width: $screen-md) {
-    min-height: 120px;
-  }
-
   @include block('social-link') {    
     position: absolute;
     width: 40%;
@@ -43,26 +27,52 @@
 
   @include block('navbar-nav') {
 
+    // Mobile Nav
+    @include size(100%, 100%);
+    background-color: #060b0e;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    margin-top: 0;
+    display: none;
+
+    &:target{
+      display: block;
+    }
+
+    @include element('close'){
+      @include size(22px, 22px);
+      background-image: url(../images/icon_close.svg);
+      background-size: cover;
+      display: block;
+      position: absolute;
+      right: 0;
+      margin: 12px;
+    }
+
+    @media (min-width: $screen-sm) {
+      @include size(100%, auto);
+      background-color: transparent;
+      display: block;
+    }
+
     li{
       background-image: url(../images/nav_element.png);
       background-size: auto 100%;
       position: fixed;
-      width: 60px;
-      height: 60px;
 
-      @media (max-width: $screen-sm) {
-        margin-left: 15%;
-        padding-left: 60px;
-      }
+      @include size(60px, 60px);
+      margin-left: 15%;
+      padding-left: 60px;
 
       @media (min-width: $screen-sm) {
-        width: 100px;
-        height: 100px;
+        @include size(100px, 100px);
+        margin: 0;
+        padding: 0;
       }
 
       @media (min-width: $screen-md) {
-        width: 120px;
-        height: 120px;
+        @include size(120px, 120px);
       }
 
       &:hover{
@@ -75,37 +85,26 @@
       }
 
       a{
-        width: 100%;
-        height: 100%;
+        @include size(100%, 100%);
+        font-family: 'Poiret One', sans-serif;
+        font-weight: 700;
         text-align: center;
         color: white;
         font-size: 24px;
-
-        @media (max-width: $screen-sm) {
-          line-height: 40px;
-          text-transform: uppercase;
-        }
 
         &:link, &:visited, &:hover, &:active {
           background-color: transparent;
         }
 
         @media (min-width: $screen-sm) {
-          font-size: 16px;
-          visibility: hidden; 
+          visibility: hidden;
+          font-size: 18px;
         }
 
         @media (min-width: $screen-md) {
-          font-size: 18px;
+          font-size: 20px;
         }
       }
-
-      // @include state('active') {
-      //   background-image: url(../images/nav_element_hover.svg);
-      //   a{
-      //     visibility: visible;
-      //   }
-      // }
     }
 
     @include element('home') {
@@ -117,12 +116,8 @@
         left: 2vw;
       }
 
-      @media (min-width: $screen-md) {
-        background-position: 0;
-      }
-
       a{
-        line-height: 60px;
+        line-height: 40px;
         @media (min-width: $screen-sm) {
           line-height: 70px;
         }
@@ -149,7 +144,10 @@
       }
 
       a{
-        line-height: 70px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 70px;
+        }
         @media (min-width: $screen-md) {
           line-height: 90px;
         }
@@ -173,7 +171,10 @@
       }
 
       a{
-        line-height: 45px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 45px;
+        }
         @media (min-width: $screen-md) {
           line-height: 65px;
         }
@@ -197,7 +198,10 @@
       }
 
       a{
-        line-height: 68px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 68px;
+        }
         @media (min-width: $screen-md) {
           line-height: 88px;
         }
@@ -221,7 +225,10 @@
       }
 
       a{
-        line-height: 85px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 85px;
+        }
         @media (min-width: $screen-md) {
           line-height: 105px;
         }
@@ -245,7 +252,10 @@
       }
 
       a{
-        line-height: 60px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 60px;
+        }
         @media (min-width: $screen-md) {
           line-height: 80px;
         }
@@ -269,40 +279,18 @@
       }
 
       a{
-        line-height: 65px;
+        line-height: 40px;
+        @media (min-width: $screen-sm) {
+          line-height: 65px;
+        }
         @media (min-width: $screen-md) {
           line-height: 85px;
         }
       }
     }
-
-    // Mobile Nav
-    @media (max-width: $screen-sm) {
-      @include size(100%, 100%);
-      background-color: #060b0e;
-      overflow: scroll;
-      position: fixed;
-      z-index: 1000;
-      top: 0%;
-      margin-top: 0;
-      display: none;
-
-      &:target{
-        display: block;
-      }
-
-      @include element('close'){
-        @include size(22px, 22px);
-        background-image: url(../images/icon_close.svg);
-        background-size: cover;
-        display: block;
-        position: absolute;
-        right: 0;
-        margin: 12px;
-      }
-    }
   }
 
+  // Mobile - Hambuger Icon 
   @include block('mobile-nav'){
     @include size(45px, 45px);
     background: url(../images/mobile_nav.svg) $brown-dark no-repeat;

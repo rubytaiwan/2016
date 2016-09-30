@@ -1,0 +1,1718 @@
+section#schedule.row
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 Schedule
+  .col-xs-12.col-sm-offset-3.col-sm-8
+
+    .schedule.hidden-xs
+      ul.schedule__day-link
+        li
+          a.day-link_first href="#day_1" Day 1
+        li
+          a.day-link_second href="#day_2" Day 2
+      
+      .schedule__first#day_1
+        table.schedule__table
+          thead
+            tr
+              th.period Period
+              th.r0
+                | 劇院式大禮堂
+                br
+                | Auditorium
+              th.r1
+                | 第一會議室
+                br
+                | 1st Conference Room
+          tbody
+            tr
+              th 09:00 ~ 09:50
+              td colspan="2"
+                b Registration
+            tr
+              th 09:50 ~ 10:00
+              td colspan="2"
+                b Openinig
+            tr
+              th 10:00 ~ 11:00
+              -if this.scheduleFirst.r01
+                - for speaker of (this.scheduleFirst.r01)
+                  td colspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr
+              th 11:05 ~ 11:30
+              -if this.scheduleFirst.r02
+                - for speaker of (this.scheduleFirst.r02)
+                  td colspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr
+              th 11:30 ~ 11:55
+              -if this.scheduleFirst.r03
+                - for speaker of (this.scheduleFirst.r03)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+              -if this.scheduleFirst.r11
+                - for speaker of (this.scheduleFirst.r11)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr.break-time
+              th 12:00 ~ 13:30
+              td colspan="2" 
+                i.fa.fa-cutlery
+                | &nbsp;Lunch&nbsp;
+                i.fa.fa-cutlery
+            tr
+              th 13:30 ~ 13:55
+              -if this.scheduleFirst.r04
+                - for speaker of (this.scheduleFirst.r04)
+                  td rowspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td rowspan="2" TBD
+              -if this.scheduleFirst.r12
+                - for speaker of (this.scheduleFirst.r12)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 13:55 ~ 14:20
+              -if this.scheduleFirst.r13
+                - for speaker of (this.scheduleFirst.r13)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 14:30 ~ 14:55
+              -if this.scheduleFirst.r05
+                - for speaker of (this.scheduleFirst.r05)
+                  td.long-talk rowspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td.long-talk rowspan="2" TBD
+              -if this.scheduleFirst.r14
+                - for speaker of (this.scheduleFirst.r14)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 14:55 ~ 15:20
+              -if this.scheduleFirst.r15
+                - for speaker of (this.scheduleFirst.r15)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr.break-time
+              th 15:20 ~ 15:50
+              td colspan="2" 
+                i.fa.fa-coffee
+                | &nbsp;Tea Time&nbsp;
+                i.fa.fa-coffee
+            tr
+              th 15:50 ~ 16:15
+              -if this.scheduleFirst.r06
+                - for speaker of (this.scheduleFirst.r06)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+              -if this.scheduleFirst.r16
+                - for speaker of (this.scheduleFirst.r16)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 16:15 ~ 16:40
+              -if this.scheduleFirst.r07
+                - for speaker of (this.scheduleFirst.r07)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+              -if this.scheduleFirst.r17
+                - for speaker of (this.scheduleFirst.r17)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 16:40 ~ 17:40
+              -if this.scheduleFirst.r08
+                - for speaker of (this.scheduleFirst.r08)
+                  td colspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr
+              th rowspan="2" 17:55 ~ 18:25
+              td colspan="2" 
+                i.fa.fa-bolt
+                | &nbsp;Lightning Talks&nbsp;
+                i.fa.fa-bolt
+            tr.lightning-talk
+              -if this.scheduleFirst.lightning
+                td colspan="2"
+                  - for speaker of (this.scheduleFirst.lightning)
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr.break-time
+              th 19:00 ~ 21:30
+              td colspan="2" 
+                i.fa.fa-beer
+                | &nbsp;Official Party&nbsp;
+                i.fa.fa-cutlery
+
+
+      .schedule__second#day_2
+        table.schedule__table
+          thead
+            tr
+              th.period Period
+              th.r0
+                | 劇院式大禮堂
+                br
+                | Auditorium
+              th.r1
+                | 第一會議室
+                br
+                | 1st Conference Room
+          tbody
+            tr
+              th 09:00 ~ 09:50
+              td colspan="2"
+                b Registration
+            tr
+              th 09:50 ~ 10:00
+              td colspan="2"
+                b Openinig
+            tr
+              th 10:00 ~ 11:00
+              -if this.scheduleSecond.r01
+                - for speaker of (this.scheduleSecond.r01)
+                  td colspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr
+              th 11:05 ~ 11:30
+              -if this.scheduleSecond.r02
+                - for speaker of (this.scheduleSecond.r02)
+                  td rowspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td rowspan="2" TBD
+              -if this.scheduleSecond.r11
+                - for speaker of (this.scheduleSecond.r11)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 11:30 ~ 11:55
+              -if this.scheduleSecond.r12
+                - for speaker of (this.scheduleSecond.r12)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr.break-time
+              th 12:00 ~ 13:30
+              td colspan="2" 
+                i.fa.fa-cutlery
+                | &nbsp;Lunch&nbsp;
+                i.fa.fa-cutlery
+            tr
+              th 13:30 ~ 13:55
+              -if this.scheduleSecond.r04
+                - for speaker of (this.scheduleSecond.r04)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+              -if this.scheduleSecond.r13
+                - for speaker of (this.scheduleSecond.r13)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 13:55 ~ 14:20
+              -if this.scheduleSecond.r04
+                - for speaker of (this.scheduleSecond.r04)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+              -if this.scheduleSecond.r14
+                - for speaker of (this.scheduleSecond.r14)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 14:30 ~ 14:55
+              -if this.scheduleSecond.r05
+                - for speaker of (this.scheduleSecond.r05)
+                  td rowspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td rowspan="2" TBD
+              -if this.scheduleSecond.r15
+                - for speaker of (this.scheduleSecond.r15)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 14:55 ~ 15:20
+              -if this.scheduleSecond.r16
+                - for speaker of (this.scheduleSecond.r16)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr.break-time
+              th 15:20 ~ 15:50
+              td colspan="2" 
+                i.fa.fa-coffee
+                | &nbsp;Tea Time&nbsp;
+                i.fa.fa-coffee
+            tr
+              th 15:50 ~ 16:15
+              -if this.scheduleSecond.r06
+                - for speaker of (this.scheduleSecond.r06)
+                  td.long-talk rowspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td.fix rowspan="2" TBD
+              -if this.scheduleSecond.r17
+                - for speaker of (this.scheduleSecond.r17)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 16:15 ~ 16:40
+              -if this.scheduleSecond.r18
+                - for speaker of (this.scheduleSecond.r18)
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td TBD
+            tr
+              th 16:50 ~ 17:40
+              -if this.scheduleSecond.r07
+                - for speaker of (this.scheduleSecond.r07)
+                  td colspan="2"
+                    a.schedule__table__link href=["#" +speaker.name]
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+              -else
+                td colspan="2" TBD
+            tr.break-time
+              th 17:40 ~ 17:55
+              td colspan="2"
+                b Closing 
+
+
+    .schedule.mobile.visible-xs
+      ul.schedule__day-link
+        li
+          a.day-link_first href="#day_1" Day 1
+        li
+          a.day-link_second href="#day_2" Day 2
+      
+      .schedule__first#day_1
+        table.schedule__table
+          tbody
+            tr.row-time
+              th 09:00 ~ 09:50
+            tr
+              td
+                b Registration
+            tr.row-time
+              th 09:50 ~ 10:00
+            tr
+              td
+                b Openinig
+            tr.row-time
+              th 10:00 ~ 11:00
+            -if this.scheduleFirst.r01
+              - for speaker of (this.scheduleFirst.r01)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.row-time
+              th 11:05 ~ 11:30
+            -if this.scheduleFirst.r02
+              - for speaker of (this.scheduleFirst.r02)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.row-time
+              th 11:30 ~ 11:55
+            -if this.scheduleFirst.r03
+              - for speaker of (this.scheduleFirst.r03)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r11
+              - for speaker of (this.scheduleFirst.r11)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.break-time
+              th
+                | 12:00 ~ 13:30
+                span
+                  i.fa.fa-cutlery
+                  | &nbsp;Lunch&nbsp;
+                  i.fa.fa-cutlery
+
+            tr.row-time
+              th 13:30 ~ 13:55
+            -if this.scheduleFirst.r04
+              - for speaker of (this.scheduleFirst.r04)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r12
+              - for speaker of (this.scheduleFirst.r12)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 13:55 ~ 14:20
+            -if this.scheduleFirst.r04
+              - for speaker of (this.scheduleFirst.r04)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r13
+              - for speaker of (this.scheduleFirst.r13)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 14:30 ~ 14:55
+            -if this.scheduleFirst.r05
+              - for speaker of (this.scheduleFirst.r05)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r14
+              - for speaker of (this.scheduleFirst.r14)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 14:55 ~ 15:20
+            -if this.scheduleFirst.r05
+              - for speaker of (this.scheduleFirst.r05)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r15
+              - for speaker of (this.scheduleFirst.r15)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.break-time
+              th 
+                | 15:20 ~ 15:50
+                span
+                  i.fa.fa-coffee
+                  | &nbsp;Tea Time&nbsp;
+                  i.fa.fa-coffee
+            tr.row-time
+              th 15:50 ~ 16:15
+            -if this.scheduleFirst.r06
+              - for speaker of (this.scheduleFirst.r06)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r16
+              - for speaker of (this.scheduleFirst.r16)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 16:15 ~ 16:40
+            -if this.scheduleFirst.r07
+              - for speaker of (this.scheduleFirst.r07)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleFirst.r17
+              - for speaker of (this.scheduleFirst.r17)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 16:40 ~ 17:40
+            -if this.scheduleFirst.r08
+              - for speaker of (this.scheduleFirst.r08)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.row-time
+              th 17:55 ~ 18:25
+            tr
+              td.row-r0
+                i.fa.fa-bolt
+                | &nbsp;Lightning Talks&nbsp;
+                i.fa.fa-bolt
+            -if this.scheduleFirst.lightning
+              tr.lightning-talk              
+                td
+                  - for speaker of (this.scheduleFirst.lightning)
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.break-time
+              th
+                | 19:00 ~ 21:30
+                span
+                  i.fa.fa-beer
+                  | &nbsp;Official Party&nbsp;
+                  i.fa.fa-cutlery
+
+
+      .schedule__second#day_2
+        table.schedule__table
+          tbody
+            tr.row-time
+              th 09:00 ~ 09:50
+            tr
+              td
+                b Registration
+            tr.row-time
+              th 09:50 ~ 10:00
+            tr
+              td
+                b Openinig
+            tr.row-time
+              th 10:00 ~ 11:00
+            -if this.scheduleSecond.r01
+              - for speaker of (this.scheduleSecond.r01)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.row-time
+              th 11:05 ~ 11:30
+            -if this.scheduleSecond.r02
+              - for speaker of (this.scheduleSecond.r02)
+                tr
+                  td
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r11
+              - for speaker of (this.scheduleSecond.r11)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 11:30 ~ 11:55
+            -if this.scheduleSecond.r02
+              - for speaker of (this.scheduleSecond.r02)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r12
+              - for speaker of (this.scheduleSecond.r12)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.break-time
+              th
+                | 12:00 ~ 13:30
+                span
+                  i.fa.fa-cutlery
+                  | &nbsp;Lunch&nbsp;
+                  i.fa.fa-cutlery
+            tr.row-time
+              th 13:30 ~ 13:55
+            -if this.scheduleSecond.r03
+              - for speaker of (this.scheduleSecond.r03)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r13
+              - for speaker of (this.scheduleSecond.r13)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 13:55 ~ 14:20
+            -if this.scheduleSecond.r04
+              - for speaker of (this.scheduleSecond.r04)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r14
+              - for speaker of (this.scheduleSecond.r14)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 14:30 ~ 14:55
+            -if this.scheduleSecond.r05
+              - for speaker of (this.scheduleSecond.r05)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r15
+              - for speaker of (this.scheduleSecond.r15)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 14:55 ~ 15:20
+            -if this.scheduleSecond.r05
+              - for speaker of (this.scheduleSecond.r05)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r16
+              - for speaker of (this.scheduleSecond.r16)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.break-time
+              th 
+                | 15:20 ~ 15:50
+                span
+                  i.fa.fa-coffee
+                  | &nbsp;Tea Time&nbsp;
+                  i.fa.fa-coffee
+            tr.row-time
+              th 15:50 ~ 16:15
+            -if this.scheduleSecond.r06
+              - for speaker of (this.scheduleSecond.r06)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r17
+              - for speaker of (this.scheduleSecond.r17)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 16:15 ~ 16:40
+            -if this.scheduleSecond.r06
+              - for speaker of (this.scheduleSecond.r06)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            -if this.scheduleSecond.r18
+              - for speaker of (this.scheduleSecond.r18)
+                tr
+                  td.row-r1
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 第一會議室 1st Conference Room
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r1
+                  span.lable 第一會議室 1st Conference Room
+                  | TBD
+            tr.row-time
+              th 16:50 ~ 17:40
+            -if this.scheduleSecond.r07
+              - for speaker of (this.scheduleSecond.r07)
+                tr
+                  td.row-r0
+                    a.schedule__table__link href=["#" +speaker.name]
+                      span.lable 劇院式大禮堂 Auditorium
+                      h3.schedule__table__speaker
+                        strong =speaker.subject
+                        - if speaker.lang
+                          | &nbsp;(&nbsp;English&nbsp;)
+                        -else
+                          | &nbsp;(&nbsp;Chinese&nbsp;)
+                        br
+                        | By&nbsp;
+                        =speaker.name
+                      - if speaker.slideUrl
+                        a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+                      - if speaker.videoUrl
+                        a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
+            -else
+              tr
+                td.row-r0
+                  span.lable 劇院式大禮堂 Auditorium
+                  | TBD
+            tr.row-time
+              th 17:40 ~ 17:55
+            tr
+              td
+                b Closing

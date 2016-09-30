@@ -1,7 +1,7 @@
 #staff{
 
   @media (min-width: $screen-sm) {
-    padding-top: 25px;
+    margin-top: 30px;
   }
 
   @include block('staff'){
@@ -21,13 +21,10 @@
       z-index: 1000;
       top: 0%;
       left: 0%;
-      padding-top: 60px;
+      padding-top: 50px;
 
       @media (min-width: $screen-sm) {
-        padding-top: 100px;
-      }
-      @media (min-width: $screen-md) {
-        padding-top: 120px;
+        padding-top: 80px;
       }
 
       &:target{

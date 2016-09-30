@@ -14,6 +14,7 @@
     background: url(../images/gem_icon_alt_l.png), url(../images/gem_icon_alt_r.png);
     background-repeat: no-repeat; 
     background-position: 20% -10px, 80% -10px;
+    color: #E3F2FD;
 
     @media (min-width: $screen-sm) {
       background-position: 30% -10px, 70% -10px;

@@ -6,7 +6,7 @@
   }
 
   @include block('map-content'){
-    color: black;
+    color: $brown-alt;
     text-align: center;
     padding-left: 10px;
     padding-bottom: 15px;
@@ -25,7 +25,7 @@
     }
 
     @include element('address'){
-      color: #333;
+      color: $brown-light;
       font-size: 16px;
 
       @media (min-width: $screen-sm) {
@@ -34,6 +34,7 @@
 
       @include state('zh'){
         font-size: 14px;
+        color: $brown-alt;
 
         @media (min-width: $screen-sm) {
           font-size: 16px;
