@@ -3,41 +3,49 @@ section#sponsor.row
     .title
       h1 Sponsor
   .col-xs-12.col-sm-offset-3.col-sm-8
-    .sub-title.is-ruby
-      h2 Ruby
-    .row
-      - if this.sponsor.ruby
-        - for sponsor of (this.sponsor.ruby)
-          .col-xs-12
-            a.logo href=sponsor.url target="_blank"
-              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+    .sponsors
+      .sponsors__sub-title.is-ruby
+        h2 Ruby
+      .row
+        - if this.sponsor.ruby
+          - for sponsor of (this.sponsor.ruby)
+            .col-xs-12
+              a.sponsors__logo href=sponsor.url target="_blank"
+                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
-  .col-xs-12.col-sm-offset-3.col-sm-8
-    .sub-title.is-platinum
-      h2 Platinum
-    .row
-      - if this.sponsor.platinum
-        - for sponsor of (this.sponsor.platinum)
-          .col-xs-12.col-md-6
-            a.logo href=sponsor.url target="_blank"
-              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+    .sponsors
+      .sponsors__sub-title.is-platinum
+        h2 Platinum
+      .row
+        - if this.sponsor.platinum
+          - for sponsor of (this.sponsor.platinum)
+            .col-xs-12.col-md-6
+              a.sponsors__logo href=sponsor.url target="_blank"
+                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
-  .col-xs-12.col-sm-offset-3.col-sm-8
-    .sub-title.is-gold
-      h2 Gold
-    .row
-      - if this.sponsor.gold
-        - for sponsor of (this.sponsor.gold)
-          .col-xs-12.col-sm-6.col-md-4
-            a.logo href=sponsor.url target="_blank"
-              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+    .sponsors
+      .sponsors__sub-title.is-gold
+        h2 Gold
+      .row
+        - if this.sponsor.gold
+          - for sponsor of (this.sponsor.gold)
+            .col-xs-12.col-sm-6.col-md-4
+              a.sponsors__logo href=sponsor.url target="_blank"
+                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
-  .col-xs-12.col-sm-offset-3.col-sm-8
-    .sub-title.is-silver
-      h2 Silver
-    .row
-      - if this.sponsor.silver
-        - for sponsor of (this.sponsor.silver)
-          .col-xs-12.col-sm-6.col-md-4
-            a.logo href=sponsor.url target="_blank"
-              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+    .sponsors
+      .sponsors__sub-title.is-silver
+        h2 Silver
+      .row
+        - if this.sponsor.silver
+          - for sponsor of (this.sponsor.silver)
+            .col-xs-12.col-sm-6.col-md-4
+              a.sponsors__logo href=sponsor.url target="_blank"
+                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+      
+    .sponsor-cfs
+      p
+        a.en href="https://rubyconf.tw/2016/rubyconftw2016-cfs-en.pdf" target="_blank" Support Us
+        | /
+        a.cht href="https://rubyconf.tw/2016/rubyconftw2016-cfs-cht.pdf" target="_blank" 贊助我們
+      

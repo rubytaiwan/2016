@@ -3,8 +3,8 @@ nav.navbar.navbar-fixed-top.c-navbar
     a.mobile-nav.visible-xs href="#nav"
     ul.nav.navbar-nav#nav
       a.navbar-nav__close.visible-xs href="#/"
-      li.navbar-nav__home
-        a href="#" Home
+      li.navbar-nav__home.is-active
+        a href="#landing" Home
       li.navbar-nav__news
         a href="#news" News
       li.navbar-nav__speaker
