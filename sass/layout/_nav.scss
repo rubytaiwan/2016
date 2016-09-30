@@ -41,13 +41,13 @@
     }
 
     @include element('close'){
-      @include size(22px, 22px);
+      @include size(25px, 25px);
       background-image: url(../images/icon_close.svg);
       background-size: cover;
       display: block;
       position: absolute;
       right: 0;
-      margin: 12px;
+      margin: 20px;
     }
 
     @media (min-width: $screen-sm) {
@@ -103,6 +103,15 @@
 
         @media (min-width: $screen-md) {
           font-size: 20px;
+        }
+      }
+
+      @include state('active'){
+        @media (min-width: $screen-sm) {
+          background-image: url(../images/nav_element_hover.png);
+          a{
+            visibility: visible;
+          }
         }
       }
     }
@@ -300,5 +309,6 @@
     position: absolute;
     right: 0;
     padding: 10px;
+    margin: 10px;
   }
 }
