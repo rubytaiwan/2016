@@ -8,8 +8,8 @@ html
     link(rel="stylesheet" href="style.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Questrial")
     script(src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js")
-    script(crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="//code.jquery.com/jquery-3.1.1.min.js")
-    script(crossorigin="anonymous" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" src="//code.jquery.com/ui/1.12.1/jquery-ui.js")
+    script(crossorigin="anonymous" src="//code.jquery.com/jquery-3.1.1.min.js")
+    script(crossorigin="anonymous" src="//code.jquery.com/ui/1.12.1/jquery-ui.js")
     script(src="bundle.js")
     script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyC5axSSWrtFUxQWYS1BfkDjjEG_z9jVBnA")
     script(src="//use.fontawesome.com/a57863a8af.js")
@@ -29,46 +29,3 @@ html
         == partial('blocks/coc')
         == partial('blocks/sponsor')
         == partial('blocks/footer')
-
-    javascript:
-      (function() {
-        // Schedule Tabs
-        $( ".schedule" ).tabs();
-
-        //Smoothscroll
-        $('a[href^="#"]').on('click', function (e) {
-
-          $(document).off("scroll");
-          
-          $('a').each(function () {
-              $(this).removeClass('active');
-          })
-          $(this).addClass('active');
-
-          var target = this.hash,
-              menu = target;
-          $target = $(target);
-          $('html, body').stop().animate({
-              'scrollTop': $target.offset().top+2
-          }, 500, 'swing', function () {
-              window.location.hash = target;
-              $(document).on("scroll", onScroll);
-          });
-        });
-
-        //Activing Navbar
-        window.onscroll = function() {
-          var scrollPos = $(document).scrollTop();
-          $('#nav li a').each(function () {
-              var currLink = $(this);
-              var refElement = $(currLink.attr("href"));
-              if (refElement.position().top - 100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                  $('#nav li').removeClass("is-active");
-                  currLink.parent().addClass("is-active");
-              }
-              else{
-                  currLink.removeClass("is-active");
-              }
-          });
-        };
-      }())
