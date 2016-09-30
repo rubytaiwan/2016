@@ -8,8 +8,9 @@ html
     link(rel="stylesheet" href="style.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Questrial")
     script(src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js")
+    script(crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="//code.jquery.com/jquery-3.1.1.min.js")
+    script(crossorigin="anonymous" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" src="//code.jquery.com/ui/1.12.1/jquery-ui.js")
     script(src="bundle.js")
-
     script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyC5axSSWrtFUxQWYS1BfkDjjEG_z9jVBnA")
     script(src="//use.fontawesome.com/a57863a8af.js")
 
@@ -62,4 +63,7 @@ html
         marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
+
+        // Schedule Tabs
+        $( ".schedule" ).tabs();
       }())

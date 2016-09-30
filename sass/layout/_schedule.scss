@@ -2,7 +2,7 @@
 
   a{
     @include transition(all 0.3s);
-    color: white;
+    color: #EFEBE9;
 
     &:hover{
       color: $brown;
@@ -12,27 +12,53 @@
 
   @include block('schedule'){
     position: relative;
-    margin: 0 40px;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 20px;
+    }
     
     @include element('day-link'){
-      margin: 0 40px 20px;
+      border: 2px solid $brown-alt;
+      padding: 0;
+      margin: 0;
 
-      a{
-        @include transition(all 0.3s);
-        @include size(50%, 80px);
+      @media (min-width: $screen-sm) {
+        margin: 0 0 20px;
+      }
 
-        background-image: 
-          url('../images/gem_icon_alt_l.png'),
-          url('../images/gem_icon_alt_r.png');
-        background-size: auto 120%;
-        background-repeat: no-repeat;
-        background-position: 10% center, 90% center;
-
+      li{
         display: inline-block;
-        text-align: center; 
-        font-size: 24px;
-        line-height: 40px;
-        padding: 20px;
+        @include size(50%, 40px);
+
+        @media (min-width: $screen-sm) {
+          @include size(50%, 60px);
+        }
+
+        &.ui-tabs-active{
+          background-color: $brown-alt;
+        }
+
+        a{
+          @include transition(all 0.3s);
+          display: block;
+          text-align: center; 
+          line-height: 40px;
+          font-size: 20px;
+
+          &:hover{
+            background-color: $brown-medium;
+            color: white;
+          }
+
+          &:focus{
+            outline-width: 0;
+          }
+
+          @media (min-width: $screen-sm) {
+            line-height: 60px;
+            font-size: 24px;
+          }
+        }
       }
     }
 
@@ -136,15 +162,42 @@
       }
     }
 
-    @include element('second'){
-      @include size(100%, 100%);
-      background: $brown-light;
-      position: absolute;
-      top: 0;
-      visibility: hidden;
+    &.mobile {
+      tbody{
+        tr{
+          th{
+            border-right: 0px solid $brown-medium;
+          }
+        }
+      }
 
-      &:target{
-        visibility: visible;
+      .row-time{
+        background-color: transparent;
+      }
+
+      .row-r0{
+        background-color: $brown-medium;
+      }
+
+      .row-r1{
+        background-color: $brown-medium;
+        border-top: 1px solid $brown-alt;
+      }
+      
+      .lable{
+        border-bottom: 1px dotted #777;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      }
+
+      .break-time{
+        span{
+          border-left: 2px dotted $brown-alt;
+          margin-left: 10px;
+          padding-left: 10px;
+        }
       }
     }
   }
