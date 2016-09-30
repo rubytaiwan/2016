@@ -20,3 +20,6 @@ const IMAGES = [
 ];
 
 IMAGES.forEach((image) => { require(`images\/${image}`) })
+
+// Github Pages CNAME file
+require('file?name=[path][name]!CNAME')
