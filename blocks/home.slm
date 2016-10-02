@@ -1,2 +1,48 @@
-#landing
+section#landing
   .mask
+  .super.hidden-xs
+    .super__title
+      h1.is-mask
+        | 2016
+        br
+        | Ruby Conf
+        br
+        | Taiwan
+      h1
+        | 2016
+        br
+        | Ruby Conf
+        br
+        | Taiwan
+    .super__sub
+      p.is-date
+        | December 2
+        sup nd
+        |  - 3
+        sup rd
+      p.is-venue
+        | Activity Center, 
+        br
+        | Academia Sinica
+.super.visible-xs
+    .super__title
+      h1.is-mask
+        | 2016
+        br
+        | Ruby Conf
+        br
+        | Taiwan
+      h1
+        | 2016
+        br
+        | Ruby Conf
+        br
+        | Taiwan
+    .super__sub
+      p.is-date
+        | December 2
+        sup nd
+        |  - 3
+        sup rd
+      p.is-venue
+        | Activity Center, Academia Sinica

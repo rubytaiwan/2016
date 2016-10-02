@@ -23,6 +23,13 @@ import Animation from './animation.js'
 
         // Smooth Scroll ( true => Auto add "is-active" when scroll )
         smoothScroll('.nav a', true)
+
+        $( ".super__title" ).delay(1000).animate({
+            opacity: 1,
+        }, 1000, "easeInOutCubic");
+        $( ".super__sub" ).delay(2000).animate({
+            opacity: 0.8,
+        }, 1000, "easeInOutCubic");
     }
 
     document.addEventListener('DOMContentLoaded', setup)
