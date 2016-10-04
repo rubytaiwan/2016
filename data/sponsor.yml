@@ -1,41 +1,13 @@
 sponsor:
   ruby:
-    - name: Ruby
-      url: https://5xruby.tw/
-      picture: https://placehold.it/280x145
-      desc:
   platinum:
-    - name:
-      url:
-      picture: https://placehold.it/250x145
-      desc:
-    - name:
-      url:
-      picture: https://placehold.it/250x145
-      desc:
+    - name: Akatsuki
+      url: http://aktsk.com.tw/
+      picture: ./images/logo/platinum_akatsuki.svg
+      desc: Akatsuki, the best mobile game company from Japan has landed in Taiwan!! Our goal is to build better social values and create happiness for the society across the globe, under the ethos “Brightening the world by the power of game.
+    - name: 5xRuby
+      url: http://5xruby.tw/
+      picture: ./images/logo/platinum_5xruby.svg
+      desc: 我們是一群在台灣的 Ruby 程式語言的愛好者，每天的工作都是跟 Ruby/Rails 相關。Ruby on Rails 快速開發的優勢，在國外企業與創業圈極為熱門；而 Ruby 語言本身的自然與優雅簡潔，也讓工程師們工作起來更加快樂。但是，在台灣實際真的有使用 Ruby/Rails 做為主要開發工具的企業卻仍是少數。我們最終的目的，是希望在台灣可以有越來越多的企業能了解或採用 Ruby 這個優雅、有趣，並且極具生產力的程式語言做為主要開發工具，更快速的實現您的想法。
   gold:
-    - name:
-      url:
-      picture: https://placehold.it/220x100
-      desc:
-    - name:
-      url:
-      picture: https://placehold.it/220x100
-      desc:
-    - name:
-      url:
-      picture: https://placehold.it/220x100
-      desc:
   silver:
-    - name:
-      url:
-      picture: https://placehold.it/200x100
-      desc:
-    - name:
-      url:
-      picture: https://placehold.it/200x100
-      desc:
-    - name:
-      url:
-      picture: https://placehold.it/200x100
-      desc:

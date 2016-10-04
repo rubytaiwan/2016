@@ -46,9 +46,41 @@
       }
     }
 
-    @include element('logo') {
+    @include element('row'){
       display: block;
-      margin: 10px 0 20px;
+      overflow: auto;
+
+      @include element('logo') {
+        display: inline-block;
+        margin: 10px 20px;
+        img{
+          width: 100%;
+        }
+      }
+
+      @include state('ruby'){
+        img{
+          max-width: 300px; 
+        }
+      }
+
+      @include state('platinum'){
+        img{
+          max-width: 280px; 
+        }
+      }
+
+      @include state('gold'){
+        img{
+          max-width: 240px; 
+        }
+      }
+
+      @include state('silver'){
+        img{
+          max-width: 200px; 
+        }
+      }
     }
   }
 

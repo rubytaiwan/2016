@@ -4,44 +4,40 @@ section#sponsor.row
       h1 Sponsor
   .col-xs-12.col-sm-offset-3.col-sm-8
     .sponsors
-      .sponsors__sub-title.is-ruby
-        h2 Ruby
-      .row
-        - if this.sponsor.ruby
-          - for sponsor of (this.sponsor.ruby)
-            .col-xs-12
-              a.sponsors__logo href=sponsor.url target="_blank"
-                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+      - if this.sponsor.ruby
+        .sponsors__sub-title.is-ruby
+          h2 Ruby
+        - for sponsor of (this.sponsor.ruby)
+          .sponsors__row.is-ruby
+            a.sponsors__row__logo href=sponsor.url target="_blank"
+              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
     .sponsors
-      .sponsors__sub-title.is-platinum
-        h2 Platinum
-      .row
-        - if this.sponsor.platinum
+      - if this.sponsor.platinum
+        .sponsors__sub-title.is-platinum
+          h2 Platinum
+        .sponsors__row.is-platinum
           - for sponsor of (this.sponsor.platinum)
-            .col-xs-12.col-md-6
-              a.sponsors__logo href=sponsor.url target="_blank"
-                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+            a.sponsors__row__logo href=sponsor.url target="_blank"
+              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
     .sponsors
-      .sponsors__sub-title.is-gold
-        h2 Gold
-      .row
-        - if this.sponsor.gold
+      - if this.sponsor.gold
+        .sponsors__sub-title.is-gold
+          h2 Gold
+        .sponsors__row.is-gold
           - for sponsor of (this.sponsor.gold)
-            .col-xs-12.col-sm-6.col-md-4
-              a.sponsors__logo href=sponsor.url target="_blank"
-                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+            a.sponsors__row__logo href=sponsor.url target="_blank"
+              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
     .sponsors
-      .sponsors__sub-title.is-silver
-        h2 Silver
-      .row
-        - if this.sponsor.silver
+      - if this.sponsor.silver
+        .sponsors__sub-title.is-silver
+          h2 Silver
+        .sponsors__row.is-silver
           - for sponsor of (this.sponsor.silver)
-            .col-xs-12.col-sm-6.col-md-4
-              a.sponsors__logo href=sponsor.url target="_blank"
-                img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+            a.sponsors__row__logo href=sponsor.url target="_blank"
+              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
       
     .sponsor-cfs
       p
