@@ -10,4 +10,16 @@ sponsor:
       picture: ./images/logo/platinum_5xruby.svg
       desc: 我們是一群在台灣的 Ruby 程式語言的愛好者，每天的工作都是跟 Ruby/Rails 相關。Ruby on Rails 快速開發的優勢，在國外企業與創業圈極為熱門；而 Ruby 語言本身的自然與優雅簡潔，也讓工程師們工作起來更加快樂。但是，在台灣實際真的有使用 Ruby/Rails 做為主要開發工具的企業卻仍是少數。我們最終的目的，是希望在台灣可以有越來越多的企業能了解或採用 Ruby 這個優雅、有趣，並且極具生產力的程式語言做為主要開發工具，更快速的實現您的想法。
   gold:
+    - name: Microsoft
+      url: https://www.microsoft.com
+      picture: ./images/logo/gold_MS.svg
+      desc: 在微軟，我們的任務及價值在協助全球各地的使用者及企業用戶實現其目標與願景。
+    - name: Gandi.net
+      url: https://www.gandi.net/
+      picture: ./images/logo/gold_gandi.svg
+      desc: GANDI 為域名註冊商以及雲端代管服務公司。商品包含免費網站、SSL 憑證、部落格、電子郵件、VPS 專用虛擬伺服器、雲端代管。
   silver:
+    - name: 5FPRO
+      url: https://www.facebook.com/5fpro/
+      picture: ./images/logo/silver_5FPRO.svg
+      desc: 以 Web Development 為主要業務的軟體公司，透過網路技術的力量來創造社會價值。
