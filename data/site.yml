@@ -1,2 +1,4 @@
 site:
   title: RubyConf Taiwan 2016
+  ogimg: "/images/ogimg.jpg"
+  desc: "RubyConf Taiwan is only anniversary event of Ruby programming language and will have the 6th gathering at activity center of Academia Sinica Taiwan from 2nd to 3rd December 2016."
