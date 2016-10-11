@@ -1,5 +1,5 @@
 news:
-  - title: 這是消息標題這是消息標題
-    date: 2016/09/28
-    cover: https://placehold.it/960x300
-    content: 文字文字文字文字文字文字文字文字文字文字文字文字
+  - title: The CFP will close 10/11 23:59(GMT+8).
+    date: 2016/10/11
+    cover: 
+    content: "The CFP will close at 10/11 23:59 GMT+8, please submit your proposal before closed at <a href='https://cfp.rubyconf.tw/'>https://cfp.rubyconf.tw/</a>"
