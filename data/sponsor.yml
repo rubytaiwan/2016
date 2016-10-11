@@ -1,5 +1,9 @@
 sponsor:
   ruby:
+    - name: Shopmatic
+      url: https://goshopmatic.hk/
+      picture: ./images/logo/ruby_shopmatic.svg
+      desc: Enabling online commerce for small businesses in the emerging markets of the world.
   platinum:
     - name: Akatsuki
       url: http://aktsk.com.tw/

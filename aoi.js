@@ -23,8 +23,8 @@ module.exports = function(config, options) {
     config.module.loaders.push({
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
-            'file?name=[path][name].[ext]',
-            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            'file?name=[path][name].[ext]'//,
+            //'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
     });
 
