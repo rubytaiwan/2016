@@ -32,7 +32,7 @@ section#schedule.row
             tr
               th 09:50 ~ 10:00
               td colspan="2"
-                b Openinig
+                b Opening
             tr
               th 10:00 ~ 11:00
               -if this.scheduleFirst.r01
@@ -405,7 +405,7 @@ section#schedule.row
             tr
               th 09:50 ~ 10:00
               td colspan="2"
-                b Openinig
+                b Opening
             tr
               th 10:00 ~ 11:00
               -if this.scheduleSecond.r01
@@ -723,7 +723,7 @@ section#schedule.row
                         a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video
               -else
                 td colspan="2" TBD
-            tr.break-time
+            tr
               th 17:40 ~ 17:55
               td colspan="2"
                 b Closing 
@@ -748,7 +748,7 @@ section#schedule.row
               th 09:50 ~ 10:00
             tr
               td
-                b Openinig
+                b Opening
             tr.row-time
               th 10:00 ~ 11:00
             -if this.scheduleFirst.r01
@@ -1244,7 +1244,7 @@ section#schedule.row
               th 09:50 ~ 10:00
             tr
               td
-                b Openinig
+                b Opening
             tr.row-time
               th 10:00 ~ 11:00
             -if this.scheduleSecond.r01
