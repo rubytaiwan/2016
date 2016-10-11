@@ -15,4 +15,4 @@ section#news.row
                 img.news__more__cover src=news.cover alt=news.title /
               h3.news__more__title =news.title
               p.news__more__date =news.date
-              p.news__more__content =news.content
+              p.news__more__content ==news.content
