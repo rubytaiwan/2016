@@ -21,7 +21,7 @@ module.exports = function(config, options) {
     }
 
     config.module.loaders.push({
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
         loaders: [
             'file?name=[path][name].[ext]'//,
             //'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
