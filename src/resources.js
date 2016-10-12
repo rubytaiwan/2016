@@ -23,3 +23,5 @@ IMAGES.forEach((image) => { require(`images\/${image}`) })
 
 // Github Pages CNAME file
 require('file?name=[path][name]!CNAME')
+require('file?name=[path][name].[ext]!manifest.json')
+require('file?name=[path][name].[ext]!browserconfig.xml')
