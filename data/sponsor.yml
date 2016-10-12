@@ -3,7 +3,11 @@ sponsor:
     - name: Shopmatic
       url: https://goshopmatic.hk/
       picture: ./images/logo/ruby_shopmatic.svg
-      desc: Enabling online commerce for small businesses in the emerging markets of the world.
+      desc: "Shopmatic manages the entire ecosystem for anyone wanting to sell online.
+We go the extra mile to ensure that we help merchants and individuals in every step of the
+process to grow their business online - from developing their own unique webstores, to
+listing them on marketplaces and social channels, to providing them with insights on
+how to sell online."
   platinum:
     - name: Akatsuki
       url: http://aktsk.com.tw/
