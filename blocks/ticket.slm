@@ -1,0 +1,6 @@
+section#ticket.row
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 Tickets
+    .ticket
+      iframe.kktix allowtransparency="true" frameborder="0" height="575" hspace="0" marginheight="20" marginwidth="20" scrolling="auto" src="https://kktix.com/tickets_widget?slug=rubyconftw2016" vspace="0" width="100%" 
