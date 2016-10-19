@@ -37,6 +37,11 @@ sponsor:
       url: https://www.codementor.io/
       picture: ./images/logo/gold_codementor.svg
       desc: Codementor provides instant 1:1 help for software development.  Build projects faster with on-demand live help from expert developers.
+    - name: Shopline
+      url: http://bit.ly/2dmb7xK
+      picture: ./images/logo/gold_shopline.svg
+      desc: "Shopline為自助電商平台，整合了前端的網站設計、後台的商品管理，以及完整的金物流系統，為電商賣家提供簡單好操作的架站工具。不僅讓賣家輕鬆快速開設個人化的網路商店，也讓消費者更便利的在手機上購物。在台灣、香港及東南亞已經擁有超過八萬間店家開店並持續成長中。
+      Shopline is a DIY e-commerce platform that empowers merchants in Asia to launch their own standalone online store. Our differentiation lies in our simplistic setup process  native language support  regional payment methods and the fact that the entire experience is optimized for mobile. All shops are completely responsive and adapt to all screen sizes  keeping a consistent customer experience. Our goal is to empower small businesses in Asia with simple-to-use tools that complements the way they do business and allowing them to succeed in e-commerce. The long term vision is to build a complete social e-commerce platform that drives value to both merchants and consumers."
   silver:
     - name: 5FPRO
       url: https://www.facebook.com/5fpro/
