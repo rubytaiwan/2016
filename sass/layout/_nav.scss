@@ -116,7 +116,7 @@
       }
     }
 
-    @include element('home') {
+    @include element('news') {
       top: 5%;
 
       @media (min-width: $screen-sm) {
@@ -136,7 +136,7 @@
       }
     }
 
-    @include element('news') {
+    @include element('ticket') {
 
       background-position: -240px 0;
       top: 18%;
