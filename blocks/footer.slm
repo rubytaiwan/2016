@@ -16,9 +16,9 @@ footer
                       i.fa.fa-home
                 p.staff__more__title =staff.title
       .social-link
-        a.social-link--fb href="https://www.facebook.com/ruby.taiwan" target="_blank"
+        a.social-link--fb href="https://www.facebook.com/rubyconftw/" target="_blank"
           img src="images/social/fb.png" alt="facebook"/
-        a.social-link--twitter href="https://twitter.com/rubytaiwan" target="_blank"
+        a.social-link--twitter href="https://twitter.com/rubyconftw" target="_blank"
           img src="images/social/twitter.png" alt="twitter"/
         a.social-link--email href="mailto:contact@rubyconf.tw"
           img src="images/social/email.png" alt="email"/

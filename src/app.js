@@ -24,6 +24,18 @@ import Animation from './animation.js'
         // Smooth Scroll ( true => Auto add "is-active" when scroll )
         smoothScroll('.nav a', true)
 
+        $( "#coc-content" ).click(function() {
+					var btn = $(this);
+
+					$( ".coc-content.is-more" ).slideToggle( "slow", function() {
+						if ($(this).is(':visible')) {
+							btn.text('Less');                
+						} else {
+							btn.text('More');                
+						}
+					});
+        })
+
         $( ".super__title" ).delay(1000).animate({
             opacity: 1,
         }, 1000, "easeInOutCubic");

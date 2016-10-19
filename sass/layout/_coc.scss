@@ -7,18 +7,39 @@
       padding: 0 40px;
     }
 
-    @include state('zh'){
-      margin-top: 30px;
+    @include state('more'){
+      display: none;
 
-      a{
-        @include transition(all 0.3s);
-        color: white;
+      .zh {
+        margin-top: 30px;
 
-        &:hover{
-          color: $blue;
-          text-decoration: none;
+        a{
+          @include transition(all 0.3s);
+          color: white;
+
+          &:hover{
+            color: $blue;
+            text-decoration: none;
+          }
         }
       }
+    }
+  }
+  #coc-content{
+    @include transition(all 0.3s);
+    background-color: $brown-alt;
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 18px;
+    color: #EFEBE9;      
+
+    &:hover{
+      text-decoration: none;
+      background-color: $brown-alt - #111;
     }
   }
 }
