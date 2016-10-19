@@ -1,0 +1,21 @@
+section#ticket{
+
+  @include block('ticket'){
+    
+    @media (min-width: $screen-sm) {
+      margin: 0 40px;
+    }
+    @media (min-width: $screen-md) {
+      margin: 0 50px;
+    }
+
+    iframe{
+      background-color: white;
+      border-radius: 4px;
+      padding: 20px;
+      @media (min-width: $screen-md) {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

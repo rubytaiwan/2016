@@ -8,6 +8,12 @@
       display: block;
       color: white;
       margin-bottom: 30px;
+      @media (min-width: $screen-sm) {
+        min-height: 260px;
+      }
+      @media (min-width: $screen-md) {
+        min-height: 230px;
+      }
 
       &:hover{
         text-decoration: none;
