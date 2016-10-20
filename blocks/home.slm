@@ -25,24 +25,30 @@ section#landing
         br
         | Academia Sinica
 .super.visible-xs
-    .super__title
-      h1.is-mask
-        | 2016
-        br
-        | Ruby Conf
-        br
-        | Taiwan
-      h1
-        | 2016
-        br
-        | Ruby Conf
-        br
-        | Taiwan
-    .super__sub
-      p.is-date
-        | December 2
-        sup nd
-        |  - 3
-        sup rd
-      p.is-venue
-        | Activity Center, Academia Sinica
+  .super__title
+    h1.is-mask
+      | 2016
+      br
+      | Ruby Conf
+      br
+      | Taiwan
+    h1
+      | 2016
+      br
+      | Ruby Conf
+      br
+      | Taiwan
+  .super__sub
+    p.is-date
+      | December 2
+      sup nd
+      |  - 3
+      sup rd
+    p.is-venue
+      | Activity Center, Academia Sinica
+  a.register-btn__mobile.visible-xs href="http://rubytaiwan.kktix.cc/events/rubyconftw2016" target="_blank"
+    | Register Now
+a.register-btn.hidden-xs href="http://rubytaiwan.kktix.cc/events/rubyconftw2016" target="_blank"
+  | Register
+  br
+  | Now

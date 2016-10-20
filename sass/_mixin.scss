@@ -45,14 +45,14 @@
 	-moz-animation-timing-function:ease-in-out;
     
 	@-webkit-keyframes Scale{
-		from {-webkit-transform: scale(0.9);}
+		from {-webkit-transform: scale(0.95);}
 		65% {-webkit-transform: scale(1.0);}
-		to {-webkit-transform: scale(0.9);}
+		to {-webkit-transform: scale(0.95);}
 	}
 			
 	@-moz-keyframes scale{
-		from {-moz-transform: scale(0.9);}
+		from {-moz-transform: scale(0.95);}
 		65% {-moz-transform: scale(1.0);}
-		to {-moz-transform: scale(0.9);}
+		to {-moz-transform: scale(0.95);}
 	}
 }
