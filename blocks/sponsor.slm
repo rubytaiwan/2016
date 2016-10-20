@@ -7,8 +7,8 @@ section#sponsor.row
       - if this.sponsor.ruby
         .sponsors__sub-title.is-ruby
           h2 Ruby
-        - for sponsor of (this.sponsor.ruby)
-          .sponsors__row.is-ruby
+        .sponsors__row.is-ruby
+          - for sponsor of (this.sponsor.ruby)
             a.sponsors__row__logo href=sponsor.url target="_blank"
               img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
 
