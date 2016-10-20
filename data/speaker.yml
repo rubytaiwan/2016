@@ -12,8 +12,10 @@ keynote_speakers: &keynote_speakers
     avatar: "/images/speakers/rkh.jpg"
     title: Co-Founder and CTO, Travis CI
     bio: Co-Founder and CTO at Travis CI, former opera star
-    subject: TBD
-    summary: TBD
+    subject: "How we replaced salary negotiations with a Sinatra app"
+    summary: "Let's talk about salaries, diversity, career development, getting compensated in gold and silver, paying taxes in livestock and Ruby code.
+We at Travis CI have been working on a new salary system to determine how much we pay whom, when employees get raises and a whole range of other things. After lots of back and forth, we ended up with a Sinatra application to solve salary questions.
+Expect to explore the topic from many different angles and levels. We'll look at decisions, realisations and implications, as well as interesting parts of the implementation."
     urlHome: http://rkh.im/
     urltwitter: http://twitter.com/konstantinhaase
     urlGithub: http://github.com/rkh
