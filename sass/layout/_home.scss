@@ -103,3 +103,61 @@
     }
   }
 }
+
+@include block('register-btn') {
+  @include transition(all 0.3s);
+  @include scaling();
+  background: url(../images/register_bubble.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: 68%;
+  opacity: 0;
+  
+  color: $brown-alt;
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 700;
+
+  text-shadow: 0px 0px 10px rgba($yellow, 0.5);
+
+  &:link, &:visited, &:active{
+    color: $brown-alt;
+  }
+
+  &:hover{
+    color: $red-dark;
+    opacity: 1;
+  }
+
+  @media (min-width: $screen-sm) {
+    top: 60px;
+    width: 200px;
+    padding: 50px 0; 
+    font-size: 32px;
+  }
+  @media (min-width: $screen-md) {
+    top: 120px;
+    width: 235px; 
+    padding: 55px 0; 
+    font-size: 38px;
+  }
+
+  @include element('mobile') {
+    background-color: $brown-alt;
+    border-radius: 4px;
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 10px 0;
+    opacity: 0;
+
+    color: #EFEBE9;
+    text-align: center;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    &:link, &:hover, &:visited, &:active{
+      color: #EFEBE9;
+    }
+  }
+}

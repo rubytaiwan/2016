@@ -28,11 +28,11 @@ import Animation from './animation.js'
 					var btn = $(this);
 
 					$( ".coc-content.is-more" ).slideToggle( "slow", function() {
-						if ($(this).is(':visible')) {
-							btn.text('Less');                
-						} else {
-							btn.text('More');                
-						}
+							if ($(this).is(':visible')) {
+									btn.text('Less');                
+							} else {
+									btn.text('More');                
+							}
 					});
         })
 
@@ -42,6 +42,12 @@ import Animation from './animation.js'
         $( ".super__sub" ).delay(2000).animate({
             opacity: 0.8,
         }, 1000, "easeInOutCubic");
+        $( ".register-btn" ).delay(1800).animate({
+            opacity: 0.95,
+        }, 1000, "easeInQuart");
+        $( ".register-btn__mobile" ).delay(2000).animate({
+            opacity: 0.9,
+        }, 1000, "easeInQuart");
     }
 
     document.addEventListener('DOMContentLoaded', setup)

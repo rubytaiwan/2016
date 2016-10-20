@@ -29,6 +29,12 @@ body{
   p{
     font-size: 16px;
   }
+
+  a{
+    &:link, &:hover, &:visited, &:active{
+      text-decoration: none;
+    }
+  }
 }
 
 @include block('main') {
