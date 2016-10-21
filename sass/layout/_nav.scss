@@ -1,5 +1,7 @@
 nav{
-  pointer-events: none;
+  @media (min-width: $screen-sm) {
+    pointer-events: none;
+  }
 }
 
 @include block('c-navbar') {
