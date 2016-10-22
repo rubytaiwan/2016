@@ -3,8 +3,8 @@ keynote_speakers: &keynote_speakers
     avatar: "/images/speakers/matz.png"
     title: Creator of Ruby, Heroku
     bio: Father of Ruby Programming Language
-    subject: TBD
-    summary: TBD
+    subject: "Beware of Alpha Syndrome"
+    summary: "Matz talks about psychological phenomenon of programmers"
     urlHome: http://www.rubyist.net/~matz/
     urltwitter: http://twitter.com/yukihiro_matz
     urlGithub: http://github.com/matz
@@ -30,5 +30,4 @@ Expect to explore the topic from many different angles and levels. We'll look at
     urlHome: 
     urltwitter: 
     urlGithub: https://github.com/lubatang
-
 speakers: *keynote_speakers
