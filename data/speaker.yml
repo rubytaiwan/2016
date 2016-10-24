@@ -32,7 +32,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
     urlGithub: https://github.com/lubatang
   - name: David Chang
     avatar: "//avatars.githubusercontent.com/u/839973?v=3"
-    title: 
+    title: "Software engineer, Solda"
     urlGithub: https://github.com/zetachang
     urltwitter: ''
     bio: <p>Software engineer at <a href="https://solda.io">Solda</a> and creator of
@@ -45,7 +45,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
     language: Chinese
   - name: Don Werve
     avatar: "//avatars.githubusercontent.com/u/43188?v=3"
-    title: 
+    title: ''
     urlGithub: https://github.com/matadon
     urltwitter: ''
     bio: |-
@@ -59,7 +59,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
     language: English
   - name: Eric Hodel
     avatar: "//avatars.githubusercontent.com/u/9831?v=3"
-    title: 
+    title: ''
     urlGithub: https://github.com/drbrain
     urltwitter: ''
     bio: "<p>Eric Hodel is a ruby committer and maintainer of many gems. He works at
@@ -73,7 +73,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
     language: English
   - name: Flo
     avatar: "//avatars.githubusercontent.com/u/10917453?v=3"
-    title: 
+    title: ''
     urlGithub: https://github.com/strikyflo
     urltwitter: ''
     bio: "<p>Hi, Im florian, I&#39;m a web backend engineer for 9 years, using ruby
@@ -88,8 +88,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       <p>I will discuss why those patterns are not a fit, and how they can be replaced (completely dropped for another technology, or how to improve them). Delivering good practices that should be implemented as soon as your project is no more a prototype to scale your tests speed, your maintainability.</p>
     language: English
   - name: Harisankar
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg"
-    title: CEO/Chief Solutions Architect
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg"
+    title: CEO/Chief Solutions Architect, Red Panthers Software Solutions (P) Ltd.
     urlGithub: https://github.com/coderhs
     urltwitter: https://twitter.com/coderhs
     bio: |-
@@ -103,8 +103,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
   - name: Juin Chiu
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/79/fullsizeoutput_30.jpeg"
-    title: Web developer
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/79/fullsizeoutput_30.jpeg"
+    title: Web developer, iCook, Polydice Inc.
     urlGithub: https://github.com/davidjuin0519
     urltwitter: ''
     bio: "<p>I am currently a Rubyist, interested in functional programming, data engineering,
@@ -117,8 +117,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       the model from Redux.</p>
     language: English
   - name: Kazuyuki Honda
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/89/346598.jpeg"
-    title: DevOps Engineer
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/89/346598.jpeg"
+    title: DevOps Engineer, Quipper Ltd
     urlGithub: https://github.com/hakobera
     urltwitter: https://twitter.com/hakobera
     bio: "<p>Kazuyuki loves Ruby and a cup of coffee. After working 9 years at IBM,
@@ -131,8 +131,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       <p>I&#39;m working on it over 2 years, so I want to share how to write complex data pipelines in Ruby using <a href="http://tumugi.github.io/">tumugi</a>, which is a gem I made.</p>
     language: English
   - name: Kei Sawada
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/102/me_icon.png"
-    title: Software Engineer
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/102/me_icon.png"
+    title: 'Software Engineer, Recruit Holdings Co., Ltd. '
     urlGithub: https://github.com/remore
     urltwitter: https://twitter.com/remore
     bio: "<p>Kei started his career in 2001 as a Tokyo-based software engineer and finally
@@ -152,7 +152,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
     language: English
   - name: Layne McNish
     avatar: "//avatars.githubusercontent.com/u/7490960?v=3"
-    title: Software Engineer
+    title: Software Engineer, Omada Health
     urlGithub: https://github.com/laynemcnish
     urltwitter: https://twitter.com/lmcnish14
     bio: "<p>Software Engineer at Omada Health in San Francisco, CA</p>"
@@ -163,8 +163,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       our issues through code instead of more Wikis and READMEs?</p>"
     language: English
   - name: Matthew Rudy Jacobs
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/111/me-tw.jpg"
-    title: Lead Architect
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/111/me-tw.jpg"
+    title: Lead Architect, GoGoVan
     urlGithub: https://github.com/matthewrudy
     urltwitter: https://twitter.com/matthewrudy
     bio: |-
@@ -183,8 +183,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       and finally hatch a plan for how to pull off the infamous rewrite.</p>
     language: English
   - name: Satoshi "Moris" Tagomori
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
-    title: Software Engineer
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
+    title: Software Engineer, Treasure Data, Inc.
     urlGithub: https://github.com/tagomoris
     urltwitter: https://twitter.com/tagomoris
     bio: |-
@@ -201,8 +201,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       <p>The presenter, a main developer of Fluentd, will show you many things to be considered, and many troubles/accidents we met.</p>
     language: English
   - name: Shi-Ken Don
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/92/12670899_1770942739791825_3478189837054622548_n.jpg"
-    title: Web Developer
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/92/12670899_1770942739791825_3478189837054622548_n.jpg"
+    title: Web Developer, 貝殼放大
     urlGithub: https://github.com/shikendon
     urltwitter: ''
     bio: "<p>土生土長的澎湖人，國中時因緣際會接觸到 VB6 從此對程式設計深深著迷，高中時踏入 Web Design &amp; Web Security
@@ -213,8 +213,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
     language: Chinese
   - name: ZYWU
-    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/54/DSC_1113.JPG"
-    title: 'Sr. Engineer '
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/54/DSC_1113.JPG"
+    title: Sr. Engineer , Trend Micro
     urlGithub: https://github.com/zongyuwu
     urltwitter: ''
     bio: "<p>熱愛Ruby、資訊安全，目前在趨勢科技擔任工程師。</p>"
