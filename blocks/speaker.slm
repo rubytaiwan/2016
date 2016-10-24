@@ -29,7 +29,7 @@ section#speaker.row
                         a.speaker__more__github[href=speaker.urlGithub target="_blank"]
                           i.fa.fa-github
                     p.speaker__more__title =speaker.title
-                    p.speaker__more__bio =speaker.bio
+                    div.speaker__more__bio ==speaker.bio
                   .speaker__more__talk
                     h4.speaker__more__subject =speaker.subject
-                    p.speaker__more__summary =speaker.summary
+                    div.speaker__more__summary ==speaker.summary
