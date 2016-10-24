@@ -1,4 +1,4 @@
-keynote_speakers: &keynote_speakers
+speakers:
   - name: Yukihiro (Matz) Matsumoto
     avatar: "/images/speakers/matz.png"
     title: Creator of Ruby, Heroku
@@ -30,4 +30,199 @@ Expect to explore the topic from many different angles and levels. We'll look at
     urlHome: 
     urltwitter: 
     urlGithub: https://github.com/lubatang
-speakers: *keynote_speakers
+  - name: David Chang
+    avatar: "//avatars.githubusercontent.com/u/839973?v=3"
+    title: 
+    urlGithub: https://github.com/zetachang
+    urltwitter: ''
+    bio: <p>Software engineer at <a href="https://solda.io">Solda</a> and creator of
+      <a href="http://ruby-hyperloop.io/gems/reactrb/">Reactrb</a>. Started a journey
+      learning and loving Ruby 5 years ago. Built tons of native mobile app and still
+      thought crafting great font-end products is challenging and fun. </p>
+    subject: A React Inspired UI framework in Pure Ruby
+    summary: "<p>A framework presented will demonstrate how to build user interface
+      in pure ruby by using declarative and component-based approach.</p>"
+    language: Chinese
+  - name: Don Werve
+    avatar: "//avatars.githubusercontent.com/u/43188?v=3"
+    title: 
+    urlGithub: https://github.com/matadon
+    urltwitter: ''
+    bio: |-
+      <p>Although originally designed by Apple in California as a durability-testing device for laptops, Don has spent the past seven years working around the world as a software engineer and back-pocket CTO, helping companies solve tough team management and scaling issues.</p>
+      <p>Don lives in Tokyo, and spends his spare time experimenting with advanced forms of deliciousness in his kitchen, hiking through the incredible beauty of the Japanese countryside, and training to survive the impending zombie apocalypse.</p>
+    subject: To Code Is Human
+    summary: |-
+      <p>Mastering the art of programming requires both the ability to rapidly understand specific problem domains, as well as comprehensive working knowledge of software development tools, from individual libraries, to programming languages, to the fundamental limits of computing hardware itself.</p>
+      <p>But what is often neglected is an understanding of the most heavily-used and relied-upon tool in the software developer&#39;s toolbox: the programmer&#39;s brain itself.</p>
+      <p>In this talk, we will combine the art of programming with the science of cognitive psychology, and emerge with a set of simple, proven techniques that we can use to craft software that is drastically less buggy, easier to understand, and more adaptive in the face of change.</p>
+    language: English
+  - name: Eric Hodel
+    avatar: "//avatars.githubusercontent.com/u/9831?v=3"
+    title: 
+    urlGithub: https://github.com/drbrain
+    urltwitter: ''
+    bio: "<p>Eric Hodel is a ruby committer and maintainer of many gems. He works at
+      Fastly on the API features team maintaining and building ruby services that customers
+      use to configure their CDN services.</p>"
+    subject: Building maintainable command-line tools with MRuby
+    summary: |-
+      <p>MRuby and mruby-cli makes it possible to ship single binary command-line tools that can be used without setup effort. How can we make these easy to write too?</p>
+      <p>Existing libraries for making command-line tools are built for experienced rubyists. This makes them a poor choice for porting to MRuby.</p>
+      <p>In this talk we&#39;ll explore how to build a command-line tool with mruby-cli along with a design and philosophy that makes it easy to create new commands and maintain existing commands even for unfamiliar developers.</p>
+    language: English
+  - name: Flo
+    avatar: "//avatars.githubusercontent.com/u/10917453?v=3"
+    title: 
+    urlGithub: https://github.com/strikyflo
+    urltwitter: ''
+    bio: "<p>Hi, Im florian, I&#39;m a web backend engineer for 9 years, using ruby
+      since 2007.  I&#39;m from France, living in shanghai since 2013. I&#39;m working
+      with strikingly as ruby expert in backend team (also giving my 2 cents on front
+      end from time to time). I&#39;m mainly focused on data and code design (ie: not
+      implementation) and DX (developper experience).</p>"
+    subject: Large scale Rails applications
+    summary: |-
+      <p>Rails patterns are amazing for prototyping, but they are actually very bad practices for large scale production applications.
+      Also, Rails comes with lot of handy tools to break many barriers for web beginners while introducing tons of good practices. Again, those good practices are a good introduction, but they don&#39;t fit large scale production applications, especially when it comes to modern practices in front end world.</p>
+      <p>I will discuss why those patterns are not a fit, and how they can be replaced (completely dropped for another technology, or how to improve them). Delivering good practices that should be implemented as soon as your project is no more a prototype to scale your tests speed, your maintainability.</p>
+    language: English
+  - name: Harisankar
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg"
+    title: CEO/Chief Solutions Architect
+    urlGithub: https://github.com/coderhs
+    urltwitter: https://twitter.com/coderhs
+    bio: |-
+      <p>Harisankar P S has been building SaaS application and API&#39;s using Ruby and Rails for the past 5 years. He is also the founder of Red Panthers, a Ruby on Rails dev shop based out in Kochi, India. He is interested in open source and organizes Open Source Saturdays and Ruby Meetup in Kochi. He also contributes to open source as well.</p>
+      <p><a href="http://github.com/coderhs">Github</a>
+      <a href="http://twitter.com/coderhs">Twitter</a></p>
+    subject: Using database to pull your applications weight
+    summary: |-
+      <p>Most Ruby on Rails application out there in the world deals with the manipulation and presentation of data. So the speed of our application has a relationship with how fast we work with data. Ruby on Rails, the swiss army knife of web development, is good with presenting data. But when it comes to crunching huge volumes of data, our rails application starts to slow down. Here we are not talking about joining a couple of rows from multiple tables, but about processing months of historical data and providing meaning full information.</p>
+      <p>Databases are good at processing data, but we sometimes make the mistake of just using it to as a file cabinet. The database is optimized to crunch GB&#39;s of data and return to us the results that we need.</p>
+      <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
+    language: English
+  - name: Juin Chiu
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/79/fullsizeoutput_30.jpeg"
+    title: Web developer
+    urlGithub: https://github.com/davidjuin0519
+    urltwitter: ''
+    bio: "<p>I am currently a Rubyist, interested in functional programming, data engineering,
+      and machine learning. Also a biker and a foodie on the side.</p>"
+    subject: Exploring Functional Programming by Rebuilding Redux
+    summary: <p>The goal of this talk is to introduce basic functional programming concepts.
+      This will be achieved by demonstrating how to rebuild <a href="https://github.com/reactjs/redux">Redux</a>,
+      a popular Javascript library, using Ruby. For this purpose, I open-sourced a gem
+      called <a href="https://github.com/davidjuin0519/rubidux">Rubidux</a>, which borrows
+      the model from Redux.</p>
+    language: English
+  - name: Kazuyuki Honda
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/89/346598.jpeg"
+    title: DevOps Engineer
+    urlGithub: https://github.com/hakobera
+    urltwitter: https://twitter.com/hakobera
+    bio: "<p>Kazuyuki loves Ruby and a cup of coffee. After working 9 years at IBM,
+      M3 as a Java/Node.js web application developer, he joined EdTech company Quipper
+      as a DevOps engineer. And now working on to make something automatic.</p>"
+    subject: How to write complex data pipelines in Ruby
+    summary: |-
+      <p>We often write a code to build data pipelines, which include multiple ETL process,
+      summarize large size data, generate reports and so on. But it&#39;s not easy to write robust data pipelines in Ruby. Because there are many things to consider not only write a business logic but idempotence, dependency resolution, parallel execution, error handling and retry.</p>
+      <p>I&#39;m working on it over 2 years, so I want to share how to write complex data pipelines in Ruby using <a href="http://tumugi.github.io/">tumugi</a>, which is a gem I made.</p>
+    language: English
+  - name: Kei Sawada
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/102/me_icon.png"
+    title: Software Engineer
+    urlGithub: https://github.com/remore
+    urltwitter: https://twitter.com/remore
+    bio: "<p>Kei started his career in 2001 as a Tokyo-based software engineer and finally
+      met Ruby in 2011. Ruby and its community quickly caught his attention and interest
+      him very much, and since then he always picks up Ruby in the first place whenever
+      he needs to make software. His most well-known project is Burn created in 2014,
+      which is a toolkit to create 8-bit flavored application. He also plays the contrabass
+      every weekend.</p>"
+    subject: How I made a pure-Ruby word2vec program more than 3x faster
+    summary: "<p>Ruby made programmers happy. I was no exception until I started to
+      port original word2vec.c to Ruby. What was disappointing to me was the fact that
+      large-scale scientific computation with CRuby is too time-consuming as the number
+      of loops gets bigger. This experience led me to create VirtualModule, which lets
+      you reduce execution time by running your arbitrary Ruby code on the other language
+      VM process. In this talk, you will find out about when CRuby doesn&#39;t perform
+      very well and what kind of bottlenecks you can workaround using VirtualModule.</p>"
+    language: English
+  - name: Layne McNish
+    avatar: "//avatars.githubusercontent.com/u/7490960?v=3"
+    title: Software Engineer
+    urlGithub: https://github.com/laynemcnish
+    urltwitter: https://twitter.com/lmcnish14
+    bio: "<p>Software Engineer at Omada Health in San Francisco, CA</p>"
+    subject: Solving your onboarding problems with Ruby
+    summary: "<p>Starting at a new company is hard.  It&#39;s even harder when half
+      the instructions and documentation to get you ready to code is out of date or
+      missing key parts.  We&#39;re Rubyists, not HR managers.  Why don&#39;t we solve
+      our issues through code instead of more Wikis and READMEs?</p>"
+    language: English
+  - name: Matthew Rudy Jacobs
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/111/me-tw.jpg"
+    title: Lead Architect
+    urlGithub: https://github.com/matthewrudy
+    urltwitter: https://twitter.com/matthewrudy
+    bio: |-
+      <p>Matthew has been coding Ruby since 2006, mostly working for startups in London and Hong Kong.</p>
+      <p>He also lived in Taipei for a year in 2014-2015.</p>
+      <p>He&#39;s the organiser of Hong Kong Code Conf and has been running the HK monthly coder meetup Codeaholics since 2010.</p>
+      <p>He&#39;s currently Lead Architect at GoGoVan, leading a distributed team building a real-time delivery platform with ambitions to disrupt the logistics industry all over the world.</p>
+    subject: The Big Bang Rewrite!
+    summary: |-
+      <p>Working on any large, sufficiently complex codebase, a good developer&#39;s natural instinct is to think &quot;if only I could start again, it&#39;d be so much better&quot;.</p>
+      <p>This is almost always a bad idea.
+      Big Bang rewrites almost alway fail, wasting time, money, and energy.</p>
+      <p>But occasionally it is actually the best solution.</p>
+      <p>In this talk we&#39;re going to explore the realities of real-world software,
+      discuss technical debt, approaches to improving bad software,
+      and finally hatch a plan for how to pull off the infamous rewrite.</p>
+    language: English
+  - name: Satoshi "Moris" Tagomori
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
+    title: Software Engineer
+    urlGithub: https://github.com/tagomoris
+    urltwitter: https://twitter.com/tagomoris
+    bio: |-
+      <p>OSS developer/maintainer: Fluentd, Norikra, MessagePack-Ruby, Woothee and many others mainly about Web services, data collecting and distributed/streaming data processing.
+      Living in Tokyo, and working for Treasure Data.</p>
+    subject: How to Write Middleware in Ruby
+    summary: |-
+      <p>This presentation will show how to write middleware in Ruby.</p>
+      <p>Middleware are required:
+      * to work well on various environment/platform
+      * not to crash for unexpected data or unstability of network
+      * not to consume cpu/memory or other resources unexpectedly
+      * and many things</p>
+      <p>The presenter, a main developer of Fluentd, will show you many things to be considered, and many troubles/accidents we met.</p>
+    language: English
+  - name: Shi-Ken Don
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/92/12670899_1770942739791825_3478189837054622548_n.jpg"
+    title: Web Developer
+    urlGithub: https://github.com/shikendon
+    urltwitter: ''
+    bio: "<p>土生土長的澎湖人，國中時因緣際會接觸到 VB6 從此對程式設計深深著迷，高中時踏入 Web Design &amp; Web Security
+      的領域，但真正開始寫出東西是在大學一年級的暑假使用 PHP 寫出自己的網站，中間也陸續碰過 C++, Java, Python 等各種語言，目前最喜歡的語言是
+      Ruby，可以說到了沒有 Ruby 就不想寫程式的地步，現為貝殼放大的 Web Developer。</p>"
+    subject: 從零開始的爬蟲之旅
+    summary: "<p>以過來人的經驗分享用 Ruby 每分鐘抓取 2000+ 頁面、維護上億筆紀錄資料庫的心路歷程，從單線程到多線程再到 Auto Scaling
+      讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
+    language: Chinese
+  - name: ZYWU
+    avatar: "https://cfp.rubyconf.tw/uploads/user/photo/54/DSC_1113.JPG"
+    title: 'Sr. Engineer '
+    urlGithub: https://github.com/zongyuwu
+    urltwitter: ''
+    bio: "<p>熱愛Ruby、資訊安全，目前在趨勢科技擔任工程師。</p>"
+    subject: When Ruby Meets Cryptography
+    summary: |-
+      <p>資訊安全是用來保障你我資料安全與個人隱私的技術，而密碼學扮演其中重要的角色，主題內將介紹不同的情境需要什麼密碼技術來提供安全並且會以實務的觀點討論：<br>
+      * 關於密碼系統
+      * Ruby OpenSSL APIs
+      * 如何安全地使用Ruby OpenSSL APIs
+      * 曾被揭發之Ruby OpenSSL漏洞頗析</p>
+    language: Chinese
