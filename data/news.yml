@@ -1,4 +1,14 @@
 news:
+  - title: "All keynote's talk detail were updated"
+    date: 2016/10/22
+    cover: 
+    content: |-
+      We have updated talk details of all three keynote sessions（Matz, @rkh and Luba）, please check them by clicking the speaker's avatar or name.。
+  - title: "First round of CFP result has been sent"
+    date: 2016/10/22
+    cover: 
+    content: |-
+      The session committee has already reviewed all 70 proposals and sent the first round of the CFP result.
   - title: "開放早鳥票售票 / Early Bird Ticket Sales!"
     date: 2016/10/20
     cover: '/images/ogimg-rubychan.jpg'
