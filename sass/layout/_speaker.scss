@@ -1,4 +1,15 @@
 #speaker{
+  .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
   @include block('speaker-list') {
     text-align: center;
     padding-top: 30px;
@@ -8,11 +19,6 @@
       display: block;
       color: white;
       margin-bottom: 30px;
-      min-height: 240px;
-
-      @media (min-width: $screen-sm) {
-        min-height: 260px;   
-      }
       
       &:hover{
         text-decoration: none;
@@ -42,6 +48,10 @@
 
         &:target{
           visibility: visible;
+        }
+
+        img{
+          margin: 0 auto;
         }
 
         @include element('close'){
