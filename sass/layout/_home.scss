@@ -56,7 +56,10 @@
         background: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: rgba(#fff, 0.5);
-        text-shadow: 0px 0px 10px rgba(white, 0.5);
+
+        @media (min-width: $screen-sm) {
+          text-shadow: 0px 0px 10px rgba(white, 0.5);
+        }
       }
 
       @media (min-width: $screen-sm) {

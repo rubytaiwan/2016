@@ -6,7 +6,7 @@ section#speaker.row
     .speaker-list
       .row
         - for speaker of (this.speakers)
-          .col-xs-12.col-sm-6.col-md-4
+          .col-xs-12.col-sm-6.col-md-4.col-fix
             a.speaker href=["#" +speaker.name]
               img.speaker__avatar src=speaker.avatar alt=speaker.name /
               h3.speaker__name =speaker.name
