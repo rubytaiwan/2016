@@ -1,15 +1,36 @@
 #speaker{
-  .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-    flex-wrap: wrap;
+
+  @media (min-width: $screen-sm) {
+    .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .row > .col-fix {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 50%;
+    }
   }
-  .row > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
+
+  @media (min-width: $screen-md) {
+    .row > .col-fix {
+      width: 33%;
+    }
   }
+
+
   @include block('speaker-list') {
     text-align: center;
     padding-top: 30px;
