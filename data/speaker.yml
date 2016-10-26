@@ -30,9 +30,35 @@ Expect to explore the topic from many different angles and levels. We'll look at
     urlHome: 
     urltwitter: 
     urlGithub: https://github.com/lubatang
+  - name: bih00425
+    avatar: "//avatars.githubusercontent.com/u/1940696?v=3"
+    title: ''
+    urlGithub: https://github.com/bih00425
+    urltwitter: ''
+    bio: |-
+      <p>熟悉 ruby 和一點點的 bioinformation，試著把兩者結合，希望創造出有趣的東西。
+      任職於黃碼科技 Goldenio Techology。</p>
+    subject: Writing Data Analysis Pipeline As Ruby Gem
+    summary: |-
+      <p>在分析 DNA/RNA 資料上，已有許多工具可供使用，可透過不同工具的結合，可以找出可能導致疾病或癌症的變異點，但工具繁雜，每套工具所需要的參數及使用方法不同，控制每個步驟相當麻煩，必須精通各種分析工具的用法。
+      希望透過這個 talk 讓聽眾暸解，要串接 C 和 JAVA 等語言撰寫的分析工具時，可以利用 RUBY 的套件，撰寫簡單的 code 來處理複雜的分析流程．我們將工具與參數的使用，撰寫成 RUBY 模組，並利用 templete 系統組合出一個 robust 的資料分析流程(Actgun)。
+      執行分析流程通常會花費相當大的資源與時間，我們將以 Actgun 為核心，探討如何撰寫輔助套件(actgun-cluster)，讓 Actgun 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
+    language: Chinese
+  - name: Chien-Wei Chu
+    avatar: "//avatars.githubusercontent.com/u/5680562?v=3"
+    title: ''
+    urlGithub: https://github.com/icarus4
+    urltwitter: ''
+    bio: |-
+      <p>離開最接近硬體的C語言，轉向投入最接近人腦思考的Ruby developer。</p>
+      <p>現為財報狗CTO，主導財報狗數個重要技術專案，包含將網站由PHP無痛轉移至Rails、多個重要功能的效能大幅優化、打造高效率又可靠的爬蟲系統...等。</p>
+    subject: 利用 Sidekiq Enterprise 打造高效率與高可靠度的爬蟲系統
+    summary: "<p>在財報狗 (statementdog.com)，我們提供友善的介面與大量的財務數據輔助股票投資人進行投資決策。這些數據的背後是由大量的爬蟲與運算邏輯程式碼所建構而成。在我們的資料庫中，每一檔股票各自都有近千項數據要抓取與計算，在總計數千檔股票都有近千項數據要處理的情況下，如何做到穩定又快速的更新數據與資訊，是一項不容易的任務。在這次的
+      talk 中，我們將會分享我們在建構系統時所面臨的挑戰、以及我們如何利用 Sidekiq Enterprise 打造出一個高效率又可靠的爬蟲系統。(本talk不探討如何撰寫crawler的相關議題，例如Nokogiri或Mechanise等相關gem的使用方式)</p>"
+    language: Chinese
   - name: David Chang
-    avatar: "//avatars.githubusercontent.com/u/839973?v=3"
-    title: "Software engineer, Solda"
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/74/profile.jpeg"
+    title: ''
     urlGithub: https://github.com/zetachang
     urltwitter: ''
     bio: <p>Software engineer at <a href="https://solda.io">Solda</a> and creator of
@@ -102,11 +128,34 @@ Expect to explore the topic from many different angles and levels. We'll look at
       <p>Databases are good at processing data, but we sometimes make the mistake of just using it to as a file cabinet. The database is optimized to crunch GB&#39;s of data and return to us the results that we need.</p>
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
+  - name: Ivan Nemytchenko
+    avatar: "//avatars.githubusercontent.com/u/9665?v=3"
+    title: ''
+    urlGithub: https://github.com/inem
+    urltwitter: ''
+    bio: "<p>14 years in IT. Rubyist since 2008. Being co-founder of two outsourcing
+      companies. Co-organised two IT conferences. Organised online internship for junior
+      ruby developers. In 2015 moved to Serbia, and later joined GitLab as Developer
+      Advocate</p>"
+    subject: Breaking Bad Habits with GitLab CI
+    summary: |-
+      <p>GitLab is known in Ruby community for years. 2 years ago GitLab has made a huge leap forward by integrating CI system.</p>
+      <p>In this talk we’ll explore its functionality. The talk consists of two stories, where companies started from manual process, and step by step automated their it. Here’s what you will learn:</p>
+      <ul>
+      <li>how to execute a single command?</li>
+      <li>how to run multiple commands in sequence?</li>
+      <li>how to run them in parallel?</li>
+      <li>how to pass artifacts between stages?</li>
+      <li>how to deploy with GitLab CI?</li>
+      <li>how to deploy to multiple environments?</li>
+      </ul>
+      <p>You’ll be amazed how simple, yet powerful it is.</p>
+    language: English
   - name: Juin Chiu
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/79/fullsizeoutput_30.jpeg"
     title: Web developer, iCook, Polydice Inc.
     urlGithub: https://github.com/davidjuin0519
-    urltwitter: ''
+    urltwitter: https://twitter.com/JuinChiu
     bio: "<p>I am currently a Rubyist, interested in functional programming, data engineering,
       and machine learning. Also a biker and a foodie on the side.</p>"
     subject: Exploring Functional Programming by Rebuilding Redux
@@ -115,6 +164,20 @@ Expect to explore the topic from many different angles and levels. We'll look at
       a popular Javascript library, using Ruby. For this purpose, I open-sourced a gem
       called <a href="https://github.com/davidjuin0519/rubidux">Rubidux</a>, which borrows
       the model from Redux.</p>
+    language: English
+  - name: Julian Cheal
+    avatar: "//avatars.githubusercontent.com/u/63991?v=3"
+    title: ''
+    urlGithub: https://github.com/juliancheal
+    urltwitter: ''
+    bio: "<p>A British Ruby/Rails developer, with a penchant for tweed, fine coffee,
+      and homebrewing. When not working for clients, I help organise fun events around
+      the world that teach people to program flying robots. I also occasionally speak
+      at international conferences on the intersection of programming and robotics.</p>"
+    subject: It's More Fun to Compute
+    summary: |-
+      <p>Come with us now on a journey through time and space. As we explore the world of analog/digital synthesis. From computer generated music to physical synthesisers and everything in between.</p>
+      <p>So you want to write music with code, but don’t know the difference between an LFO, ADSR, LMFAO, etc. Or a Sine wave, Saw wave, Google wave. We’ll explore what these mean, and how Ruby can be used to make awesome sounds. Ever wondered what Fizz Buzz sounds like, or which sounds better bubble sort or quick sort? So hey Ruby, let’s make music!</p>
     language: English
   - name: Kazuyuki Honda
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/89/346598.jpeg"
@@ -149,6 +212,23 @@ Expect to explore the topic from many different angles and levels. We'll look at
       you reduce execution time by running your arbitrary Ruby code on the other language
       VM process. In this talk, you will find out about when CRuby doesn&#39;t perform
       very well and what kind of bottlenecks you can workaround using VirtualModule.</p>"
+    language: English
+  - name: Kiyoshi Nomo
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/105/090215_1026_0002.jpg"
+    title: Engineer
+    urlGithub: https://github.com/kysnm
+    urltwitter: https://twitter.com/kysnm
+    bio: |-
+      <p>Software engineer, Living in Tokyo
+      <a href="https://twitter.com/kysnm">https://twitter.com/kysnm</a></p>
+    subject: What is the Rack Hijacking API
+    summary: |-
+      <h2>Rack Hijacking API</h2>
+      <ul>
+      <li>usage</li>
+      <li>details</li>
+      <li>etc</li>
+      </ul>
     language: English
   - name: Layne McNish
     avatar: "//avatars.githubusercontent.com/u/7490960?v=3"
@@ -212,17 +292,78 @@ Expect to explore the topic from many different angles and levels. We'll look at
     summary: "<p>以過來人的經驗分享用 Ruby 每分鐘抓取 2000+ 頁面、維護上億筆紀錄資料庫的心路歷程，從單線程到多線程再到 Auto Scaling
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
     language: Chinese
+  - name: Urabe, Shyouhei
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/17/icon.jpg"
+    title: ruby-core committer, Money Forward, Inc.
+    urlGithub: https://github.com/shyouhei
+    urltwitter: ''
+    bio: "<p>Shyouhei is a long time ruby-core contributor. He was the branch mentor
+      of 1.8.x in 1.8 era. He also introduced the ruby/ruby github repo back then. Today
+      he is a full-timer to develop ruby interpreter at a fintech startup called Money
+      Forward, inc. based in Japan.</p>"
+    subject: Optimizing ruby core
+    summary: "<p>I made ruby interpreter 10 times faster.  Let me show you how.</p>"
+    language: English
+  - name: Yasuko Ohba
+    avatar: "//avatars.githubusercontent.com/u/12509?v=3"
+    title: ''
+    urlGithub: https://github.com/nay
+    urltwitter: ''
+    bio: "<p>A Ruby / Rails programmer in Tokyo, Japan. President of Everyleaf Corporation,
+      which provides software development service mostly with Rails for clients since
+      2007. I have written 2 books on Ruby in Japan. A mother of a 3 year old girl.</p>"
+    subject: Value And Pain to Keep Rails Applications Alive
+    summary: |-
+      <p>In 2014-2015 my team migrated a series of applications from Rails 2.3.5 to 4.2.1, and Ruby 1.8 to 2.1. Our goal was to add large features, while substantially refactoring the whole system. It was a big challenge!</p>
+      <p>This talk will cover the timeline of the project and talk about all the things a team performing a large migration of Ruby and Rails will need to do. Secondly, I&#39;ll talk about importance, hardness, and some techniques to keep Rails applications healthy and maintainable. </p>
+    language: English
+  - name: Yatish Mehta
+    avatar: "//avatars.githubusercontent.com/u/1014383?v=3"
+    title: ''
+    urlGithub: https://github.com/yatish27
+    urltwitter: ''
+    bio: "<p>Yatish Mehta, is a Software Engineer at Coupa Software. An NC State Graduate,
+      he has also been a part of really interesting startups like Fab.com and Sungard.
+      Yatish doesn’t shy away from talking about his first love, Ruby. While Ruby still
+      remains his core competency, recently he’s begun exploring the mighty Golang as
+      well. If you don’t find him experimenting with software, you’re sure to find him
+      playing around in the kitchen. He lives by the motto, ‘I don’t have dreams, I
+      have goals’... you guessed it right, he is a big Suits fan too. </p>"
+    subject: ActionCable and ReactJS tie the knot
+    summary: "<p>ActionCable is the new young prince of the Rails kingdom. He is young
+      but powerful, en route to getting recognized for his skills? . ReactJS is the
+      new princess of the JS kingdom. Recently, everyone has fallen head over heels
+      in love with her. Together they are bound to create a powerful empire. Let’s watch
+      the magic unveil as these two unite.</p>"
+    language: English
+  - name: youchan
+    avatar: "//cfp.rubyconf.tw/uploads/user/photo/70/youchan_square.jpg"
+    title: Software engineer, Ubiregi inc.
+    urlGithub: https://github.com/youchan
+    urltwitter: https://twitter.com/youchan
+    bio: |-
+      <p>Yoh Osaki
+      Software engineer at Ubiregi inc.
+      Author of Hyalite which is react-like virtual DOM library.
+      Member of Asakusa.rb, Chidoriashi.rb</p>
+    subject: Isomorphic web programming in Ruby
+    summary: |-
+      <p>For JavaScript, The method is available that is the isomorphic programming.
+      The isomorphic programming is the method exploiting the advantages obtained by same code running on both the server-side and client-side.
+      For examle, React is reducing the overhead of iniitial rendering in client side by server side rendering.
+      On the other hand, for the rubyists, We can also write ruby code on client side by using Opal.</p>
+      <p>This talk introduces a new framework for isomorphic programming with the Opal: Menilite.
+      Menilite shares model code between the server side and the client side by marshalling objects and storing them in the database automatically.
+      As a result, code duplication is reduced and APIs are no longer a necessity.
+      Isomorphic programming can significantly accelerate your progress on a project; I sincerely hope you find it helpful in developing web applications.
+      Menilite aims to expand the playing field for the Ruby language, a language optimized for developer happiness. I&#39;m sure you will agree that we will find even more happiness by bringing Ruby to the front-end as well.</p>
+    language: English
   - name: ZYWU
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/54/a.JPG"
-    title: Sr. Engineer , Trend Micro
+    title: Software Engineer , Trend Micro
     urlGithub: https://github.com/zongyuwu
     urltwitter: ''
     bio: "<p>熱愛Ruby、資訊安全，目前在趨勢科技擔任工程師。</p>"
-    subject: When Ruby Meets Cryptography
-    summary: |-
-      <p>資訊安全是用來保障你我資料安全與個人隱私的技術，而密碼學扮演其中重要的角色，主題內將介紹不同的情境需要什麼密碼技術來提供安全並且會以實務的觀點討論：<br>
-      * 關於密碼系統
-      * Ruby OpenSSL APIs
-      * 如何安全地使用Ruby OpenSSL APIs
-      * 曾被揭發之Ruby OpenSSL漏洞頗析</p>
+    subject: 利用Ruby撰寫勒索軟體並探討如何安全的使用密碼系統
+    summary: "<p>資訊安全是用來保障你我資料安全與個人隱私的技術，而密碼學扮演其中重要的角色，講題內容會以如何使用Ruby撰寫簡單的勒索軟體(Ransomeware)來探討如何安全的使用密碼系統。</p>"
     language: Chinese
