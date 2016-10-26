@@ -47,3 +47,8 @@ sponsor:
       url: https://www.facebook.com/5fpro/
       picture: ./images/logo/silver_5FPRO.svg
       desc: 以 Web Development 為主要業務的軟體公司，透過網路技術的力量來創造社會價值。
+  speaker:
+    - name: 'Travis CI'
+      url: https://travis-ci.com/
+      picture: ./images/logo/speaker_travis-ci.svg
+      desc: "Travis CI is a hosted, continuous integration service used to build, test and deploy software projects hosted on GitHub or GitHub Enterprise."

@@ -33,6 +33,18 @@
         }
       }
 
+      @include state('speaker'){
+        background-position: 10% -10px, 90% -10px;
+
+        @media (min-width: $screen-sm) {
+          background-position: 25% -10px, 75% -10px;
+        }
+
+        @media (min-width: $screen-md) {
+          background-position: 35% -10px, 65% -10px;
+        }
+      }
+
       padding: 25px 0;
       text-align: center;
       
@@ -52,7 +64,12 @@
 
       @include element('logo') {
         display: inline-block;
-        margin: 10px 20px;
+        margin: 10px 5px;
+
+        @media (min-width: $screen-sm) {
+          margin: 10px 20px;
+        }
+
         img{
           width: 100%;
         }
@@ -80,6 +97,13 @@
       }
 
       @include state('silver'){
+        img{
+          width: 200px;
+          max-width: 200px; 
+        }
+      }
+
+      @include state('speaker'){
         img{
           width: 200px;
           max-width: 200px; 

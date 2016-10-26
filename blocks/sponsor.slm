@@ -38,6 +38,15 @@ section#sponsor.row
           - for sponsor of (this.sponsor.silver)
             a.sponsors__row__logo href=sponsor.url target="_blank"
               img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
+
+    .sponsors
+      - if this.sponsor.speaker
+        .sponsors__sub-title.is-speaker
+          h2 Speakers
+        .sponsors__row.is-speaker
+          - for sponsor of (this.sponsor.speaker)
+            a.sponsors__row__logo href=sponsor.url target="_blank"
+              img src=sponsor.picture alt=sponsor.name title=sponsor.desc /
       
     .sponsor-cfs
       p
