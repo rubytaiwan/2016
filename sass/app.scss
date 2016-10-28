@@ -60,7 +60,7 @@ body{
       url(../images/background/cave_top.svg),
       url(../images/background/cave_left.svg), 
       url(../images/background/cave_right.svg);
-    background-position: top, left, right;
+    background-position: top center, left center, right center;
     background-repeat: no-repeat, repeat-y, repeat-y;
     background-size: contain;
   }
