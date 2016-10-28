@@ -190,7 +190,7 @@ section#schedule.row
             tr
               th 15:15 ~ 15:45
               - for speaker of (this.speakers)
-                -if (speaker.name == "bih00425")
+                -if (speaker.name == "Shi-Gang Wang")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
                 -if (speaker.name == "Kiyoshi Nomo")
@@ -461,7 +461,7 @@ section#schedule.row
               th 15:15 ~ 15:45
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "bih00425")
+                -if (speaker.name == "Shi-Gang Wang")
                   td.row-r0
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')

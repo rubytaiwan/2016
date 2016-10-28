@@ -28,22 +28,25 @@ speakers:
     本篇 talk 會指出 Ruby langauge 現行 VM 上設計的問題，說明為何其無法針對客戶 workload 進行客製化，以期之後社群的努力與改進。"
     language: Chinese
     urlGithub: https://github.com/lubatang
-  - name: Shi-Gang Wang
-    avatar: "//avatars.githubusercontent.com/u/1940696?v=3"
-    title: 'Software engineer, Goldenio'
-    urlGithub: https://github.com/seansg
-    bio: |-
-      <p>熟悉 ruby 和一點點的 bioinformation，試著把兩者結合，希望創造出有趣的東西。
-      任職於黃碼科技 Goldenio Techology。</p>
-    subject: Writing Data Analysis Pipeline As Ruby Gem
+  - name: Brad Urani
+    avatar: "//avatars.githubusercontent.com/u/4195952?v=3"
+    title: rincipal Software Engineering, Procore
+    urlGithub: https://github.com/bradurani
+    urltwitter: ''
+    bio: "<p>Brad Urani loves talking, tweeting and blogging about software almost as
+      much as he loves creating it. He&#39;s a veteran of 5 startups and a frequent
+      conference and meetup speaker. He lives in Santa Barbara, California where he
+      preaches the wonders of Ruby and relational databases as principal engineer at
+      Procore.</p>"
+    subject: 'Buidling HUGE web apps: Rails at 1,000,000 Lines of Code'
     summary: |-
-      <p>在分析 DNA/RNA 資料上，已有許多工具可供使用，可透過不同工具的結合，可以找出可能導致疾病或癌症的變異點，但工具繁雜，每套工具所需要的參數及使用方法不同，控制每個步驟相當麻煩，必須精通各種分析工具的用法。
-      希望透過這個 talk 讓聽眾暸解，要串接 C 和 JAVA 等語言撰寫的分析工具時，可以利用 RUBY 的套件，撰寫簡單的 code 來處理複雜的分析流程．我們將工具與參數的使用，撰寫成 RUBY 模組，並利用 templete 系統組合出一個 robust 的資料分析流程(Actgun)。
-      執行分析流程通常會花費相當大的資源與時間，我們將以 Actgun 為核心，探討如何撰寫輔助套件(actgun-cluster)，讓 Actgun 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
-    language: Chinese
+      <p>There&#39;s big, and there&#39;s HUGE. Conventional wisdom says that huge teams with huge apps are slow and unresponsive. However, with great people, the right culture and diligent engineering, a team of 60 can perform like a team of 6.
+      Join us for a story of HUGE. Learn which tools, patterns and practices help you manage growth, and which don&#39;t. Hear how trust in your teammates trumps consistency of design, and how scale changes priorities.
+      Building a huge app takes focus and leadership, but if you prioritize people over process, you can stay fast, agile and bug free even when you&#39;re huge.</p>
+    language: English
   - name: Chien-Wei Chu
     avatar: "//avatars.githubusercontent.com/u/5680562?v=3"
-    title: ''
+    title: CTO, 財報狗
     urlGithub: https://github.com/icarus4
     urltwitter: ''
     bio: |-
@@ -55,7 +58,7 @@ speakers:
     language: Chinese
   - name: David Chang
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/74/profile.jpeg"
-    title: ''
+    title: Software engineer, Solda
     urlGithub: https://github.com/zetachang
     urltwitter: ''
     bio: <p>Software engineer at <a href="https://solda.io">Solda</a> and creator of
@@ -68,7 +71,7 @@ speakers:
     language: Chinese
   - name: Don Werve
     avatar: "//avatars.githubusercontent.com/u/43188?v=3"
-    title: ''
+    title: Consultant, Minimum Viable
     urlGithub: https://github.com/matadon
     urltwitter: ''
     bio: |-
@@ -82,7 +85,7 @@ speakers:
     language: English
   - name: Eric Hodel
     avatar: "//avatars.githubusercontent.com/u/9831?v=3"
-    title: ''
+    title: Fastly
     urlGithub: https://github.com/drbrain
     urltwitter: ''
     bio: "<p>Eric Hodel is a ruby committer and maintainer of many gems. He works at
@@ -96,7 +99,7 @@ speakers:
     language: English
   - name: Flo
     avatar: "//avatars.githubusercontent.com/u/10917453?v=3"
-    title: ''
+    title: Senior Backend Engineer, Strikingly
     urlGithub: https://github.com/strikyflo
     urltwitter: ''
     bio: "<p>Hi, Im florian, I&#39;m a web backend engineer for 9 years, using ruby
@@ -123,9 +126,23 @@ speakers:
       <p>Databases are good at processing data, but we sometimes make the mistake of just using it to as a file cabinet. The database is optimized to crunch GB&#39;s of data and return to us the results that we need.</p>
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
+  - name: Hiro Asari
+    avatar: "//avatars.githubusercontent.com/u/25666?v=3"
+    title: Developer, Travis CI GmbH
+    urlGithub: https://github.com/BanzaiMan
+    urltwitter: ''
+    bio: |-
+      <p>Hiro Asari is a developer at Travis CI GmbH and core member of the JRuby team.</p>
+      <p>He is not very good at writing his own bio.</p>
+    subject: Ruby, HTTP/2 and You
+    summary: |-
+      <p>HTTP/2 is here.</p>
+      <p>The first major revision since 1997 to Hypertext Transfer Protocol on which so much of the modern information transfer relies, HTTP/2 could have an enormous impact on the way we write applications.</p>
+      <p>Along with the history of HTTP and the current support status in the Ruby and Rails ecosystems, we will discuss how your web app can take advantage of HTTP/2.</p>
+    language: English
   - name: Ivan Nemytchenko
     avatar: "//avatars.githubusercontent.com/u/9665?v=3"
-    title: ''
+    title: Developer Advocate, Gitlab
     urlGithub: https://github.com/inem
     urltwitter: ''
     bio: "<p>14 years in IT. Rubyist since 2008. Being co-founder of two outsourcing
@@ -162,7 +179,7 @@ speakers:
     language: English
   - name: Julian Cheal
     avatar: "//avatars.githubusercontent.com/u/63991?v=3"
-    title: ''
+    title: Senior Software Developer, Red Hat
     urlGithub: https://github.com/juliancheal
     urltwitter: ''
     bio: "<p>A British Ruby/Rails developer, with a penchant for tweed, fine coffee,
@@ -210,7 +227,7 @@ speakers:
     language: English
   - name: Kiyoshi Nomo
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/105/090215_1026_0002.jpg"
-    title: Engineer
+    title: Software engineer
     urlGithub: https://github.com/kysnm
     urltwitter: https://twitter.com/kysnm
     bio: |-
@@ -220,9 +237,9 @@ speakers:
     summary: |-
       <h2>Rack Hijacking API</h2>
       <ul>
-      <li>usage</li>
-      <li>details</li>
-      <li>etc</li>
+      <li>What is the Rack Hijacking API</li>
+      <li>How to use</li>
+      <li>Details of implementation</li>
       </ul>
     language: English
   - name: Layne McNish
@@ -275,6 +292,20 @@ speakers:
       * and many things</p>
       <p>The presenter, a main developer of Fluentd, will show you many things to be considered, and many troubles/accidents we met.</p>
     language: English
+  - name: Shi-Gang Wang
+    avatar: "//avatars.githubusercontent.com/u/1940696?v=3"
+    title: Software engineer, Goldenio Technoloy
+    urlGithub: https://github.com/bih00425
+    urltwitter: ''
+    bio: |-
+      <p>熟悉 ruby 和一點點的 bioinformation，試著把兩者結合，希望創造出有趣的東西。
+      任職於黃碼科技 Goldenio Techology。</p>
+    subject: Writing Data Analysis Pipeline As Ruby Gem
+    summary: |-
+      <p>在分析 DNA/RNA 資料上，已有許多工具可供使用，可透過不同工具的結合，可以找出可能導致疾病或癌症的變異點，但工具繁雜，每套工具所需要的參數及使用方法不同，控制每個步驟相當麻煩，必須精通各種分析工具的用法。
+      希望透過這個 talk 讓聽眾暸解，要串接 C 和 JAVA 等語言撰寫的分析工具時，可以利用 RUBY 的套件，撰寫簡單的 code 來處理複雜的分析流程．我們將工具與參數的使用，撰寫成 RUBY 模組，並利用 templete 系統組合出一個 robust 的資料分析流程(Cagnut)。
+      執行分析流程通常會花費相當大的資源與時間，我們將以 Cagnut 為核心，探討如何撰寫輔助套件(cagnut-cluster)，讓 Cagnut 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
+    language: Chinese
   - name: Shi-Ken Don
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/92/12670899_1770942739791825_3478189837054622548_n.jpg"
     title: Web Developer, 貝殼放大
@@ -301,7 +332,7 @@ speakers:
     language: English
   - name: Yasuko Ohba
     avatar: "//avatars.githubusercontent.com/u/12509?v=3"
-    title: ''
+    title: President, Everyleaf Corporation
     urlGithub: https://github.com/nay
     urltwitter: ''
     bio: "<p>A Ruby / Rails programmer in Tokyo, Japan. President of Everyleaf Corporation,
@@ -314,7 +345,7 @@ speakers:
     language: English
   - name: Yatish Mehta
     avatar: "//avatars.githubusercontent.com/u/1014383?v=3"
-    title: ''
+    title: Engineer, Coupa Software
     urlGithub: https://github.com/yatish27
     urltwitter: ''
     bio: "<p>Yatish Mehta, is a Software Engineer at Coupa Software. An NC State Graduate,
