@@ -91,7 +91,10 @@
           border-radius: 4px;
           position: relative;
           margin: 20px auto;
-          width: 80%;
+          width: 100%;
+          @media (min-width: $screen-sm) {
+            width: 80%;
+          }
         }
 
         @include element('name'){
@@ -123,9 +126,11 @@
         @include element('talk'){
           border: 1px solid $blue;
           border-radius: 4px;
-          width: 80%;
-          min-height: 200px;
           margin: 0 auto 20px;
+          width: 100%;
+          @media (min-width: $screen-sm) {
+            width: 80%;
+          }
         }
 
         @include element('subject'){

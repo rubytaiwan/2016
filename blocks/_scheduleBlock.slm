@@ -1,0 +1,15 @@
+a.schedule__table__link href=["#" +speaker.name]
+  img.schedule__table__avatar src=speaker.avatar alt=speaker.name /
+  h3.schedule__table__subject
+    strong =speaker.subject
+    - if (speaker.language == "Chinese")
+      | &nbsp;(&nbsp;Chinese&nbsp;)
+    -else
+      | &nbsp;(&nbsp;English&nbsp;)
+  h4.schedule__table__speaker
+    | By&nbsp;
+    =speaker.name
+  - if speaker.slideUrl
+    a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+  - if speaker.videoUrl
+    a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video

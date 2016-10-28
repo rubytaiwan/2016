@@ -14,8 +14,8 @@ speakers:
     bio: Co-Founder and CTO at Travis CI, former opera star
     subject: "How we replaced salary negotiations with a Sinatra app"
     summary: "Let's talk about salaries, diversity, career development, getting compensated in gold and silver, paying taxes in livestock and Ruby code.
-We at Travis CI have been working on a new salary system to determine how much we pay whom, when employees get raises and a whole range of other things. After lots of back and forth, we ended up with a Sinatra application to solve salary questions.
-Expect to explore the topic from many different angles and levels. We'll look at decisions, realisations and implications, as well as interesting parts of the implementation."
+    We at Travis CI have been working on a new salary system to determine how much we pay whom, when employees get raises and a whole range of other things. After lots of back and forth, we ended up with a Sinatra application to solve salary questions.
+    Expect to explore the topic from many different angles and levels. We'll look at decisions, realisations and implications, as well as interesting parts of the implementation."
     urlHome: http://rkh.im/
     urltwitter: http://twitter.com/konstantinhaase
     urlGithub: http://github.com/rkh
@@ -25,10 +25,8 @@ Expect to explore the topic from many different angles and levels. We'll look at
     bio: Co-Founder and CTO at Skymizer
     subject: "Ruby, facing the change of world-wide server-class microprocessors"
     summary: "隨著物聯網與雲端服務的盛行，傳統的 server class microprocessor 逐漸地從 general propose 轉變成為 workload specific；雲端服務採購 workload specific processor 的比重從 2010 年 9% 提升到今年至少 30%，比重逐年增加。為了因應 workload specific processor，許多程式語言都逐漸從 interpreter base、JIT base 轉向到 compiler base。Ruby language 的架構是採用純 interpreter base，致使 Skymizer 在針對客戶 workload 優化時，遭遇許多困難。
-
-本篇 talk 會指出 Ruby langauge 現行 VM 上設計的問題，說明為何其無法針對客戶 workload 進行客製化，以期之後社群的努力與改進。"
-    urlHome: 
-    urltwitter: 
+    本篇 talk 會指出 Ruby langauge 現行 VM 上設計的問題，說明為何其無法針對客戶 workload 進行客製化，以期之後社群的努力與改進。"
+    language: Chinese
     urlGithub: https://github.com/lubatang
   - name: Brad Urani
     avatar: "//avatars.githubusercontent.com/u/4195952?v=3"
@@ -122,8 +120,6 @@ Expect to explore the topic from many different angles and levels. We'll look at
     urltwitter: https://twitter.com/coderhs
     bio: |-
       <p>Harisankar P S has been building SaaS application and API&#39;s using Ruby and Rails for the past 5 years. He is also the founder of Red Panthers, a Ruby on Rails dev shop based out in Kochi, India. He is interested in open source and organizes Open Source Saturdays and Ruby Meetup in Kochi. He also contributes to open source as well.</p>
-      <p><a href="http://github.com/coderhs">Github</a>
-      <a href="http://twitter.com/coderhs">Twitter</a></p>
     subject: Using database to pull your applications weight
     summary: |-
       <p>Most Ruby on Rails application out there in the world deals with the manipulation and presentation of data. So the speed of our application has a relationship with how fast we work with data. Ruby on Rails, the swiss army knife of web development, is good with presenting data. But when it comes to crunching huge volumes of data, our rails application starts to slow down. Here we are not talking about joining a couple of rows from multiple tables, but about processing months of historical data and providing meaning full information.</p>
@@ -278,7 +274,7 @@ Expect to explore the topic from many different angles and levels. We'll look at
       discuss technical debt, approaches to improving bad software,
       and finally hatch a plan for how to pull off the infamous rewrite.</p>
     language: English
-  - name: Satoshi "Moris" Tagomori
+  - name: Satoshi 'Moris' Tagomori
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
     title: Software Engineer, Treasure Data, Inc.
     urlGithub: https://github.com/tagomoris
