@@ -69,7 +69,7 @@
       thead > tr > th, tbody > tr > th, tbody > tr > td {
         text-align: center;
         vertical-align: middle;
-        padding: 20px;
+        padding: 20px 15px;
       }
 
       thead{
@@ -105,13 +105,12 @@
             background-color: $brown-medium+#111;
           }
 
-          &.lightning-talk{
-            border-top: 2px dotted $brown-medium;
-            background-color: $brown-light;
-          }
-
           td:nth-child(3){
             border-left: 2px solid $brown-medium;
+          }
+
+          &.fix{
+            border-bottom: 2px solid $brown-medium;
           }
         }
       }
@@ -124,14 +123,23 @@
         border-bottom: 2px solid $brown-light;
       }
 
+      @include element('avatar'){
+        @include size(80px, 80px);
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      }
+
+      @include element('subject'){
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
       @include element('speaker'){
-        line-height: 2;
+        color: $brown;
+        line-height: 1.5;
         font-size: 16px;
         margin: 0;
-
-        strong{
-          font-size: 18px;
-        }
       }
 
       @include element('doc'){
@@ -176,12 +184,11 @@
       }
 
       .row-r0{
-        background-color: $brown-medium;
+        background-color: $brown-alt;
       }
 
       .row-r1{
         background-color: $brown-medium;
-        border-top: 1px solid $brown-alt;
       }
       
       .lable{
