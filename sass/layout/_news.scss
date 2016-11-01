@@ -63,10 +63,15 @@ section#news{
       visibility: hidden;
       overflow: scroll;
       position: fixed;
-      z-index: 1000;
+      z-index: 1031;
       top: 0%;
       left: 0%;
       padding-top: 50px;
+
+      @media (min-width: $screen-sm) {
+        padding-top: 80px;
+        z-index: 1000;
+      }
 
       +.news__link{
         border-top: 1px dotted $brown-alt;
@@ -77,15 +82,19 @@ section#news{
       }
 
       @include element('close'){
-        @include size(25px, 25px);
+        @include size(30px, 30px);
         background-image: url(../images/icon_close.svg);
         background-size: cover;
         display: block;
-        margin: 0 auto 30px;
+        position: absolute;
+        top: -30px;
+        right: 20px;
+
       }
 
       @include element('cover'){
         width: 100%;
+        padding-top: 20px;
       }
 
       @include element('date'){

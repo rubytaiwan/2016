@@ -58,13 +58,14 @@
         visibility: hidden;
         overflow: scroll;
         position: fixed;
-        z-index: 1000;
+        z-index: 1031;
         top: 0%;
         left: 0%;
         padding-top: 50px;
 
         @media (min-width: $screen-sm) {
           padding-top: 80px;
+          z-index: 1000;
         }
 
         &:target{
@@ -81,9 +82,8 @@
           background-size: cover;
           position: absolute;
           display: block;
-          opacity: 0.5;
-          top: 0;
-          right: 12%;
+          top: -30px;
+          right: 20px;
         }
 
         @include element('info'){
