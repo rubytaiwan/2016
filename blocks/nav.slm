@@ -12,7 +12,13 @@ nav.navbar.navbar-fixed-top.c-navbar
       li.navbar-nav__schedule
         a href="#schedule" Schedule
       li.navbar-nav__venue
-        a href="#venue" Venue
+        a.hidden-xs href="#venue" 
+         | Venue
+         br
+         | &
+         br
+         | Parties
+        a.visible-xs href="#venue" Venue & Parties
       li.navbar-nav__coc
         a href="#coc" COC
       li.navbar-nav__sponsor

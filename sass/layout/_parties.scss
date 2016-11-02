@@ -1,0 +1,147 @@
+#parties{
+  @include block('party'){
+    padding: 0 10px;
+
+    +.party{
+      margin-top: 30px;
+    }
+    
+    @include element('title'){
+      background: url(../images/gem_icon_alt_l.png), url(../images/gem_icon_alt_r.png);
+      background-repeat: no-repeat; 
+      background-position: center;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+      font-size: 24px;
+
+      @media (min-width: $screen-sm) {
+        text-align: left;
+        padding-left: 80px;
+      }
+
+      @media (min-width: $screen-md) {
+        padding-left: 90px;
+        font-size: 28px;
+      }
+
+      @include state('pre'){
+        background-position: 0 center, 100% center;
+
+        @media (min-width: $screen-sm) {
+          background-position: 0 center, 160px center;
+        }
+
+        @media (min-width: $screen-md) {
+          background-position: 0 center, 200px center;
+        }
+      }
+      @include state('official'){
+        background-position: 0 center, 100% center;
+        
+        @media (min-width: $screen-sm) {
+          background-position: 0 center, 200px center;
+        }
+
+        @media (min-width: $screen-md) {
+          background-position: 0 center, 250px center;
+        }
+      }
+    }
+
+    @include element('content'){
+      font-size: 16px;
+      line-height: 2;
+      width: 270px;
+      margin: 0 auto;
+      
+      @media (min-width: $screen-sm) {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 18px;
+      }
+
+      .icon{
+        width: 30px;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        margin-left: 10px;
+
+        @media (min-width: $screen-sm) {
+          width: 40px;
+          margin-left: 20px;
+        }
+      }
+
+      @include element('date'){
+        text-align: center;
+        margin-left: -20px;
+        @media (min-width: $screen-sm) {
+          text-align: left;
+        }
+      }
+
+      @include element('location'){
+        line-height: 1.5;
+        margin-top: 10px;
+
+        .icon{
+          margin-left: 5px;
+          @media (min-width: $screen-sm) {
+            margin-left: 0;
+          }
+        }
+
+        .zh{
+          display: inline;
+          span{
+            padding-left: 35px;
+            @media (min-width: $screen-sm) {
+              padding-left: 0;
+            }
+          }
+        }
+
+        .en{
+          padding-left: 35px;
+
+          @media (min-width: $screen-sm) {
+            padding-left: 40px;
+          }
+        }
+        span{
+          display: block;
+          font-size: 16px;
+          color: #EFEBE9 - #222;
+
+          @media (min-width: $screen-sm) {
+            margin-left: 20px;
+            display: inline-block;
+          }
+        }
+      }
+
+      @include element('link'){
+        @include transition(all 0.3s);
+        background-color: $brown-alt;
+        display: block;
+        width: 200px;
+        padding: 5px 10px;
+        margin: 20px 0 0 40px; 
+        text-align: center;
+        a{
+          font-size: 18px;
+          color: #EFEBE9;
+        }
+        &:hover{
+          text-decoration: none;
+          background-color: $brown-alt - #111;
+        }
+      }
+    }
+  }
+}
+
+
+

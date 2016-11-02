@@ -1,0 +1,42 @@
+section#parties.row
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .title
+      h1 Parties
+  .col-xs-12.col-sm-offset-3.col-sm-8
+    .party
+      h2.party__title.is-pre Pre Party
+      .party__content
+        .party__content__date
+          .icon
+            i.fa.fa-calendar
+          | Dec. 1, 2016
+          .icon
+            i.fa.fa-clock-o
+          | 19:00 ~ 21:30
+        .party__content__location
+          .icon
+            i.fa.fa-map-marker
+          .zh
+            | 新五倍紅寶石出礦坑
+            span 台北市中正區衡陽路 7 號 5 樓
+          .en
+            | New 5xRuby
+            span 5F, No.7, HengYang Rd, Zhongzheng District, Taipei
+        .party__content__link
+          a href="http://5xruby.kktix.cc/events/2016party" target="_blank" Register Now
+        
+    .party
+      h2.party__title.is-official Official Party
+      .party__content
+        .party__content__date
+          .icon
+            i.fa.fa-calendar
+          | Dec. 2, 2016
+          .icon
+            i.fa.fa-clock-o
+          | 18:05 ~ 20:35
+        .party__content__location
+          .icon
+            i.fa.fa-map-marker
+          | TBD
+        .party__content__link Free for Attendees
