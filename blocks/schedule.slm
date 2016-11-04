@@ -46,12 +46,13 @@ section#schedule.row
               - for speaker of (this.speakers)
                 -if (speaker.name == "Ivan Nemytchenko")
                   td == partial('_scheduleBlock')
-                  td TBA
-
+              - for speaker of (this.speakers)
+                -if (speaker.name == "Sebastian Sogamoso")
+                  td == partial('_scheduleBlock')
             tr
               th 11:30 ~ 12:00
               - for speaker of (this.speakers)
-                -if (speaker.name == "Urabe, Shyouhei")
+                -if (speaker.name == "Shyouhei Urabe")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
                 -if (speaker.name == "Yasuko Ohba")
@@ -70,7 +71,7 @@ section#schedule.row
                 -if (speaker.name == "Kazuyuki Honda")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
-                -if (speaker.name == "Harisankar")
+                -if (speaker.name == "Harisankar P S")
                   td == partial('_scheduleBlock')
 
             tr
@@ -79,7 +80,7 @@ section#schedule.row
                 -if (speaker.name == "Julian Cheal")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
-                -if (speaker.name == "youchan")
+                -if (speaker.name == "Yoh Osaki")
                   td rowspan="2" == partial('_scheduleBlock')
             tr.fix
               - for speaker of (this.speakers)
@@ -91,7 +92,7 @@ section#schedule.row
             tr
               th 15:20 ~ 15:50
               - for speaker of (this.speakers)
-                -if (speaker.name == "Satoshi 'Moris' Tagomori")
+                -if (speaker.name == "Satoshi Tagomori")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
                 -if (speaker.name == "Don Werve")
@@ -133,7 +134,7 @@ section#schedule.row
             tr
               th 09:30 ~ 10:00
               - for speaker of (this.speakers)
-                -if (speaker.name == "ZYWU")
+                -if (speaker.name == "Zong-Yu Wu")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
                 -if (speaker.name == "Yatish Mehta")
@@ -206,7 +207,7 @@ section#schedule.row
             tr
               th 16:15 ~ 16:45
               - for speaker of (this.speakers)
-                -if (speaker.name == "Flo")
+                -if (speaker.name == "Florian Dutey")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
                 -if (speaker.name == "Juin Chiu")
