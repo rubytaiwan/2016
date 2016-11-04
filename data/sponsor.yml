@@ -12,31 +12,35 @@ sponsor:
       desc: "Shopmatic manages the entire ecosystem for anyone wanting to sell online.
       We go the extra mile to ensure that we help merchants and individuals in every step of the process to grow their business online - from developing their own unique webstores, to listing them on marketplaces and social channels, to providing them with insights on how to sell online."
   platinum:
-    - name: Akatsuki
-      url: http://aktsk.com.tw/
-      picture: ./images/logo/platinum_akatsuki.svg
-      desc: Akatsuki, the best mobile game company from Japan has landed in Taiwan!! Our goal is to build better social values and create happiness for the society across the globe, under the ethos “Brightening the world by the power of game.
     - name: 5xRuby
       url: http://5xruby.tw/
       picture: ./images/logo/platinum_5xruby.svg
       desc: 我們是一群在台灣的 Ruby 程式語言的愛好者，每天的工作都是跟 Ruby/Rails 相關。Ruby on Rails 快速開發的優勢，在國外企業與創業圈極為熱門；而 Ruby 語言本身的自然與優雅簡潔，也讓工程師們工作起來更加快樂。但是，在台灣實際真的有使用 Ruby/Rails 做為主要開發工具的企業卻仍是少數。我們最終的目的，是希望在台灣可以有越來越多的企業能了解或採用 Ruby 這個優雅、有趣，並且極具生產力的程式語言做為主要開發工具，更快速的實現您的想法。
+    - name: Akatsuki
+      url: http://aktsk.com.tw/
+      picture: ./images/logo/platinum_akatsuki.svg
+      desc: Akatsuki, the best mobile game company from Japan has landed in Taiwan!! Our goal is to build better social values and create happiness for the society across the globe, under the ethos “Brightening the world by the power of game.
   gold:
-    - name: Microsoft
-      url: https://www.microsoft.com
-      picture: ./images/logo/gold_MS.svg
-      desc: 在微軟，我們的任務及價值在協助全球各地的使用者及企業用戶實現其目標與願景。
-    - name: Gandi.net
-      url: https://www.gandi.net/
-      picture: ./images/logo/gold_gandi.svg
-      desc: GANDI 為域名註冊商以及雲端代管服務公司。商品包含免費網站、SSL 憑證、部落格、電子郵件、VPS 專用虛擬伺服器、雲端代管。
-    - name: Laxino Systems Limited | 勒思系統有限公司
-      url: http://www.laxino.com/
-      picture: ./images/logo/gold_laxino.svg
-      desc: "Founded in June 2008 in Macau, Laxino Systems Limited is the leading cloud-based gaming technology provider in Asia. Our vision is to provide the best innovative solutions to the dynamic Asian gaming market through the adoption of cloud computing and data technologies. With a team of world-class talents, and experts in technology and business domain knowledge, Laxino has the proven experience to deliver superior customer value and satisfaction."
     - name: Codementor
       url: https://www.codementor.io/
       picture: ./images/logo/gold_codementor.svg
       desc: Codementor provides instant 1:1 help for software development.  Build projects faster with on-demand live help from expert developers.
+    - name: Gandi.net
+      url: https://www.gandi.net/
+      picture: ./images/logo/gold_gandi.svg
+      desc: GANDI 為域名註冊商以及雲端代管服務公司。商品包含免費網站、SSL 憑證、部落格、電子郵件、VPS 專用虛擬伺服器、雲端代管。
+    - name: GitLab
+      url: https://about.gitlab.com/
+      picture: ./images/logo/gold_gitlab.svg
+      desc: "Founded in 2014 and downloaded over a million times, GitLab, Inc. is the leading self-hosted git management platform combining git repository management, issue tracking, version control, code review, continuous integration and continuous deployment into a single application."
+    - name: Laxino Systems Limited | 勒思系統有限公司
+      url: http://www.laxino.com/
+      picture: ./images/logo/gold_laxino.svg
+      desc: "Founded in June 2008 in Macau, Laxino Systems Limited is the leading cloud-based gaming technology provider in Asia. Our vision is to provide the best innovative solutions to the dynamic Asian gaming market through the adoption of cloud computing and data technologies. With a team of world-class talents, and experts in technology and business domain knowledge, Laxino has the proven experience to deliver superior customer value and satisfaction."
+    - name: Microsoft
+      url: https://www.microsoft.com
+      picture: ./images/logo/gold_MS.svg
+      desc: 在微軟，我們的任務及價值在協助全球各地的使用者及企業用戶實現其目標與願景。
     - name: Shopline
       url: http://bit.ly/2dmb7xK
       picture: ./images/logo/gold_shopline.svg
@@ -48,7 +52,35 @@ sponsor:
       picture: ./images/logo/silver_5FPRO.svg
       desc: 以 Web Development 為主要業務的軟體公司，透過網路技術的力量來創造社會價值。
   speaker:
+    - name: 'Cookpad'
+      url: https://cookpad.com
+      picture: ./images/logo/speaker_cookpad.svg
+      desc: "尋找及分享家常食譜的最佳地方。"
+    - name: 'Coupa'
+      url: http://www.coupa.com/
+      picture: ./images/logo/speaker_coupa.svg
+      desc: "Coupa is the cloud platform for business spend; delivering measurable value through real-time spend visibility, control, compliance, and agility."
+    - name: 'Omada Health'
+      url: https://www.omadahealth.com/
+      picture: ./images/logo/speaker_omada.svg
+      desc: "We help employers and health plans tackle diabetes and heart disease in the most engaging, effective, and scalable way possible."
+    - name: 'Procore'
+      url: https://www.procore.com/
+      picture: ./images/logo/speaker_procore.svg
+      desc: "Procore Technologies, Inc., the world's number one most widely used construction management software, helps firms drastically increase project efficiency and accountability by streamlining and mobilizing project communication and documentation. Hundreds of thousands of registered Procore users manage all types of construction projects including industrial plants, office buildings, apartment complexes, university facilities, retail centers, and more."
+    - name: 'Quipper'
+      url: https://www.quipper.com/
+      picture: ./images/logo/speaker_quipper.svg
+      desc: "Quipper Video provides online tutorial videos to students who are eager to enhance their knowledge, learn beyond, and prepare for school entrance examinations."
+    - name: 'Red Panthers'
+      url: https://redpanthers.co/
+      picture: ./images/logo/speaker_red-panthers.svg
+      desc: "Red Panthers is a Ruby on Rails product development studio hand-crafting applications for clients ranging from single person startup to MNC"
     - name: 'Travis CI'
       url: https://travis-ci.com/
       picture: ./images/logo/speaker_travis-ci.svg
       desc: "Travis CI is a hosted, continuous integration service used to build, test and deploy software projects hosted on GitHub or GitHub Enterprise."
+    - name: 'Treasure Data'
+      url: https://www.treasuredata.com/
+      picture: ./images/logo/speaker_treasure-data.svg
+      desc: "Treasure Data connects data and teams together with a full suite of tools that automate data collection and processing. Faster than ever before."
