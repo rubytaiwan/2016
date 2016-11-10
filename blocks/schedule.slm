@@ -111,7 +111,7 @@ section#schedule.row
                 i.fa.fa-bolt
                 | &nbsp;Unconference&nbsp;
                 i.fa.fa-bolt
-                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Register Now
+                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Submit Your Event Now
 
             tr.break-time
               th 18:05 ~ 20:35
@@ -356,7 +356,7 @@ section#schedule.row
                 i.fa.fa-bolt
                 | &nbsp;Unconference&nbsp;
                 i.fa.fa-bolt
-                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Register Now
+                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Submit Your Event Now
 
             tr.break-time
               th
