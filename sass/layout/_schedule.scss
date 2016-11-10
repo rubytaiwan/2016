@@ -165,6 +165,19 @@
         margin: 0;
       }
 
+      @include block('unconference-link'){
+        display: block;
+        width: 125px;
+        margin: 15px auto 0;
+        padding: 10px;
+        background-color: $brown-alt - #111;
+
+        &:hover{
+          color: #EFEBE9;
+          background-color: #6e5148;
+        }
+      }
+
       @include element('doc'){
         display: inline-block;
         border-radius: 4px;
