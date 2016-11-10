@@ -10,6 +10,29 @@
     }
   }
 
+  @include block('schedule_notice'){
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 0 0 20px;
+      line-height: 1.8;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 20px 20px;
+        font-size: 20px;
+      }
+
+      i{
+        margin-right: 10px;
+      }
+
+      span{
+        padding: 5px 0;
+        border-bottom: 1px dotted #EFEBE9;
+      }
+    }
+  }
+
   @include block('schedule'){
     position: relative;
 

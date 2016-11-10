@@ -4,6 +4,13 @@ section#schedule.row
       h1 Schedule
   .col-xs-12.col-sm-offset-3.col-sm-8
 
+    .schedule_notice
+      p 
+        i.fa.fa-commenting
+        | We offer&nbsp;
+        span simultaneous interpretation
+        | &nbsp;service (Chinese to English) on all Chinese sessions!
+
     .schedule.hidden-xs
       ul.schedule__day-link
         li
