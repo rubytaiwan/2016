@@ -4,6 +4,13 @@ section#schedule.row
       h1 Schedule
   .col-xs-12.col-sm-offset-3.col-sm-8
 
+    .schedule_notice
+      p 
+        i.fa.fa-commenting
+        | We offer&nbsp;
+        span simultaneous interpretation
+        | &nbsp;service (Chinese to English) on all Chinese sessions!
+
     .schedule.hidden-xs
       ul.schedule__day-link
         li
@@ -104,6 +111,7 @@ section#schedule.row
                 i.fa.fa-bolt
                 | &nbsp;Unconference&nbsp;
                 i.fa.fa-bolt
+                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Submit Your Event Now
 
             tr.break-time
               th 18:05 ~ 20:35
@@ -348,6 +356,7 @@ section#schedule.row
                 i.fa.fa-bolt
                 | &nbsp;Unconference&nbsp;
                 i.fa.fa-bolt
+                a.unconference-link href="http://rubytaiwan.kktix.cc/events/unconf2016" target="_blank" Submit Your Event Now
 
             tr.break-time
               th

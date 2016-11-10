@@ -10,6 +10,29 @@
     }
   }
 
+  @include block('schedule_notice'){
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 0 0 20px;
+      line-height: 1.8;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 20px 20px;
+        font-size: 20px;
+      }
+
+      i{
+        margin-right: 10px;
+      }
+
+      span{
+        padding: 5px 0;
+        border-bottom: 1px dotted #EFEBE9;
+      }
+    }
+  }
+
   @include block('schedule'){
     position: relative;
 
@@ -140,6 +163,19 @@
         line-height: 1.5;
         font-size: 16px;
         margin: 0;
+      }
+
+      @include block('unconference-link'){
+        display: block;
+        width: 200px;
+        margin: 15px auto 0;
+        padding: 10px;
+        background-color: $brown-alt - #111;
+
+        &:hover{
+          color: #EFEBE9;
+          background-color: #6e5148;
+        }
       }
 
       @include element('doc'){

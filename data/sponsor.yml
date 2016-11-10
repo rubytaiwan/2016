@@ -24,7 +24,7 @@ sponsor:
     - name: 'Codementor'
       url: https://www.codementor.io/
       picture: ./images/logo/gold_codementor.svg
-      desc: Codementor provides instant 1:1 help for software development.  Build projects faster with on-demand live help from expert developers.
+      desc: "Codementor provides instant 1:1 help for software development.  Build projects faster with on-demand live help from expert developers."
     - name: 'Gandi.net'
       url: https://www.gandi.net/
       picture: ./images/logo/gold_gandi.svg
