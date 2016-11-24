@@ -64,7 +64,7 @@ sponsor:
       url: http://www.coupa.com/
       picture: ./images/logo/speaker_coupa.svg
       desc: "Coupa is the cloud platform for business spend; delivering measurable value through real-time spend visibility, control, compliance, and agility."
-    - name: 'Fastly
+    - name: 'Fastly'
       url: https://www.fastly.com/
       picture: ./images/logo/speaker_fastly.svg
       desc: "Fastly is the future of content delivery. We&#039;re the only real-time CDN that gives businesses complete control over how they serve content. Sign up and start testing today."
