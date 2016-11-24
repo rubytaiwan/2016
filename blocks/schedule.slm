@@ -360,7 +360,7 @@ section#schedule.row
 
             tr.break-time
               th
-                | 19:00 ~ 21:30
+                | 18:05 ~ 20:35
                 span
                   i.fa.fa-beer
                   | &nbsp;Official Party&nbsp;

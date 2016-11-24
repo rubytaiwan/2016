@@ -38,5 +38,8 @@ section#parties.row
         .party__content__location
           .icon
             i.fa.fa-map-marker
-          | TBD
+          .zh
+            | 中研長虹西餐廳
+          .en
+            | Changhong Restaurant, Academia Sinica
         .party__content__link Free for Attendees
