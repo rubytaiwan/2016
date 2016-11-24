@@ -272,15 +272,17 @@ section#schedule.row
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')
             tr
-              td.row-r1
-                span.lable 第一會議室 1st Conference Room
-                | TBA
+              - for speaker of (this.speakers)
+                -if (speaker.name == "Sebastian Sogamoso")
+                  td.row-r1
+                    span.lable 第一會議室 1st Conference Room
+                    == partial('_scheduleBlock')
 
             tr.row-time
               th 11:30 ~ 12:00
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "Urabe, Shyouhei")
+                -if (speaker.name == "Shyouhei Urabe")
                   td.row-r0
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')
@@ -309,7 +311,7 @@ section#schedule.row
                     == partial('_scheduleBlock')
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "Harisankar")
+                -if (speaker.name == "Harisankar P S")
                   td.row-r1
                     span.lable 第一會議室 1st Conference Room
                     == partial('_scheduleBlock')
@@ -329,7 +331,7 @@ section#schedule.row
                     == partial('_scheduleBlock')
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "youchan")
+                -if (speaker.name == "Yoh Osaki")
                   td.row-r1
                     span.lable 第一會議室 1st Conference Room
                     == partial('_scheduleBlock')
@@ -338,7 +340,7 @@ section#schedule.row
               th 15:20 ~ 15:50
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "Satoshi 'Moris' Tagomori")
+                -if (speaker.name == "Satoshi Tagomori")
                   td.row-r0
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')
@@ -379,7 +381,7 @@ section#schedule.row
               th 09:30 ~ 10:00
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "ZYWU")
+                -if (speaker.name == "Zong-Yu Wu")
                   td.row-r0
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')
@@ -432,7 +434,7 @@ section#schedule.row
                     == partial('_scheduleBlock')
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "Matthew Rudy Jacobs")
+                -if (speaker.name == "TAI-AN SU")
                   td.row-r1
                     span.lable 第一會議室 1st Conference Room
                     == partial('_scheduleBlock')
@@ -494,7 +496,7 @@ section#schedule.row
               th 16:15 ~ 16:45
             tr
               - for speaker of (this.speakers)
-                -if (speaker.name == "Flo")
+                -if (speaker.name == "Florian Dutey")
                   td.row-r0
                     span.lable 劇院式大禮堂 Auditorium
                     == partial('_scheduleBlock')
