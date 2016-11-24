@@ -29,7 +29,7 @@ speakers:
     language: Chinese
     urlGithub: https://github.com/lubatang
   - name: Brad Urani
-    avatar: "//avatars.githubusercontent.com/u/4195952?v=3"
+    avatar: images/speakers/bradurani.jpg
     title: Principal Software Engineering, Procore
     urlGithub: https://github.com/bradurani
     urltwitter: ''
@@ -45,7 +45,7 @@ speakers:
       Building a huge app takes focus and leadership, but if you prioritize people over process, you can stay fast, agile and bug free even when you&#39;re huge.</p>
     language: English
   - name: Chien-Wei Chu
-    avatar: "//avatars.githubusercontent.com/u/5680562?v=3"
+    avatar: images/speakers/icarus4.jpg
     title: CTO, 財報狗
     urlGithub: https://github.com/icarus4
     urltwitter: ''
@@ -57,7 +57,7 @@ speakers:
       talk 中，我們將會分享我們在建構系統時所面臨的挑戰、以及我們如何利用 Sidekiq Enterprise 打造出一個高效率又可靠的爬蟲系統。(本talk不探討如何撰寫crawler的相關議題，例如Nokogiri或Mechanise等相關gem的使用方式)</p>"
     language: Chinese
   - name: David Chang
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/74/profile.jpeg"
+    avatar: images/speakers/zetachang.jpg
     title: Software engineer, Solda
     urlGithub: https://github.com/zetachang
     urltwitter: ''
@@ -70,10 +70,10 @@ speakers:
       in pure ruby by using declarative and component-based approach.</p>"
     language: Chinese
   - name: Don Werve
-    avatar: "//avatars.githubusercontent.com/u/43188?v=3"
+    avatar: images/speakers/matadon.jpg
     title: Consultant, Minimum Viable
     urlGithub: https://github.com/matadon
-    urltwitter: ''
+    urltwitter: https://twitter.com/matadon
     bio: |-
       <p>Although originally designed by Apple in California as a durability-testing device for laptops, Don has spent the past seven years working around the world as a software engineer and back-pocket CTO, helping companies solve tough team management and scaling issues.</p>
       <p>Don lives in Tokyo, and spends his spare time experimenting with advanced forms of deliciousness in his kitchen, hiking through the incredible beauty of the Japanese countryside, and training to survive the impending zombie apocalypse.</p>
@@ -84,7 +84,7 @@ speakers:
       <p>In this talk, we will combine the art of programming with the science of cognitive psychology, and emerge with a set of simple, proven techniques that we can use to craft software that is drastically less buggy, easier to understand, and more adaptive in the face of change.</p>
     language: English
   - name: Eric Hodel
-    avatar: "//avatars.githubusercontent.com/u/9831?v=3"
+    avatar: images/speakers/drbrain.jpg
     title: Fastly
     urlGithub: https://github.com/drbrain
     urltwitter: ''
@@ -98,7 +98,7 @@ speakers:
       <p>In this talk we&#39;ll explore how to build a command-line tool with mruby-cli along with a design and philosophy that makes it easy to create new commands and maintain existing commands even for unfamiliar developers.</p>
     language: English
   - name: Florian Dutey
-    avatar: "//avatars.githubusercontent.com/u/10917453?v=3"
+    avatar: images/speakers/strikyflo.jpg
     title: Senior Backend Engineer, Strikingly
     urlGithub: https://github.com/strikyflo
     urltwitter: ''
@@ -114,7 +114,7 @@ speakers:
       <p>I will discuss why those patterns are not a fit, and how they can be replaced (completely dropped for another technology, or how to improve them). Delivering good practices that should be implemented as soon as your project is no more a prototype to scale your tests speed, your maintainability.</p>
     language: English
   - name: Harisankar P S
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg"
+    avatar: images/speakers/coderhs.jpg
     title: CEO/Chief Solutions Architect, Red Panthers Software Solutions (P) Ltd.
     urlGithub: https://github.com/coderhs
     urltwitter: https://twitter.com/coderhs
@@ -129,7 +129,7 @@ speakers:
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
   - name: Hiro Asari
-    avatar: "//avatars.githubusercontent.com/u/25666?v=3"
+    avatar: images/speakers/BanzaiMan.jpg
     title: Developer, Travis CI GmbH
     urlGithub: https://github.com/BanzaiMan
     urltwitter: ''
@@ -143,7 +143,7 @@ speakers:
       <p>Along with the history of HTTP and the current support status in the Ruby and Rails ecosystems, we will discuss how your web app can take advantage of HTTP/2.</p>
     language: English
   - name: Ivan Nemytchenko
-    avatar: "//avatars.githubusercontent.com/u/9665?v=3"
+    avatar: images/speakers/inem.jpg
     title: Developer Advocate, Gitlab
     urlGithub: https://github.com/inem
     urltwitter: ''
@@ -166,7 +166,7 @@ speakers:
       <p>You’ll be amazed how simple, yet powerful it is.</p>
     language: English
   - name: Juin Chiu
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/79/fullsizeoutput_30.jpeg"
+    avatar: images/speakers/davidjuin0519.jpg
     title: Web developer, iCook, Polydice Inc.
     urlGithub: https://github.com/davidjuin0519
     urltwitter: https://twitter.com/JuinChiu
@@ -180,7 +180,7 @@ speakers:
       the model from Redux.</p>
     language: English
   - name: Julian Cheal
-    avatar: "//avatars.githubusercontent.com/u/63991?v=3"
+    avatar: images/speakers/juliancheal.jpg
     title: Senior Software Developer, Red Hat
     urlGithub: https://github.com/juliancheal
     urltwitter: ''
@@ -194,7 +194,7 @@ speakers:
       <p>So you want to write music with code, but don’t know the difference between an LFO, ADSR, LMFAO, etc. Or a Sine wave, Saw wave, Google wave. We’ll explore what these mean, and how Ruby can be used to make awesome sounds. Ever wondered what Fizz Buzz sounds like, or which sounds better bubble sort or quick sort? So hey Ruby, let’s make music!</p>
     language: English
   - name: Kazuyuki Honda
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/89/346598.jpeg"
+    avatar: images/speakers/hakobera.jpg
     title: DevOps Engineer, Quipper Ltd
     urlGithub: https://github.com/hakobera
     urltwitter: https://twitter.com/hakobera
@@ -208,7 +208,7 @@ speakers:
       <p>I&#39;m working on it over 2 years, so I want to share how to write complex data pipelines in Ruby using <a href="http://tumugi.github.io/">tumugi</a>, which is a gem I made.</p>
     language: English
   - name: Kei Sawada
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/102/me_icon.png"
+    avatar: images/speakers/remore.jpg
     title: 'Software Engineer, Recruit Holdings Co., Ltd. '
     urlGithub: https://github.com/remore
     urltwitter: https://twitter.com/remore
@@ -228,7 +228,7 @@ speakers:
       very well and what kind of bottlenecks you can workaround using VirtualModule.</p>"
     language: English
   - name: Kiyoshi Nomo
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/105/090215_1026_0002.jpg"
+    avatar: images/speakers/kysnm.jpg
     title: Software engineer
     urlGithub: https://github.com/kysnm
     urltwitter: https://twitter.com/kysnm
@@ -245,7 +245,7 @@ speakers:
       </ul>
     language: English
   - name: Layne McNish
-    avatar: "//avatars.githubusercontent.com/u/7490960?v=3"
+    avatar: images/speakers/laynemcnish.jpg
     title: Software Engineer, Omada Health
     urlGithub: https://github.com/laynemcnish
     urltwitter: https://twitter.com/lmcnish14
@@ -257,7 +257,7 @@ speakers:
       our issues through code instead of more Wikis and READMEs?</p>"
     language: English
   - name: Satoshi Tagomori
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
+    avatar: images/speakers/tagomoris.jpg
     title: Software Engineer, Treasure Data, Inc.
     urlGithub: https://github.com/tagomoris
     urltwitter: https://twitter.com/tagomoris
@@ -275,7 +275,7 @@ speakers:
       <p>The presenter, a main developer of Fluentd, will show you many things to be considered, and many troubles/accidents we met.</p>
     language: English
   - name: Sebastian Sogamoso
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/55/sebasoga.jpg"
+    avatar: images/speakers/sebasoga.jpg
     title: Cookpad
     urlGithub: https://github.com/sebasoga
     urltwitter: https://twitter.com/sebasoga
@@ -289,7 +289,7 @@ speakers:
       <p>In this talk you&#39;ll learn how a &quot;perfect bug storm&quot; caused the problem, how our processes failed to catch it and how hard it was to gain our users and teammates trust back.</p>
     language: English
   - name: Shi-Gang Wang
-    avatar: "//avatars.githubusercontent.com/u/1940696?v=3"
+    avatar: images/speakers/bih00425.jpg
     title: Software engineer, Goldenio Technoloy
     urlGithub: https://github.com/bih00425
     urltwitter: ''
@@ -303,7 +303,7 @@ speakers:
       執行分析流程通常會花費相當大的資源與時間，我們將以 Cagnut 為核心，探討如何撰寫輔助套件(cagnut-cluster)，讓 Cagnut 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
     language: Chinese
   - name: Shi-Ken Don
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/92/12670899_1770942739791825_3478189837054622548_n.jpg"
+    avatar: images/speakers/shikendon.jpg
     title: Web Developer, 貝殼放大
     urlGithub: https://github.com/shikendon
     urltwitter: ''
@@ -315,8 +315,8 @@ speakers:
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
     language: Chinese
   - name: TAI-AN SU
-    avatar: "/images/speakers/taiansu.jpg"
-    title: 'Software Developer, Cogini'
+    avatar: images/speakers/taiansu.jpg
+    title: ''
     urlGithub: https://github.com/taiansu
     urltwitter: ''
     bio: |-
@@ -331,7 +331,7 @@ speakers:
       <p>而對於正在使用 Rails 的開發者而言，也可以找一些 Rails 上的設計問題，及能適用於 Rails 的新手法及觀念。</p>
     language: Chinese
   - name: Shyouhei Urabe
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/17/icon.jpg"
+    avatar: images/speakers/shyouhei.jpg
     title: ruby-core committer, Money Forward, Inc.
     urlGithub: https://github.com/shyouhei
     urltwitter: ''
@@ -343,7 +343,7 @@ speakers:
     summary: "<p>I made ruby interpreter 10 times faster.  Let me show you how.</p>"
     language: English
   - name: Yasuko Ohba
-    avatar: "//avatars.githubusercontent.com/u/12509?v=3"
+    avatar: images/speakers/nay.jpg
     title: President, Everyleaf Corporation
     urlGithub: https://github.com/nay
     urltwitter: ''
@@ -356,7 +356,7 @@ speakers:
       <p>This talk will cover the timeline of the project and talk about all the things a team performing a large migration of Ruby and Rails will need to do. Secondly, I&#39;ll talk about importance, hardness, and some techniques to keep Rails applications healthy and maintainable. </p>
     language: English
   - name: Yatish Mehta
-    avatar: "//avatars.githubusercontent.com/u/1014383?v=3"
+    avatar: images/speakers/yatish27.jpg
     title: Engineer, Coupa Software
     urlGithub: https://github.com/yatish27
     urltwitter: ''
@@ -375,7 +375,7 @@ speakers:
       the magic unveil as these two unite.</p>"
     language: English
   - name: Yoh Osaki
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/70/youchan_square.jpg"
+    avatar: images/speakers/youchan.jpg
     title: Software engineer, Ubiregi inc.
     urlGithub: https://github.com/youchan
     urltwitter: https://twitter.com/youchan
@@ -397,7 +397,7 @@ speakers:
       Menilite aims to expand the playing field for the Ruby language, a language optimized for developer happiness. I&#39;m sure you will agree that we will find even more happiness by bringing Ruby to the front-end as well.</p>
     language: English
   - name: Zong-Yu Wu
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/54/a.JPG"
+    avatar: images/speakers/zongyuwu.jpg
     title: Software Engineer , Trend Micro
     urlGithub: https://github.com/zongyuwu
     urltwitter: ''
