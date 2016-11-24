@@ -102,7 +102,7 @@ speakers:
     title: Senior Backend Engineer, Strikingly
     urlGithub: https://github.com/strikyflo
     urltwitter: ''
-    bio: "<p>Hi, Im Florian, I&#39;m a web backend engineer for 9 years, using ruby
+    bio: "<p>Hi, Im florian, I&#39;m a web backend engineer for 9 years, using ruby
       since 2007.  I&#39;m from France, living in shanghai since 2013. I&#39;m working
       with strikingly as ruby expert in backend team (also giving my 2 cents on front
       end from time to time). I&#39;m mainly focused on data and code design (ie: not
@@ -256,26 +256,6 @@ speakers:
       missing key parts.  We&#39;re Rubyists, not HR managers.  Why don&#39;t we solve
       our issues through code instead of more Wikis and READMEs?</p>"
     language: English
-  - name: Matthew Rudy Jacobs
-    avatar: "//cfp.rubyconf.tw/uploads/user/photo/111/me-tw.jpg"
-    title: Lead Architect, GoGoVan
-    urlGithub: https://github.com/matthewrudy
-    urltwitter: https://twitter.com/matthewrudy
-    bio: |-
-      <p>Matthew has been coding Ruby since 2006, mostly working for startups in London and Hong Kong.</p>
-      <p>He also lived in Taipei for a year in 2014-2015.</p>
-      <p>He&#39;s the organiser of Hong Kong Code Conf and has been running the HK monthly coder meetup Codeaholics since 2010.</p>
-      <p>He&#39;s currently Lead Architect at GoGoVan, leading a distributed team building a real-time delivery platform with ambitions to disrupt the logistics industry all over the world.</p>
-    subject: The Big Bang Rewrite!
-    summary: |-
-      <p>Working on any large, sufficiently complex codebase, a good developer&#39;s natural instinct is to think &quot;if only I could start again, it&#39;d be so much better&quot;.</p>
-      <p>This is almost always a bad idea.
-      Big Bang rewrites almost alway fail, wasting time, money, and energy.</p>
-      <p>But occasionally it is actually the best solution.</p>
-      <p>In this talk we&#39;re going to explore the realities of real-world software,
-      discuss technical debt, approaches to improving bad software,
-      and finally hatch a plan for how to pull off the infamous rewrite.</p>
-    language: English
   - name: Satoshi Tagomori
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/99/profile2014.png"
     title: Software Engineer, Treasure Data, Inc.
@@ -333,6 +313,22 @@ speakers:
     subject: 從零開始的爬蟲之旅
     summary: "<p>以過來人的經驗分享用 Ruby 每分鐘抓取 2000+ 頁面、維護上億筆紀錄資料庫的心路歷程，從單線程到多線程再到 Auto Scaling
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
+    language: Chinese
+  - name: TAI-AN SU
+    avatar: "/images/speakers/taiansu.jpg"
+    title: 'Software Developer, Cogini'
+    urlGithub: https://github.com/taiansu
+    urltwitter: ''
+    bio: |-
+      <p>三年電腦雜誌編輯，七年網頁應用程式開發。
+      母語是 Ruby，兼熟 JavaScript 及 Elixir。
+      滿分考的 JAVA 忘光了，總是在探索程式語言的本質。
+      Elixir.tw, RailsGirls 共同主辦人，RubyConf 講者。
+      喜歡貓，探戈，小說及下雨天。</p>
+    subject: Phoenix demythify, with fun
+    summary: |-
+      <p>Phoenix 是根基於 Elixir 語言的 Web MVC 框架。除了 Elixir 與 Ruby 語法上的相似之外，這框架也從 Rails 「致敬」了許多概念及元件。這個講題會比較 Rails 與 Phoenix 在概念上相似及相異的部份，並告訴你用 Phoenix 開發時，哪些觀念及手法可以繼續使用，而哪些部份需要新的觀念，以及為什麼要這樣設計。</p>
+      <p>而對於正在使用 Rails 的開發者而言，也可以找一些 Rails 上的設計問題，及能適用於 Rails 的新手法及觀念。</p>
     language: Chinese
   - name: Shyouhei Urabe
     avatar: "//cfp.rubyconf.tw/uploads/user/photo/17/icon.jpg"

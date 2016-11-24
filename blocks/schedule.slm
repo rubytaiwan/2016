@@ -176,7 +176,7 @@ section#schedule.row
                 -if (speaker.name == "Brad Urani")
                   td == partial('_scheduleBlock')
               - for speaker of (this.speakers)
-                -if (speaker.name == "Matthew Rudy Jacobs")
+                -if (speaker.name == "TAI-AN SU")
                   td == partial('_scheduleBlock')
             tr
               th 14:05 ~ 14:35
