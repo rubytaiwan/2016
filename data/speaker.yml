@@ -21,8 +21,8 @@ speakers:
     urlGithub: http://github.com/rkh
   - name: Luba Tang
     avatar: "/images/speakers/luba.jpg"
-    title: Co-Founder and CTO, Skymizer
-    bio: Co-Founder and CTO at Skymizer
+    title: CEO & founder, Skymizer
+    bio: CEO & founder of Skymizer
     subject: "Ruby, facing the change of world-wide server-class microprocessors"
     summary: "隨著物聯網與雲端服務的盛行，傳統的 server class microprocessor 逐漸地從 general propose 轉變成為 workload specific；雲端服務採購 workload specific processor 的比重從 2010 年 9% 提升到今年至少 30%，比重逐年增加。為了因應 workload specific processor，許多程式語言都逐漸從 interpreter base、JIT base 轉向到 compiler base。Ruby language 的架構是採用純 interpreter base，致使 Skymizer 在針對客戶 workload 優化時，遭遇許多困難。
     本篇 talk 會指出 Ruby langauge 現行 VM 上設計的問題，說明為何其無法針對客戶 workload 進行客製化，以期之後社群的努力與改進。"
