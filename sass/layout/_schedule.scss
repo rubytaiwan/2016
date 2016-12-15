@@ -196,6 +196,13 @@
             background-color: $pink -#222;
           }
         }
+
+        @include state('github'){
+          background-color: #607D8B;
+          &:hover{
+            background-color: #607D8B -#222;
+          }
+        }
         
         @include state('video'){
           background-color: $blue;

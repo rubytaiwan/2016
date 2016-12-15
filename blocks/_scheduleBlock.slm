@@ -11,5 +11,7 @@ a.schedule__table__link href=["#" +speaker.name]
     =speaker.name
   - if speaker.slideUrl
     a.schedule__table__doc.is-slide href=speaker.slideUrl target="_blank" Slide
+  - if speaker.githubUrl
+    a.schedule__table__doc.is-github href=speaker.githubUrl target="_blank" GitHub
   - if speaker.videoUrl
     a.schedule__table__doc.is-video href=speaker.videoUrl target="_blank" Video

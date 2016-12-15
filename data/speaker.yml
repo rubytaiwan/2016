@@ -148,6 +148,7 @@ speakers:
       <p>The first major revision since 1997 to Hypertext Transfer Protocol on which so much of the modern information transfer relies, HTTP/2 could have an enormous impact on the way we write applications.</p>
       <p>Along with the history of HTTP and the current support status in the Ruby and Rails ecosystems, we will discuss how your web app can take advantage of HTTP/2.</p>
     language: English
+    githubUrl: "https://github.com/BanzaiMan/ruby-http2-and-you-links"
   - name: Ivan Nemytchenko
     avatar: images/speakers/inem.jpg
     title: Developer Advocate, Gitlab
@@ -414,6 +415,7 @@ speakers:
       Menilite aims to expand the playing field for the Ruby language, a language optimized for developer happiness. I&#39;m sure you will agree that we will find even more happiness by bringing Ruby to the front-end as well.</p>
     language: English
     slideUrl: "http://slides.youchan.org/RubyConfTaiwan2016"
+    githubUrl: "https://github.com/youchan/menilite-todo-app"
   - name: Zong-Yu Wu
     avatar: images/speakers/zongyuwu.jpg
     title: Software Engineer , Trend Micro
