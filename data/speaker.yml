@@ -44,6 +44,7 @@ speakers:
       Join us for a story of HUGE. Learn which tools, patterns and practices help you manage growth, and which don&#39;t. Hear how trust in your teammates trumps consistency of design, and how scale changes priorities.
       Building a huge app takes focus and leadership, but if you prioritize people over process, you can stay fast, agile and bug free even when you&#39;re huge.</p>
     language: English
+    slideUrl: "https://docs.google.com/presentation/d/1kqgbAEIDeyG5qRL7h6s3ERdpls05lxxomaQKxSKFGNY/edit?usp=sharing"
   - name: Chien-Wei Chu
     avatar: images/speakers/icarus4.jpg
     title: CTO, 財報狗
@@ -56,6 +57,7 @@ speakers:
     summary: "<p>在財報狗 (statementdog.com)，我們提供友善的介面與大量的財務數據輔助股票投資人進行投資決策。這些數據的背後是由大量的爬蟲與運算邏輯程式碼所建構而成。在我們的資料庫中，每一檔股票各自都有近千項數據要抓取與計算，在總計數千檔股票都有近千項數據要處理的情況下，如何做到穩定又快速的更新數據與資訊，是一項不容易的任務。在這次的
       talk 中，我們將會分享我們在建構系統時所面臨的挑戰、以及我們如何利用 Sidekiq Enterprise 打造出一個高效率又可靠的爬蟲系統。(本talk不探討如何撰寫crawler的相關議題，例如Nokogiri或Mechanise等相關gem的使用方式)</p>"
     language: Chinese
+    slideUrl: "http://www.slideshare.net/GaryChu1/building-efficient-and-reliable-crawler-system-with-sidekiq-enterprise"
   - name: David Chang
     avatar: images/speakers/zetachang.jpg
     title: Software engineer, Solda
@@ -69,6 +71,7 @@ speakers:
     summary: "<p>A framework presented will demonstrate how to build user interface
       in pure ruby by using declarative and component-based approach.</p>"
     language: Chinese
+    slideUrl: "https://speakerdeck.com/zetachang/a-react-inspired-ui-framework-in-pure-ruby"
   - name: Don Werve
     avatar: images/speakers/matadon.jpg
     title: Consultant, Minimum Viable
@@ -83,6 +86,7 @@ speakers:
       <p>But what is often neglected is an understanding of the most heavily-used and relied-upon tool in the software developer&#39;s toolbox: the programmer&#39;s brain itself.</p>
       <p>In this talk, we will combine the art of programming with the science of cognitive psychology, and emerge with a set of simple, proven techniques that we can use to craft software that is drastically less buggy, easier to understand, and more adaptive in the face of change.</p>
     language: English
+    slideUrl: "http://www.slideshare.net/DonWerve1/to-code-is-human"
   - name: Eric Hodel
     avatar: images/speakers/drbrain.jpg
     title: Fastly
@@ -108,6 +112,7 @@ speakers:
       end from time to time). I&#39;m mainly focused on data and code design (ie: not
       implementation) and DX (developper experience).</p>"
     subject: Large scale Rails applications
+    slideUrl: "http://www.slideshare.net/testdeouf/rubyconf-taiwan-2016-large-scale-rails-applications"
     summary: |-
       <p>Rails patterns are amazing for prototyping, but they are actually very bad practices for large scale production applications.
       Also, Rails comes with lot of handy tools to break many barriers for web beginners while introducing tons of good practices. Again, those good practices are a good introduction, but they don&#39;t fit large scale production applications, especially when it comes to modern practices in front end world.</p>
@@ -128,6 +133,7 @@ speakers:
       <p>Databases are good at processing data, but we sometimes make the mistake of just using it to as a file cabinet. The database is optimized to crunch GB&#39;s of data and return to us the results that we need.</p>
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
+    slideUrl: "https://speakerdeck.com/coderhs/using-databases-to-pull-your-application-weight"
   - name: Hiro Asari
     avatar: images/speakers/BanzaiMan.jpg
     title: Developer, Travis CI GmbH
@@ -165,6 +171,7 @@ speakers:
       </ul>
       <p>You’ll be amazed how simple, yet powerful it is.</p>
     language: English
+    slideUrl: "http://www.slideshare.net/creatop/breaking-bad-habits-with-gitlab-ci-70010645"
   - name: Juin Chiu
     avatar: images/speakers/davidjuin0519.jpg
     title: Web developer, iCook, Polydice Inc.
@@ -179,6 +186,7 @@ speakers:
       called <a href="https://github.com/davidjuin0519/rubidux">Rubidux</a>, which borrows
       the model from Redux.</p>
     language: English
+    slideUrl: "https://github.com/davidjuin0519/talks/blob/master/ruby_conf_taiwan/20161203_exploring_functional_programming_by_rebuilding_redux/slides.md"
   - name: Julian Cheal
     avatar: images/speakers/juliancheal.jpg
     title: Senior Software Developer, Red Hat
@@ -207,6 +215,7 @@ speakers:
       summarize large size data, generate reports and so on. But it&#39;s not easy to write robust data pipelines in Ruby. Because there are many things to consider not only write a business logic but idempotence, dependency resolution, parallel execution, error handling and retry.</p>
       <p>I&#39;m working on it over 2 years, so I want to share how to write complex data pipelines in Ruby using <a href="http://tumugi.github.io/">tumugi</a>, which is a gem I made.</p>
     language: English
+    slideUrl: "https://speakerdeck.com/hakobera/how-to-write-complex-data-pipeline-in-ruby"
   - name: Kei Sawada
     avatar: images/speakers/remore.jpg
     title: 'Software Engineer, Recruit Holdings Co., Ltd. '
@@ -227,6 +236,7 @@ speakers:
       VM process. In this talk, you will find out about when CRuby doesn&#39;t perform
       very well and what kind of bottlenecks you can workaround using VirtualModule.</p>"
     language: English
+    slideUrl: "https://speakerdeck.com/remore/how-i-made-a-pure-ruby-word2vec-program-more-than-3x-faster"
   - name: Kiyoshi Nomo
     avatar: images/speakers/kysnm.jpg
     title: Software engineer
@@ -244,6 +254,7 @@ speakers:
       <li>Details of implementation</li>
       </ul>
     language: English
+    slideUrl: "http://www.slideshare.net/TokyoIncidents/what-is-rack-hijacking-api-69807904"
   - name: Layne McNish
     avatar: images/speakers/laynemcnish.jpg
     title: Software Engineer, Omada Health
@@ -274,6 +285,7 @@ speakers:
       * and many things</p>
       <p>The presenter, a main developer of Fluentd, will show you many things to be considered, and many troubles/accidents we met.</p>
     language: English
+    slideUrl: "http://www.slideshare.net/tagomoris/how-to-write-middleware-in-ruby"
   - name: Sebastian Sogamoso
     avatar: images/speakers/sebasoga.jpg
     title: Cookpad
@@ -288,6 +300,7 @@ speakers:
       <p>Imagine your work week ends after releasing a set of features to production. Your team is happy and you feel good about yourself. A call about a problem with payments wakes you up the next morning. You find out your most valuable users were charged hundreds of times, consuming their credit card limits, leaving others in overdraft. They&#39;re angry because they can&#39;t even buy milk at the store.</p>
       <p>In this talk you&#39;ll learn how a &quot;perfect bug storm&quot; caused the problem, how our processes failed to catch it and how hard it was to gain our users and teammates trust back.</p>
     language: English
+    slideUrl: "https://speakerdeck.com/sebasoga/the-overnight-failure"
   - name: Shi-Gang Wang
     avatar: images/speakers/bih00425.jpg
     title: Software engineer, Goldenio Technoloy
@@ -302,6 +315,7 @@ speakers:
       希望透過這個 talk 讓聽眾暸解，要串接 C 和 JAVA 等語言撰寫的分析工具時，可以利用 RUBY 的套件，撰寫簡單的 code 來處理複雜的分析流程．我們將工具與參數的使用，撰寫成 RUBY 模組，並利用 templete 系統組合出一個 robust 的資料分析流程(Cagnut)。
       執行分析流程通常會花費相當大的資源與時間，我們將以 Cagnut 為核心，探討如何撰寫輔助套件(cagnut-cluster)，讓 Cagnut 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
     language: Chinese
+    slideUrl: "http://www.slideshare.net/SeanSGWang/writing-data-analysis-pipeline-as-ruby-gem"
   - name: Shi-Ken Don
     avatar: images/speakers/shikendon.jpg
     title: Web Developer, 貝殼放大
@@ -314,6 +328,7 @@ speakers:
     summary: "<p>以過來人的經驗分享用 Ruby 每分鐘抓取 2000+ 頁面、維護上億筆紀錄資料庫的心路歷程，從單線程到多線程再到 Auto Scaling
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
     language: Chinese
+    slideUrl: "http://www.slideshare.net/shikendon/crawler-from-zero"
   - name: TAI-AN SU
     avatar: images/speakers/taiansu.jpg
     title: ''
@@ -330,6 +345,7 @@ speakers:
       <p>Phoenix 是根基於 Elixir 語言的 Web MVC 框架。除了 Elixir 與 Ruby 語法上的相似之外，這框架也從 Rails 「致敬」了許多概念及元件。這個講題會比較 Rails 與 Phoenix 在概念上相似及相異的部份，並告訴你用 Phoenix 開發時，哪些觀念及手法可以繼續使用，而哪些部份需要新的觀念，以及為什麼要這樣設計。</p>
       <p>而對於正在使用 Rails 的開發者而言，也可以找一些 Rails 上的設計問題，及能適用於 Rails 的新手法及觀念。</p>
     language: Chinese
+    slideUrl: "http://www.slideshare.net/taiansu/phoenix-demysitify-with-fun"
   - name: Shyouhei Urabe
     avatar: images/speakers/shyouhei.jpg
     title: ruby-core committer, Money Forward, Inc.
@@ -355,6 +371,7 @@ speakers:
       <p>In 2014-2015 my team migrated a series of applications from Rails 2.3.5 to 4.2.1, and Ruby 1.8 to 2.1. Our goal was to add large features, while substantially refactoring the whole system. It was a big challenge!</p>
       <p>This talk will cover the timeline of the project and talk about all the things a team performing a large migration of Ruby and Rails will need to do. Secondly, I&#39;ll talk about importance, hardness, and some techniques to keep Rails applications healthy and maintainable. </p>
     language: English
+    slideUrl: "https://speakerdeck.com/nay3/value-and-pain-to-keep-rails-applications-alive"
   - name: Yatish Mehta
     avatar: images/speakers/yatish27.jpg
     title: Engineer, Coupa Software
@@ -396,6 +413,7 @@ speakers:
       Isomorphic programming can significantly accelerate your progress on a project; I sincerely hope you find it helpful in developing web applications.
       Menilite aims to expand the playing field for the Ruby language, a language optimized for developer happiness. I&#39;m sure you will agree that we will find even more happiness by bringing Ruby to the front-end as well.</p>
     language: English
+    slideUrl: "http://slides.youchan.org/RubyConfTaiwan2016"
   - name: Zong-Yu Wu
     avatar: images/speakers/zongyuwu.jpg
     title: Software Engineer , Trend Micro
