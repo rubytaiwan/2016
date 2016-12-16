@@ -351,7 +351,7 @@ speakers:
     avatar: images/speakers/shyouhei.jpg
     title: ruby-core committer, Money Forward, Inc.
     urlGithub: https://github.com/shyouhei
-    urltwitter: ''
+    urltwitter: 'https://speakerdeck.com/shyouhei/optimizing-ruby'
     bio: "<p>Shyouhei is a long time ruby-core contributor. He was the branch mentor
       of 1.8.x in 1.8 era. He also introduced the ruby/ruby github repo back then. Today
       he is a full-timer to develop ruby interpreter at a fintech startup called Money
@@ -420,6 +420,7 @@ speakers:
     avatar: images/speakers/zongyuwu.jpg
     title: Software Engineer , Trend Micro
     urlGithub: https://github.com/zongyuwu
+    slideUrl: 'https://speakerdeck.com/zongyuwu/ruby-ransomware-and-cryptosystem'
     urltwitter: ''
     bio: "<p>熱愛Ruby、資訊安全，目前在趨勢科技擔任工程師。</p>"
     subject: 利用Ruby撰寫勒索軟體並探討如何安全的使用密碼系統
