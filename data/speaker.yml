@@ -351,6 +351,7 @@ speakers:
     avatar: images/speakers/shyouhei.jpg
     title: ruby-core committer, Money Forward, Inc.
     urlGithub: https://github.com/shyouhei
+    slideUrl: 'https://speakerdeck.com/shyouhei/optimizing-ruby'
     urltwitter: 'https://speakerdeck.com/shyouhei/optimizing-ruby'
     bio: "<p>Shyouhei is a long time ruby-core contributor. He was the branch mentor
       of 1.8.x in 1.8 era. He also introduced the ruby/ruby github repo back then. Today
