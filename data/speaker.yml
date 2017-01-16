@@ -178,6 +178,7 @@ speakers:
     title: Web developer, iCook, Polydice Inc.
     urlGithub: https://github.com/davidjuin0519
     urltwitter: https://twitter.com/JuinChiu
+    videoUrl: https://youtu.be/QlWG9NTIol4
     bio: "<p>I am currently a Rubyist, interested in functional programming, data engineering,
       and machine learning. Also a biker and a foodie on the side.</p>"
     subject: Exploring Functional Programming by Rebuilding Redux
@@ -268,6 +269,7 @@ speakers:
       missing key parts.  We&#39;re Rubyists, not HR managers.  Why don&#39;t we solve
       our issues through code instead of more Wikis and READMEs?</p>"
     language: English
+    slideUrl: http://www.slideshare.net/LayneMcNish/onboarding-the-ruby-way
   - name: Satoshi Tagomori
     avatar: images/speakers/tagomoris.jpg
     title: Software Engineer, Treasure Data, Inc.
@@ -292,6 +294,7 @@ speakers:
     title: Cookpad
     urlGithub: https://github.com/sebasoga
     urltwitter: https://twitter.com/sebasoga
+    videoUrl: https://youtu.be/L9TkoFO1FhY
     bio: |-
       <p>Sebastián is a software developer that loves pair programming and has a passion for teaching. He works as a software engineer at Cookpad helping make everyday cooking fun. In his free time he is involved on the local software development groups and organize RubyConf Colombia.</p>
       <p>He enjoys a good cup of Colombian coffee each morning which is his secret weapon to start the day in a great code-writing mood.</p>
