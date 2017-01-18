@@ -20,6 +20,7 @@ speakers:
     urlHome: http://rkh.im/
     urltwitter: http://twitter.com/konstantinhaase
     urlGithub: http://github.com/rkh
+    videoUrl: https://youtu.be/F6PaAloyp20
   - name: Luba Tang
     avatar: "/images/speakers/luba.jpg"
     title: CEO & founder, Skymizer
@@ -29,6 +30,7 @@ speakers:
     本篇 talk 會指出 Ruby langauge 現行 VM 上設計的問題，說明為何其無法針對客戶 workload 進行客製化，以期之後社群的努力與改進。"
     language: Chinese
     urlGithub: https://github.com/lubatang
+    videoUrl: https://youtu.be/AWVnCI-d4RQ
   - name: Brad Urani
     avatar: images/speakers/bradurani.jpg
     title: Principal Software Engineering, Procore
@@ -46,6 +48,7 @@ speakers:
       Building a huge app takes focus and leadership, but if you prioritize people over process, you can stay fast, agile and bug free even when you&#39;re huge.</p>
     language: English
     slideUrl: "https://docs.google.com/presentation/d/1kqgbAEIDeyG5qRL7h6s3ERdpls05lxxomaQKxSKFGNY/edit?usp=sharing"
+    videoUrl: https://youtu.be/0EpgXNbC6x4
   - name: Chien-Wei Chu
     avatar: images/speakers/icarus4.jpg
     title: CTO, 財報狗
@@ -59,6 +62,7 @@ speakers:
       talk 中，我們將會分享我們在建構系統時所面臨的挑戰、以及我們如何利用 Sidekiq Enterprise 打造出一個高效率又可靠的爬蟲系統。(本talk不探討如何撰寫crawler的相關議題，例如Nokogiri或Mechanise等相關gem的使用方式)</p>"
     language: Chinese
     slideUrl: "http://www.slideshare.net/GaryChu1/building-efficient-and-reliable-crawler-system-with-sidekiq-enterprise"
+    videoUrl: https://youtu.be/iNyfyD_33vQ
   - name: David Chang
     avatar: images/speakers/zetachang.jpg
     title: Software engineer, Solda
@@ -73,6 +77,7 @@ speakers:
       in pure ruby by using declarative and component-based approach.</p>"
     language: Chinese
     slideUrl: "https://speakerdeck.com/zetachang/a-react-inspired-ui-framework-in-pure-ruby"
+    videoUrl: https://youtu.be/jHC7oxoZL_E
   - name: Don Werve
     avatar: images/speakers/matadon.jpg
     title: Consultant, Minimum Viable
@@ -88,6 +93,7 @@ speakers:
       <p>In this talk, we will combine the art of programming with the science of cognitive psychology, and emerge with a set of simple, proven techniques that we can use to craft software that is drastically less buggy, easier to understand, and more adaptive in the face of change.</p>
     language: English
     slideUrl: "http://www.slideshare.net/DonWerve1/to-code-is-human"
+    #videoUrl: https://youtu.be/tUW09NQEvfE
   - name: Eric Hodel
     avatar: images/speakers/drbrain.jpg
     title: Fastly
@@ -102,6 +108,7 @@ speakers:
       <p>Existing libraries for making command-line tools are built for experienced rubyists. This makes them a poor choice for porting to MRuby.</p>
       <p>In this talk we&#39;ll explore how to build a command-line tool with mruby-cli along with a design and philosophy that makes it easy to create new commands and maintain existing commands even for unfamiliar developers.</p>
     language: English
+    videoUrl: https://youtu.be/8GP3mCxB5JA
   - name: Florian Dutey
     avatar: images/speakers/strikyflo.jpg
     title: Senior Backend Engineer, Strikingly
@@ -119,6 +126,7 @@ speakers:
       Also, Rails comes with lot of handy tools to break many barriers for web beginners while introducing tons of good practices. Again, those good practices are a good introduction, but they don&#39;t fit large scale production applications, especially when it comes to modern practices in front end world.</p>
       <p>I will discuss why those patterns are not a fit, and how they can be replaced (completely dropped for another technology, or how to improve them). Delivering good practices that should be implemented as soon as your project is no more a prototype to scale your tests speed, your maintainability.</p>
     language: English
+    videoUrl: https://youtu.be/vokjrQwTIQM
   - name: Harisankar P S
     avatar: images/speakers/coderhs.jpg
     title: CEO/Chief Solutions Architect, Red Panthers Software Solutions (P) Ltd.
@@ -135,6 +143,7 @@ speakers:
       <p>So my talk would be about how to optimize your database so as to speed up your existing Ruby on Rails application.</p>
     language: English
     slideUrl: "https://speakerdeck.com/coderhs/using-databases-to-pull-your-application-weight"
+    videoUrl: https://youtu.be/zJnFepGZWME
   - name: Hiro Asari
     avatar: images/speakers/BanzaiMan.jpg
     title: Developer, Travis CI GmbH
@@ -150,6 +159,7 @@ speakers:
       <p>Along with the history of HTTP and the current support status in the Ruby and Rails ecosystems, we will discuss how your web app can take advantage of HTTP/2.</p>
     language: English
     githubUrl: "https://github.com/BanzaiMan/ruby-http2-and-you-links"
+    videoUrl: https://youtu.be/Imol0joczlo
   - name: Ivan Nemytchenko
     avatar: images/speakers/inem.jpg
     title: Developer Advocate, Gitlab
@@ -262,6 +272,7 @@ speakers:
       </ul>
     language: English
     slideUrl: "http://www.slideshare.net/TokyoIncidents/what-is-rack-hijacking-api-69807904"
+    videoUrl: https://youtu.be/lUahszszZr8
   - name: Layne McNish
     avatar: images/speakers/laynemcnish.jpg
     title: Software Engineer, Omada Health
@@ -275,6 +286,7 @@ speakers:
       our issues through code instead of more Wikis and READMEs?</p>"
     language: English
     slideUrl: http://www.slideshare.net/LayneMcNish/onboarding-the-ruby-way
+    videoUrl: https://youtu.be/QemOkwxmbYY
   - name: Satoshi Tagomori
     avatar: images/speakers/tagomoris.jpg
     title: Software Engineer, Treasure Data, Inc.
@@ -326,6 +338,7 @@ speakers:
       執行分析流程通常會花費相當大的資源與時間，我們將以 Cagnut 為核心，探討如何撰寫輔助套件(cagnut-cluster)，讓 Cagnut 可以運用不同 cluster 上的排程系統，如 LSF、SGE、Torque (PBS)，達到節省分析巨量資料的時間。</p>
     language: Chinese
     slideUrl: "http://www.slideshare.net/SeanSGWang/writing-data-analysis-pipeline-as-ruby-gem"
+    videoUrl: https://youtu.be/r1FLLLMDjYk
   - name: Shi-Ken Don
     avatar: images/speakers/shikendon.jpg
     title: Web Developer, 貝殼放大
@@ -339,6 +352,7 @@ speakers:
       讓大家一步一步體會撰寫爬蟲各階段可能遇到的瓶頸，期望能在未來為從事相關工作的朋友們帶來一點幫助。</p>"
     language: Chinese
     slideUrl: "http://www.slideshare.net/shikendon/crawler-from-zero"
+    videoUrl: https://youtu.be/-4eJzY5WMGI
   - name: TAI-AN SU
     avatar: images/speakers/taiansu.jpg
     title: ''
@@ -356,6 +370,7 @@ speakers:
       <p>而對於正在使用 Rails 的開發者而言，也可以找一些 Rails 上的設計問題，及能適用於 Rails 的新手法及觀念。</p>
     language: Chinese
     slideUrl: "http://www.slideshare.net/taiansu/phoenix-demysitify-with-fun"
+    videoUrl: https://youtu.be/8tDGHQddry4
   - name: Shyouhei Urabe
     avatar: images/speakers/shyouhei.jpg
     title: ruby-core committer, Money Forward, Inc.
@@ -384,6 +399,7 @@ speakers:
       <p>This talk will cover the timeline of the project and talk about all the things a team performing a large migration of Ruby and Rails will need to do. Secondly, I&#39;ll talk about importance, hardness, and some techniques to keep Rails applications healthy and maintainable. </p>
     language: English
     slideUrl: "https://speakerdeck.com/nay3/value-and-pain-to-keep-rails-applications-alive"
+    videoUrl: https://youtu.be/QIKBsdrTg84
   - name: Yatish Mehta
     avatar: images/speakers/yatish27.jpg
     title: Engineer, Coupa Software
@@ -403,6 +419,7 @@ speakers:
       in love with her. Together they are bound to create a powerful empire. Let’s watch
       the magic unveil as these two unite.</p>"
     language: English
+    videoUrl: https://youtu.be/dBPGCx2iMbg
   - name: Yoh Osaki
     avatar: images/speakers/youchan.jpg
     title: Software engineer, Ubiregi inc.
@@ -427,10 +444,12 @@ speakers:
     language: English
     slideUrl: "http://slides.youchan.org/RubyConfTaiwan2016"
     githubUrl: "https://github.com/youchan/menilite-todo-app"
+    videoUrl: https://youtu.be/1Qvs1e0RyIY
   - name: Zong-Yu Wu
     avatar: images/speakers/zongyuwu.jpg
     title: Software Engineer , Trend Micro
     urlGithub: https://github.com/zongyuwu
+    videoUrl: https://youtu.be/mqxuM_5YgxE
     slideUrl: 'https://speakerdeck.com/zongyuwu/ruby-ransomware-and-cryptosystem'
     urltwitter: ''
     bio: "<p>熱愛Ruby、資訊安全，目前在趨勢科技擔任工程師。</p>"
